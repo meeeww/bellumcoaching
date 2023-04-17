@@ -76,6 +76,11 @@ header {
     margin-left: 2rem;
 }
 
+.headerIzquierda img{
+    width: 80px;
+    height: 80px;
+}
+
 .headerDerecha a, .headerDerecha label {
     margin-right: 2rem;
 }
