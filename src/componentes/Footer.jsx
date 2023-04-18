@@ -26,8 +26,8 @@ const Footer = () => (
             </div>
             <div className="informacionFooterDerecha">
                 <h5>Contacto</h5>
-                <a href="https://discord.gg/MW6F2Ajecq" target={"_blank"}><i class="fa-brands fa-discord"></i>Discord</a>
-                <a href="contacto@bellumcoaching.com"><i class="fa-solid fa-envelope"></i>Email</a>
+                {/* <a href="https://discord.gg/MW6F2Ajecq" target={"_blank"}><i class="fa-brands fa-discord"></i>Discord</a>
+                <a href="contacto@bellumcoaching.com"><i class="fa-solid fa-envelope"></i>Email</a> */}
             </div>
         </div>
         <div className="custom-shape-divider-bottom-1681757470">

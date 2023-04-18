@@ -33,7 +33,9 @@ const Inicio = () => (
                         necesidades. Nuestros entrenadores altamente capacitados te guiarán para mejorar tus habilidades,
                         técnicas y trabajo en equipo. Ya seas principiante o jugador experimentado, nuestro coaching para
                         League of Legends totalmente personalizado se ajusta a tus necesidades para ayudarte a alcanzar tu
-                        máximo potencial. ¡<a href="https://bellumcoaching.com/contacto/" target="_blank" style={{ color: "#00B3FF" }}>Contáctanos</a> hoy mismo para comenzar a lograr tus objetivos en la grieta!</h4>
+                        máximo potencial. 
+                        {/* ¡<a href="https://bellumcoaching.com/contacto/" target="_blank" style={{ color: "#00B3FF" }}>Contáctanos</a>  */}
+                        hoy mismo para comenzar a lograr tus objetivos en la grieta!</h4>
                     <button className="botonContacta">CONTÁCTANOS</button>
                 </div>
             </div>
@@ -88,7 +90,7 @@ const Inicio = () => (
                 <div className="tarjetaTrustpilot">
                     <p>Desde Bellum Coaching creemos que lo más importante es estar abiertos a críticas constructivas para poder mejorar nuestro servicio.</p>
                     <div className="trustpilot-widget" data-locale="es-ES" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6436c8f8337ac0fb935bbea5" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="10" data-style-alignment="center">
-                        <a href="https://es.trustpilot.com/review/www.bellumcoaching.com" target="_blank" rel="noopener">Trustpilot</a>
+                        {/* <a href="https://es.trustpilot.com/review/www.bellumcoaching.com" target="_blank" rel="noopener">Trustpilot</a> */}
                     </div>
                 </div>
 
