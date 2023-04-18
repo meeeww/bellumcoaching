@@ -11,7 +11,7 @@ const Header = () => (
         </div>
         <header>
             <div className="headerIzquierda">
-                <img src={bellumLogo} alt="Bellum Logo" />
+                <Link to="/"><img src={bellumLogo} alt="Bellum Logo" /></Link>
             </div>
             <div className="headerDerecha">
                 <Link to="/">Inicio</Link>

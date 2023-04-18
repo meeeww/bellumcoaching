@@ -10,6 +10,7 @@ import './estilos/Inicio.css'
 import {
   createBrowserRouter,
   RouterProvider,
+  Route
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -18,11 +19,11 @@ const router = createBrowserRouter([
     element: <Inicio />,
   },
   {
-    path: "precios",
+    path: "/precios",
     element: <Precios />,
   },
   {
-    path: "contacto",
+    path: "/contacto",
     element: <Contacto />,
   },
 ]);
