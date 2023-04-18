@@ -35,6 +35,10 @@ const toggleClaro = function() {
     element = document.querySelector(".paragraphFooter")
     element.classList.toggle("light-mode-texto-inverso")
 
+    
+    element = document.querySelector(".paragraphTrustpilot")
+    element.classList.toggle("light-mode-texto-inverso")
+
     element = document.querySelectorAll(".tarjetaCoaching");
     for (var i = 0; i < element.length; i++) {
         element[i].classList.toggle("light-mode-bordes");

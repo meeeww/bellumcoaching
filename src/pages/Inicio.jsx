@@ -43,7 +43,7 @@ const Inicio = () => (
                 <div className="tarjetasCoaching">
                     <div className="tarjetaCoaching">
                         <div className="tituloTarjetaCoaching">
-                            <h2>Personalización</h2>
+                            <h2>Personalización e intransferible</h2>
                         </div>
                         <div className="subtituloTarjetaCoaching">
                             <p>En nuestro equipo, ofrecemos entrenamiento personalizado para que puedas mejorar en tu juego.
@@ -86,7 +86,7 @@ const Inicio = () => (
             <div className="clientesPiensan">
                 <h2>Lo Que Nuestros Clientes Piensan</h2>
                 <div className="tarjetaTrustpilot">
-                    <p>Desde Bellum Coaching creemos que lo más importante es estar abiertos a críticas constructivas para poder mejorar nuestro servicio.</p>
+                    <p className="paragraphTrustpilot">Desde Bellum Coaching creemos que lo más importante es estar abiertos a críticas constructivas para poder mejorar nuestro servicio.</p>
                     <div className="trustpilot-widget" data-locale="es-ES" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6436c8f8337ac0fb935bbea5" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="10" data-style-alignment="center">
                         <a href="https://es.trustpilot.com/review/www.bellumcoaching.com" target="_blank" rel="noopener">Trustpilot</a>
                     </div>
@@ -114,8 +114,8 @@ const Inicio = () => (
                         <h6>40€</h6>
                     </div>
                     <div className="tarjetaPrecios" id="masRentable">
-                        <h4>20 Clases</h4>
-                        <h6>70€</h6>
+                        <h4>15 Clases</h4>
+                        <h6>55€</h6>
                     </div>
                     <div className="tarjetaPrecios">
                         <h4>20 Clases</h4>
