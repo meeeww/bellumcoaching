@@ -1,5 +1,6 @@
 npm install vite@latest
 npm install react-router-dom
+npm install gh-pages -D
 
 npm run dev
 
