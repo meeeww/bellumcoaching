@@ -5,12 +5,14 @@ import Inicio from './componentes/Inicio'
 import Precios from './componentes/Precios'
 import Contacto from './componentes/Contacto'
 import Footer from './componentes/Footer'
+
+import Prueba from './pages/InicioPrueba'
+
 import './estilos/Inicio.css'
 
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -21,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "precios",
     element: <React.StrictMode><Header /><Precios /><Footer /></React.StrictMode>,
+  },
+  {
+    path: "contacto",
+    element: <Prueba />,
   },
   {
     path: "contacto",
