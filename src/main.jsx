@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './componentes/Header'
 import Inicio from './componentes/Inicio'
+import Precios from './componentes/Precios'
+import Contacto from './componentes/Contacto'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
 
@@ -17,12 +19,12 @@ const router = createBrowserRouter([
     element: <React.StrictMode><Header /><Inicio /><Footer /></React.StrictMode>,
   },
   {
-    path: "contacto",
-    element: <React.StrictMode><Inicio /></React.StrictMode>,
+    path: "precios",
+    element: <React.StrictMode><Header /><Precios /><Footer /></React.StrictMode>,
   },
   {
-    path: "precio",
-    element: <React.StrictMode><Inicio /></React.StrictMode>,
+    path: "contacto",
+    element: <React.StrictMode><Header /><Contacto /><Footer /></React.StrictMode>,
   },
 ]);
 
