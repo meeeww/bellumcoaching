@@ -23,6 +23,10 @@ body {
     font-family: "Rubik", Sans-serif;
 }
 
+.bodyBellum {
+    margin-inline: 20rem;
+}
+
 .custom-shape-divider-top-1681756534 {
     position: absolute;
     top: 0;
@@ -76,16 +80,17 @@ header {
     margin-left: 2rem;
 }
 
-.headerIzquierda img{
+.headerIzquierda img {
     width: 80px;
     height: 80px;
 }
 
-.headerDerecha a, .headerDerecha label {
+.headerDerecha a,
+.headerDerecha label {
     margin-right: 2rem;
 }
 
-main{
+main {
     margin-inline: 5rem;
 }
 
@@ -109,27 +114,27 @@ h4 {
 }
 
 .light-mode {
-    background-color: var(--fondo-blanco)!important;
-    color: var(--color-principal-light)!important;
+    background-color: var(--fondo-blanco) !important;
+    color: var(--color-principal-light) !important;
 
-    fill: var(--color-principal-light)!important;
+    fill: var(--color-principal-light) !important;
 
     animation-name: aClaro;
     animation-duration: var(--tiempo-cambio-claridad);
 }
 
 .light-mode-inverso {
-    background-color: var(--fondo-negro)!important;
-    color: var(--color-principal-dark)!important;
+    background-color: var(--fondo-negro) !important;
+    color: var(--color-principal-dark) !important;
 
-    fill: var(--color-principal-dark)!important;
+    fill: var(--color-principal-dark) !important;
 
     animation-name: aClaro;
     animation-duration: var(--tiempo-cambio-claridad);
 }
 
 .light-mode-bordes {
-    border-color: var(--color-principal-light)!important;
+    border-color: var(--color-principal-light) !important;
 }
 
 .switch {
@@ -231,6 +236,11 @@ input:checked+.slider:before {
     align-items: center;
 }
 
+.subtituloIzquierda video{
+    width: 30rem;
+    height: 20rem;
+}
+
 .escogerCoaching {
     display: flex;
     flex-direction: column;
@@ -251,10 +261,124 @@ input:checked+.slider:before {
     margin: 10px;
     padding: 20px 40px 123px 40px;
     background-color: var(--color-secundario);
+    color: var(--color-principal-light) !important;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: var(--color-principal-dark);
     border-radius: 25px 25px 25px 25px;
+}
+
+.clientesPiensan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetaTrustpilot {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    width: auto;
+    height: 1rem;
+    margin: 10px;
+    padding: 20px 40px 123px 40px;
+    background-color: var(--color-secundario);
+    color: var(--color-principal-light) !important;
+    font-size: smaller;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: var(--color-principal-dark);
+    border-radius: 25px 25px 25px 25px;
+}
+
+.precios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.decision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.decision h2 {
+    margin-bottom: 0.5rem;
+}
+
+.tarjetasDecision {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.tarjetasPrecios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.tarjetaPrecios{
+    margin-inline: 0.5rem;
+    height: 14rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid rgba(9,9,9,.1);
+    border-radius: 4px
+}
+
+.tarjetaPrecios::before{
+    position: relative;
+    content: "";
+    width: auto;
+    background: #00c853;
+    color: #fff;
+    top: -30px;
+    right: -140px;
+    z-index: 10;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 0;
+    padding: 7px 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#mejorParaEmpezar::before{
+    content: "Mejor Para Empezar";
+    width: 200px;
+}
+
+#masVendido::before{
+    content: "Más Vendido";
+    width: 200px;
+}
+
+#masRentable::before{
+    content: "Más Rentable";
+    width: 200px;
+}
+
+.tarjetaPrecios h4{
+    margin: 0;
+}
+
+.tarjetaPrecios h6{
+    margin: 0;
 }
 
 footer {
@@ -279,7 +403,7 @@ footer a {
     font-size: 16px;
 }
 
-footer i{
+footer i {
     margin-right: 0.7rem;
 }
 
@@ -325,6 +449,7 @@ footer i{
     width: 100%;
     background-color: var(--fondo-blanco);
     color: var(--color-principal-light);
+    padding-bottom: 2rem;
 }
 
 /*
