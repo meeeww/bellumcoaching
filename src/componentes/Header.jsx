@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import bellumLogo from '../assets/Logo.png'
 import toggleClaro from '../scripts/modoClaro.js'
 
@@ -13,9 +14,9 @@ const Header = () => (
                 <img src={bellumLogo} alt="Bellum Logo" />
             </div>
             <div className="headerDerecha">
-                <a>Inicio</a>
-                <a>Precios</a>
-                <a>Contacto</a>
+                <Link to="/">Inicio</Link>
+                <Link to="/precios">Precios</Link>
+                <Link to="/contacto">Contacto</Link>
                 <label className="switch">
                     <input type="checkbox" onClick={toggleClaro} />
                         <span className="slider round"></span>

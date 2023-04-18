@@ -1,13 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './componentes/Header'
-import Inicio from './componentes/Inicio'
-import Precios from './componentes/Precios'
-import Contacto from './componentes/Contacto'
+import Inicio from './pages/Inicio'
+import Precios from './pages/Precios'
+import Contacto from './pages/Contacto'
 import Footer from './componentes/Footer'
-
-import Prueba from './pages/InicioPrueba'
-
 import './estilos/Inicio.css'
 
 import {
@@ -18,19 +15,15 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <React.StrictMode><Header /><Inicio /><Footer /></React.StrictMode>,
+    element: <Inicio />,
   },
   {
     path: "precios",
-    element: <React.StrictMode><Header /><Precios /><Footer /></React.StrictMode>,
+    element: <Precios />,
   },
   {
     path: "contacto",
-    element: <Prueba />,
-  },
-  {
-    path: "contacto",
-    element: <React.StrictMode><Header /><Contacto /><Footer /></React.StrictMode>,
+    element: <Contacto />,
   },
 ]);
 
