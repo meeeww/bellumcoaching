@@ -1,7 +1,8 @@
 import bellumLogo from '../assets/Logo.png'
+import { Link } from "react-router-dom"
 
 const Footer = () => (
-    <div>
+    <div className="footer">
         <div className="redesSociales">
             <div className="redesSocialesIzquierda">
                 <p>Nuestras redes sociales:</p>
@@ -15,18 +16,18 @@ const Footer = () => (
         <div className="informacionFooter">
             <div className="informacionFooterIzquierda">
                 <h5>Sobre Nosotros</h5>
-                <p>En Bellum Coaching nos comprometemos a brindar el mejor servicio posible para nuestros clientes.</p>
+                <p className="paragraphFooter">En Bellum Coaching nos comprometemos a brindar el mejor servicio posible para nuestros clientes.</p>
             </div>
             <div className="informacionFooterCentro">
                 <h5>Links</h5>
-                <a>Inicio</a>
-                <a>Precios</a>
-                <a>Contacto</a>
+                <Link to="/">Inicio</Link>
+                <Link to="/precios">Precios</Link>
+                <Link to="/contacto">Contacto</Link>
             </div>
             <div className="informacionFooterDerecha">
                 <h5>Contacto</h5>
-                <a>Discord</a>
-                <a>Email</a>
+                <a><i class="fa-brands fa-discord"></i>Discord</a>
+                <a><i class="fa-solid fa-envelope"></i>Email</a>
             </div>
         </div>
         <div className="custom-shape-divider-bottom-1681757470">
@@ -35,7 +36,7 @@ const Footer = () => (
             </svg>
         </div>
         <div className="copyrightFooter">
-            <p>© 2023 Copyright: BellumCoaching.com</p>
+            <p className="paragraphCopyright">© 2023 Copyright: BellumCoaching.com</p>
         </div>
     </div>
 );

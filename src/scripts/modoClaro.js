@@ -24,12 +24,21 @@ const toggleClaro = function() {
     element = document.querySelector(".redesSociales")
     element.classList.toggle("light-mode-inverso")
 
+    element = document.querySelectorAll(".paragraphDecision")
+    for (var i = 0; i < element.length; i++) {
+        element[i].classList.toggle("light-mode");
+    }
+
+    element = document.querySelector(".paragraphCopyright")
+    element.classList.toggle("light-mode-texto")
+
+    element = document.querySelector(".paragraphFooter")
+    element.classList.toggle("light-mode-texto-inverso")
+
     element = document.querySelectorAll(".tarjetaCoaching");
     for (var i = 0; i < element.length; i++) {
         element[i].classList.toggle("light-mode-bordes");
     }
-
-    
 
     switch(modoOscuro){
         case true:
