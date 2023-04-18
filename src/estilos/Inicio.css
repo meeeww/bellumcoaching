@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --color-principal-dark: #FFFFFF;
+    --color-principal-dark: #D9D9D9;
     --color-principal-light: #404040;
     --color-secundario: #00B3FF;
     --fondo-negro: #404040;
-    --fondo-blanco: #FFFFFF;
+    --fondo-blanco: #D9D9D9;
 
     --tiempo-cambio-claridad: 0.5s;
 }
@@ -325,6 +325,7 @@ input:checked+.slider:before {
 }
 
 .tarjetaPrecios{
+    background-color: var(--color-principal-light);
     margin-inline: 0.5rem;
     height: 14rem;
     width: 100%;
@@ -335,42 +336,6 @@ input:checked+.slider:before {
     overflow: hidden;
     border: 1px solid rgba(9,9,9,.1);
     border-radius: 4px
-}
-
-.tarjetaPrecios::before{
-    position: relative;
-    content: "";
-    width: auto;
-    background: #00c853;
-    color: #fff;
-    top: -30px;
-    right: -140px;
-    z-index: 10;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 0;
-    padding: 7px 0;
-    white-space: nowrap;
-    text-align: center;
-}
-
-#mejorParaEmpezar::before{
-    content: "Mejor Para Empezar";
-    width: 200px;
-}
-
-#masVendido::before{
-    content: "Más Vendido";
-    width: 200px;
-}
-
-#masRentable::before{
-    content: "Más Rentable";
-    width: 200px;
 }
 
 .tarjetaPrecios h4{

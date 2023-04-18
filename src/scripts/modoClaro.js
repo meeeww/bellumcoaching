@@ -1,3 +1,8 @@
+import bellumVideo from '../assets/VideoBellum.mp4'
+import bellumVideoLight from '../assets/VideoBellumLight.mp4'
+
+let modoOscuro = true
+
 const toggleClaro = function() {
     var element = document.body;
     element.classList.toggle("light-mode");
@@ -22,6 +27,22 @@ const toggleClaro = function() {
     element = document.querySelectorAll(".tarjetaCoaching");
     for (var i = 0; i < element.length; i++) {
         element[i].classList.toggle("light-mode-bordes");
+    }
+
+    
+
+    switch(modoOscuro){
+        case true:
+            element = document.querySelector(".videoDark")
+            console.log(element)
+            element.setAttribute("src", bellumVideoLight)
+            modoOscuro = false;
+            break;
+        case false:
+            element = document.querySelector(".videoDark")
+            element.setAttribute("src", bellumVideo)
+            modoOscuro = true;
+            break;
     }
 }
 

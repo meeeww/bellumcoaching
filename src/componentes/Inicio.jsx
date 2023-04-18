@@ -1,4 +1,5 @@
 import bellumVideo from '../assets/VideoBellum.mp4'
+import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 
 const Inicio = () => (
@@ -19,7 +20,8 @@ const Inicio = () => (
 
         <div className="subtitulo">
             <div className="subtituloIzquierda">
-                <video src={bellumVideo} alt="Bellum Video" autoPlay loop muted="muted" controlsList="nodownload"></video>
+                <video src={bellumVideo} alt="Bellum Video" autoPlay loop muted="muted" controlsList="nodownload" className="videoDark"></video>
+                <video src={bellumVideoLight} alt="Bellum Video" autoPlay loop muted="muted" controlsList="nodownload" className="videoLight" style={{display: "none"}}></video>
             </div>
             <div className="subtituloDerecha">
                 <h2>Somos Bellum</h2>
