@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { NavLink } from "react-router-dom"
 import bellumLogo from '../assets/Logo.png'
 import toggleClaro from '../scripts/modoClaro.js'
-import darVida from '../scripts/modoClaro.js'
+import bellumVideo from '../assets/VideoBellum.mp4'
+import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 
 
 
@@ -45,10 +46,10 @@ const Header = ({ quePagina }) => {
         redesSociales.classList.add("light-mode-inverso")
         
 
-        let paragraphTrustpilot, tarjetaCoaching, paragraphDecision
+        let paragraphTrustpilot, tarjetaCoaching, paragraphDecision, videoDark
         //inicio
         if (quePagina == "Inicio") {
-            
+            videoDark = document.querySelector(".videoDark")
 
             paragraphTrustpilot = document.querySelector(".paragraphTrustpilot")//
             paragraphTrustpilot.classList.add("light-mode-texto-inverso")
@@ -85,6 +86,7 @@ const Header = ({ quePagina }) => {
             }
 
             try {
+                videoDark.setAttribute("src", bellumVideo)
                 paragraphTrustpilot.classList.toggle("light-mode-texto-inverso")
                 for (var i = 0; i < tarjetaCoaching.length; i++) {
                     tarjetaCoaching[i].classList.toggle("light-mode-bordes");
@@ -98,6 +100,11 @@ const Header = ({ quePagina }) => {
 
         } else if (localStorage.modoOscuro == "false") {
             document.getElementById("togglerModoOscuro").checked = true;
+            try{
+                videoDark.setAttribute("src", bellumVideoLight)
+            } catch {
+                
+            }
         }
 
     })
