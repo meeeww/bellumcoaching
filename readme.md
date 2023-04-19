@@ -4,4 +4,4 @@ npm install gh-pages
 
 npm run dev
 
-https://www.youtube.com/watch?v=o05ZP6_JQqE
+https://www.youtube.com/watch?v=UyHHmPvVEfI

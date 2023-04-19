@@ -39,6 +39,12 @@ const toggleClaro = function() {
     element = document.querySelector(".paragraphTrustpilot")
     element.classList.toggle("light-mode-texto-inverso")
 
+    
+    element = document.querySelectorAll(".textoHeader")
+    for (var i = 0; i < element.length; i++) {
+        element[i].classList.toggle("light-mode-texto-inverso");
+    }
+
     element = document.querySelectorAll(".tarjetaCoaching");
     for (var i = 0; i < element.length; i++) {
         element[i].classList.toggle("light-mode-bordes");
@@ -47,7 +53,6 @@ const toggleClaro = function() {
     switch(modoOscuro){
         case true:
             element = document.querySelector(".videoDark")
-            console.log(element)
             element.setAttribute("src", bellumVideoLight)
             modoOscuro = false;
             break;

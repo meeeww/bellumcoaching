@@ -129,6 +129,22 @@ header {
     margin-right: 2rem;
 }
 
+#linkHeaderActive1{
+    color: var(--color-secundario);
+}
+
+.textoHeader{
+    color: var(--color-principal-dark);
+}
+
+.textoHeader:hover{
+    color: var(--color-secundario)!important;
+}
+
+.textoHeader:after{
+    color: var(--color-secundario);
+}
+
 main {
     margin-inline: 5rem;
 }

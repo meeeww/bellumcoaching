@@ -3,9 +3,10 @@ import Header from '../componentes/Header.jsx'
 import Footer from '../componentes/Footer'
 
 function MainLayout({children}) {
+
     return (
         <div>
-            <Header></Header>
+            <Header>Hey</Header>
             <div>{children}</div>
             <Footer></Footer>
         </div>
