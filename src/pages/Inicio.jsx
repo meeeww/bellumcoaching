@@ -25,6 +25,7 @@ const Inicio = () => {
                     </div>
                 </div>
 
+
                 <div className="subtitulo">
                     <div className="subtituloIzquierda">
                         <video src={bellumVideo} alt="Bellum Video" autoPlay loop muted="muted" controlsList="nodownload" className="videoDark"></video>
