@@ -41,12 +41,14 @@ const Header = ({ quePagina }) => {
         let paragraphFooter = document.querySelector(".paragraphFooter")//
         paragraphFooter.classList.add("light-mode-texto-inverso")//
 
+        let redesSociales = document.querySelector(".redesSociales")
+        redesSociales.classList.add("light-mode-inverso")
+        
 
-        let redesSociales, paragraphTrustpilot, tarjetaCoaching, paragraphDecision
+        let paragraphTrustpilot, tarjetaCoaching, paragraphDecision
         //inicio
         if (quePagina == "Inicio") {
-            redesSociales = document.querySelector(".redesSociales")
-            redesSociales.classList.add("light-mode-inverso")
+            
 
             paragraphTrustpilot = document.querySelector(".paragraphTrustpilot")//
             paragraphTrustpilot.classList.add("light-mode-texto-inverso")
@@ -68,6 +70,7 @@ const Header = ({ quePagina }) => {
             copyrightFooter.classList.toggle("light-mode-inverso")
             paragraphCopyright.classList.toggle("light-mode-texto")
             paragraphFooter.classList.toggle("light-mode-texto-inverso")
+            redesSociales.classList.toggle("light-mode-inverso")
 
             for (var i = 0; i < h4s.length; i++) {
                 h4s[i].classList.toggle("light-mode");
@@ -82,7 +85,6 @@ const Header = ({ quePagina }) => {
             }
 
             try {
-                redesSociales.classList.toggle("light-mode-inverso")
                 paragraphTrustpilot.classList.toggle("light-mode-texto-inverso")
                 for (var i = 0; i < tarjetaCoaching.length; i++) {
                     tarjetaCoaching[i].classList.toggle("light-mode-bordes");
