@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import bellumLogo from '../assets/Logo.png'
 import toggleClaro from '../scripts/modoClaro.js'
 
 
 
 const Header = () => {
+    const navLinkStyles = ({ isActive }) => {
+        return {
+            color: isActive ? "#00B3FF" : ""
+        }
+    }
 
     return (
         <div>
@@ -16,12 +21,12 @@ const Header = () => {
             </div>
             <header>
                 <div className="headerIzquierda">
-                    <Link to="/"><img src={bellumLogo} alt="Bellum Logo" /></Link>
+                    <NavLink to="/"><img src={bellumLogo} alt="Bellum Logo" /></NavLink>
                 </div>
                 <div className="headerDerecha">
-                    <Link to="/" className="textoHeader" id="linkHeaderActive1">Inicio</Link>
-                    <Link to="/precios" className="textoHeader" id="linkHeaderActive2">Precios</Link>
-                    <Link to="/contacto" className="textoHeader" id="linkHeaderActive3">Contacto</Link>
+                    <NavLink to="/" className="textoHeader" style={navLinkStyles}>Inicio</NavLink>
+                    <NavLink to="/precios" className="textoHeader" style={navLinkStyles}>Precios</NavLink>
+                    <NavLink to="/contacto" className="textoHeader" style={navLinkStyles}>Contacto</NavLink>
                     <label className="switch">
                         <input type="checkbox" onClick={toggleClaro} />
                         <span className="slider round"></span>

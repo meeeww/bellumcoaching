@@ -202,21 +202,28 @@ p {
 
     fill: var(--color-principal-dark) !important;
 
-    animation-name: aClaro;
+    animation-name: aOscuro;
     animation-duration: var(--tiempo-cambio-claridad);
 }
 
 .light-mode-texto {
     color: var(--color-principal-dark) !important;
 
-    animation-name: aClaro;
+    animation-name: aClaroTexto;
     animation-duration: var(--tiempo-cambio-claridad);
 }
 
 .light-mode-texto-inverso {
     color: var(--color-principal-light) !important;
 
-    animation-name: aClaro;
+    animation-name: aOscuroTexto;
+    animation-duration: var(--tiempo-cambio-claridad);
+}
+
+.light-mode-texto-inverso-header {
+    color: var(--color-principal-light) ;
+
+    animation-name: aOscuroTexto;
     animation-duration: var(--tiempo-cambio-claridad);
 }
 
@@ -307,6 +314,26 @@ input:checked+.slider:before {
 
     to {
         background-color: var(--fondo-negro);
+        fill: var(--color-principal-dark)
+    }
+}
+
+@keyframes aClaroTexto {
+    from {
+        fill: var(--color-principal-dark)
+    }
+
+    to {
+        fill: var(--color-principal-light)
+    }
+}
+
+@keyframes aOscuroTexto {
+    from {
+        fill: var(--color-principal-light)
+    }
+
+    to {
         fill: var(--color-principal-dark)
     }
 }

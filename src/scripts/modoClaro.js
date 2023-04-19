@@ -42,7 +42,7 @@ const toggleClaro = function() {
     
     element = document.querySelectorAll(".textoHeader")
     for (var i = 0; i < element.length; i++) {
-        element[i].classList.toggle("light-mode-texto-inverso");
+        element[i].classList.toggle("light-mode-texto-inverso-header");
     }
 
     element = document.querySelectorAll(".tarjetaCoaching");
