@@ -300,7 +300,6 @@ header,
 .subtitulo,
 .escogerCoaching,
 .clientesPiensan,
-.precios,
 .decision {
     overflow-x: hidden;
 }
@@ -498,7 +497,7 @@ header,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    width: 100%;
+    width: 93%;
 }
 
 .tarjetaPrecios {
