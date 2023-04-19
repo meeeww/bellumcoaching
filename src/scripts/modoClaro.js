@@ -3,7 +3,13 @@ import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 
 let modoOscuro = true
 
-const toggleClaro = function() {
+const toggleClaro = function () {
+    if (localStorage.modoOscuro == "true") {
+        localStorage.modoOscuro = false
+    } else if (localStorage.modoOscuro == "false") {
+        localStorage.modoOscuro = true
+    }
+
     var element = document.body;
     element.classList.toggle("light-mode");
 
@@ -12,22 +18,48 @@ const toggleClaro = function() {
         element[i].classList.toggle("light-mode");
     }
 
-    element = document.querySelector(".custom-shape-divider-top-1681756534 .shape-fill")
-    element.classList.toggle("light-mode")
-
-    element = document.querySelector(".custom-shape-divider-bottom-1681757470 .shape-fill")
-    element.classList.toggle("light-mode")
+    element = document.querySelectorAll(".shape-fill")
+    for (var i = 0; i < element.length; i++) {
+        element[i].classList.toggle("light-mode");
+    }
 
     element = document.querySelector(".copyrightFooter")
     element.classList.toggle("light-mode-inverso")
 
-    element = document.querySelector(".redesSociales")
-    element.classList.toggle("light-mode-inverso")
+    try {
+        element = document.querySelector(".redesSociales")
+        element.classList.toggle("light-mode-inverso")
 
-    element = document.querySelectorAll(".paragraphDecision")
-    for (var i = 0; i < element.length; i++) {
-        element[i].classList.toggle("light-mode");
+        element = document.querySelectorAll(".paragraphDecision")
+        for (var i = 0; i < element.length; i++) {
+            element[i].classList.toggle("light-mode");
+        }
+
+        element = document.querySelector(".paragraphTrustpilot")
+        element.classList.toggle("light-mode-texto-inverso")
+
+        element = document.querySelectorAll(".tarjetaCoaching");
+        for (var i = 0; i < element.length; i++) {
+            element[i].classList.toggle("light-mode-bordes");
+        }
+
+        switch (modoOscuro) {
+            case true:
+                element = document.querySelector(".videoDark")
+                element.setAttribute("src", bellumVideoLight)
+                modoOscuro = false;
+                break;
+            case false:
+                element = document.querySelector(".videoDark")
+                element.setAttribute("src", bellumVideo)
+                modoOscuro = true;
+                break;
+        }
+    } catch {
     }
+
+
+
 
     element = document.querySelector(".paragraphCopyright")
     element.classList.toggle("light-mode-texto")
@@ -35,33 +67,16 @@ const toggleClaro = function() {
     element = document.querySelector(".paragraphFooter")
     element.classList.toggle("light-mode-texto-inverso")
 
-    
-    element = document.querySelector(".paragraphTrustpilot")
-    element.classList.toggle("light-mode-texto-inverso")
 
-    
+
+
+
     element = document.querySelectorAll(".textoHeader")
     for (var i = 0; i < element.length; i++) {
         element[i].classList.toggle("light-mode-texto-inverso-header");
     }
 
-    element = document.querySelectorAll(".tarjetaCoaching");
-    for (var i = 0; i < element.length; i++) {
-        element[i].classList.toggle("light-mode-bordes");
-    }
 
-    switch(modoOscuro){
-        case true:
-            element = document.querySelector(".videoDark")
-            element.setAttribute("src", bellumVideoLight)
-            modoOscuro = false;
-            break;
-        case false:
-            element = document.querySelector(".videoDark")
-            element.setAttribute("src", bellumVideo)
-            modoOscuro = true;
-            break;
-    }
 }
 
 export default toggleClaro
