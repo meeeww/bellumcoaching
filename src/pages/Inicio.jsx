@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
@@ -34,7 +35,7 @@ const Inicio = () => (
                         técnicas y trabajo en equipo. Ya seas principiante o jugador experimentado, nuestro coaching para
                         League of Legends totalmente personalizado se ajusta a tus necesidades para ayudarte a alcanzar tu
                         máximo potencial. ¡<a href="https://bellumcoaching.com/contacto/" target="_blank" style={{ color: "#00B3FF" }}>Contáctanos</a> hoy mismo para comenzar a lograr tus objetivos en la grieta!</h4>
-                    <button className="botonContacta">CONTÁCTANOS</button>
+                    <Link to="/contacto" ><button className="botonContacta" style={{cursor: "pointer"}}>CONTÁCTANOS</button></Link>
                 </div>
             </div>
 
