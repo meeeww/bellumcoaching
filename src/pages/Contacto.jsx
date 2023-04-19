@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
@@ -9,7 +10,7 @@ const Contacto = () => {
 
     return (
         <MainLayout laPagina={nombrePagina}>
-            <div>Hola Zas</div>
+            <div>Hola Titon</div>
         </MainLayout >
     );
 }

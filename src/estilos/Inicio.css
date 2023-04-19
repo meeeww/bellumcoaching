@@ -711,6 +711,24 @@ header,
     color: var(--color-principal-light);
 }
 
+
+/* precios */
+.comoPagar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 10rem;
+}
+
+.comoPagar a {
+    color: var(--color-secundario);
+}
+
+.comoPagar iframe {
+    width: 350px;
+    height: 500px;
+    margin-right: 4rem
+}
 /*
 ::-webkit-scrollbar {
     width: 15px;
