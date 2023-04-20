@@ -10,19 +10,20 @@ const Contacto = () => {
 
     const nombrePagina = "Contacto"
 
-    const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
-
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.ionos.es",
+            Username : "contacto@bellumcoaching.com",
+            Password : "OFtOG2#vA3%8",
+            To : 'contacto@bellumcoaching.com',
+            From : "contacto@bellumcoaching.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+          message => alert(message)
+        );
+    }
+    
     return (
         <MainLayout laPagina={nombrePagina}>
             <div className="bodyBellum">
@@ -36,19 +37,19 @@ const Contacto = () => {
                         <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
                     </div>
                     <div className="tituloDerechaContacto">
-                        <form ref={form} onSubmit={sendEmail}>
+                        <form onSubmit={sendEmail}>
                             <div className="juntarContacto">
-                                <input type="text" placeholder="Nombre" name="user_name"></input>
+                                <input type="text" placeholder="Nombre"></input>
                                 <input type="text" placeholder="Apellido"></input>
                             </div>
                             <div className="juntarContacto">
-                                <input type="text" placeholder="Correo Electrónico" name="user_email"></input>
+                                <input type="text" placeholder="Correo Electrónico"></input>
                             </div>
                             <div className="juntarContacto">
                                 <input type="text" placeholder="Asunto"></input>
                             </div>
                             <div className="juntarContacto">
-                                <input type="text" placeholder="Tu Mensaje" className="mensajeContacto" name="message"></input>
+                                <input type="text" placeholder="Tu Mensaje" className="mensajeContacto"></input>
                             </div>
                             <div className="juntarContacto">
                                 <input type="submit" value="Submit"></input>
