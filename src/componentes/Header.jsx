@@ -44,7 +44,6 @@ const Header = ({ quePagina }) => {
 
         let redesSociales = document.querySelector(".redesSociales")
         redesSociales.classList.add("light-mode-inverso")
-        
 
         let paragraphTrustpilot, tarjetaCoaching, paragraphDecision, videoDark
         //inicio
@@ -65,7 +64,7 @@ const Header = ({ quePagina }) => {
             }
         }
 
-        if (localStorage.modoOscuro == "true") {
+        if (localStorage.getItem("modoOscuro") == "true") {
             document.getElementById("togglerModoOscuro").checked = false;
             body.classList.toggle("light-mode");
             copyrightFooter.classList.toggle("light-mode-inverso")
@@ -98,7 +97,7 @@ const Header = ({ quePagina }) => {
                 console.error("damn")
             }
 
-        } else if (localStorage.modoOscuro == "false") {
+        } else if (localStorage.getItem("modoOscuro") == "false") {
             document.getElementById("togglerModoOscuro").checked = true;
             try{
                 videoDark.setAttribute("src", bellumVideoLight)
