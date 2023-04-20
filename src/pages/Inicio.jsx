@@ -117,7 +117,7 @@ const Inicio = () => {
                         </div>
                         <div className="tarjetaPrecios">
                             <h4>10 Clases</h4>
-                            <h6>40€</h6>
+                            <h6>35€</h6>
                         </div>
                         <div className="tarjetaPrecios" id="masRentable">
                             <h4>15 Clases</h4>
