@@ -4,6 +4,7 @@ import Header from './componentes/Header'
 import Inicio from './pages/Inicio'
 import Precios from './pages/Precios'
 import Contacto from './pages/Contacto'
+import NoMatch from './pages/NoMatch'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/contacto",
     element: <Contacto />,
+  },
+  {
+    path: "*",
+    element: <NoMatch />,
   },
 ]);
 
