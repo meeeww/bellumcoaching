@@ -10,7 +10,41 @@ const Contacto = () => {
 
     return (
         <MainLayout laPagina={nombrePagina}>
-            <div>Hola Titon</div>
+            <div className="bodyBellum">
+                <div className="tituloContacto">
+                    <div className="tituloIzquierdaContacto">
+                        <h1>Contáctanos</h1>
+                        <h4 id="h4">No dudes en comunicarte con nosotros. Simplemente completa el formulario de contacto aquí y nos aseguraremos de responder lo más rápido posible.</h4>
+                        <h2>Envíanos Un Mensaje</h2>
+                        <h4 id="h4">contacto@bellumcoaching.com</h4>
+                        <h2>También Por Redes Sociales</h2>
+                        <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
+                    </div>
+                    <div className="tituloDerechaContacto">
+                        <form>
+                            <div className="juntarContacto">
+                                <input type="text" placeholder="Nombre"></input>
+                                <input type="text" placeholder="Apellido"></input>
+                            </div>
+                            <div className="juntarContacto">
+                                <input type="text" placeholder="Correo Electrónico"></input>
+                            </div>
+                            <div className="juntarContacto">
+                                <input type="text" placeholder="Asunto"></input>
+                            </div>
+                            <div className="juntarContacto">
+                                <input type="text" placeholder="Tu Mensaje" className="mensajeContacto"></input>
+                            </div>
+                            <div className="juntarContacto">
+                                <input type="submit" value="Submit"></input>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </MainLayout >
     );
 }
