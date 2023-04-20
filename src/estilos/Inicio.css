@@ -799,6 +799,7 @@ form input {
     font-weight: 800;
     letter-spacing: 1px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 ::placeholder {

@@ -1,6 +1,7 @@
 npm install vite@latest
 npm install react-router-dom
 npm install gh-pages
+npm install @emailjs/browser
 
 npm run dev
 

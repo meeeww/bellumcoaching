@@ -1,3 +1,5 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
@@ -7,6 +9,19 @@ import bellumLogo from '../assets/Logo.png'
 const Contacto = () => {
 
     const nombrePagina = "Contacto"
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <MainLayout laPagina={nombrePagina}>
@@ -21,19 +36,19 @@ const Contacto = () => {
                         <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
                     </div>
                     <div className="tituloDerechaContacto">
-                        <form>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className="juntarContacto">
-                                <input type="text" placeholder="Nombre"></input>
+                                <input type="text" placeholder="Nombre" name="user_name"></input>
                                 <input type="text" placeholder="Apellido"></input>
                             </div>
                             <div className="juntarContacto">
-                                <input type="text" placeholder="Correo Electrónico"></input>
+                                <input type="text" placeholder="Correo Electrónico" name="user_email"></input>
                             </div>
                             <div className="juntarContacto">
                                 <input type="text" placeholder="Asunto"></input>
                             </div>
                             <div className="juntarContacto">
-                                <input type="text" placeholder="Tu Mensaje" className="mensajeContacto"></input>
+                                <input type="text" placeholder="Tu Mensaje" className="mensajeContacto" name="message"></input>
                             </div>
                             <div className="juntarContacto">
                                 <input type="submit" value="Submit"></input>
