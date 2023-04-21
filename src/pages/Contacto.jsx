@@ -9,7 +9,7 @@ import bellumLogo from '../assets/Logo.png'
 const Contacto = () => {
 
     const nombrePagina = "Contacto"
-    
+
     return (
         <MainLayout laPagina={nombrePagina}>
             <div className="bodyBellum">
@@ -23,24 +23,26 @@ const Contacto = () => {
                         <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
                     </div>
                     <div className="tituloDerechaContacto">
-                        <form netlify name="contacto">
-                            <div className="juntarContacto">
-                                <input type="text" placeholder="Nombre"></input>
-                                <input type="text" placeholder="Apellido"></input>
-                            </div>
-                            <div className="juntarContacto">
-                                <input type="text" placeholder="Correo Electrónico"></input>
-                            </div>
-                            <div className="juntarContacto">
-                                <input type="text" placeholder="Asunto"></input>
-                            </div>
-                            <div className="juntarContacto">
-                                <input type="text" placeholder="Tu Mensaje" className="mensajeContacto"></input>
-                            </div>
-                            <div className="juntarContacto">
-                                <input type="submit" value="Submit"></input>
-                            </div>
-                        </form>
+                        <input type="hidden" name="Contacto" value="Contacto" netlify>
+                            <form netlify>
+                                <div className="juntarContacto">
+                                    <input type="text" placeholder="Nombre"></input>
+                                    <input type="text" placeholder="Apellido"></input>
+                                </div>
+                                <div className="juntarContacto">
+                                    <input type="text" placeholder="Correo Electrónico"></input>
+                                </div>
+                                <div className="juntarContacto">
+                                    <input type="text" placeholder="Asunto"></input>
+                                </div>
+                                <div className="juntarContacto">
+                                    <input type="text" placeholder="Tu Mensaje" className="mensajeContacto"></input>
+                                </div>
+                                <div className="juntarContacto">
+                                    <input type="submit" value="Submit"></input>
+                                </div>
+                            </form>
+                        </input>
                     </div>
                 </div>
             </div>
