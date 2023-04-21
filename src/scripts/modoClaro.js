@@ -3,11 +3,11 @@ import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 
 let modoOscuro = true
 
-const toggleClaro = function () {
-    if(localStorage.getItem("modoOscuro") == null){
-        localStorage.setItem("modoOscuro", "true")
-    }
+if(localStorage.getItem("modoOscuro") == null){
+    localStorage.setItem("modoOscuro", "true")
+}
 
+const toggleClaro = function () {
     if (localStorage.getItem("modoOscuro") == "true") {
         localStorage.setItem("modoOscuro", "false")
     } else if (localStorage.getItem("modoOscuro") == "false") {
