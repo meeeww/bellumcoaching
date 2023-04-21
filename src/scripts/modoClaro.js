@@ -5,7 +5,7 @@ let modoOscuro = true
 
 const toggleClaro = function () {
     if(localStorage.getItem("modoOscuro") == null){
-        localStorage.setItem("modoOscuro", "false")
+        localStorage.setItem("modoOscuro", "true")
     }
 
     if (localStorage.getItem("modoOscuro") == "true") {
