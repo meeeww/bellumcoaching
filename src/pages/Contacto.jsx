@@ -9,20 +9,6 @@ import bellumLogo from '../assets/Logo.png'
 const Contacto = () => {
 
     const nombrePagina = "Contacto"
-
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.ionos.es",
-            Username : "contacto@bellumcoaching.com",
-            Password : "OFtOG2#vA3%8",
-            To : 'contacto@bellumcoaching.com',
-            From : "contacto@bellumcoaching.com",
-            Subject : "This is the subject",
-            Body : "And this is the body"
-        }).then(
-          message => alert(message)
-        );
-    }
     
     return (
         <MainLayout laPagina={nombrePagina}>
@@ -37,7 +23,7 @@ const Contacto = () => {
                         <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
                     </div>
                     <div className="tituloDerechaContacto">
-                        <form onSubmit={sendEmail}>
+                        <form netlify name="contacto">
                             <div className="juntarContacto">
                                 <input type="text" placeholder="Nombre"></input>
                                 <input type="text" placeholder="Apellido"></input>
@@ -54,9 +40,6 @@ const Contacto = () => {
                             <div className="juntarContacto">
                                 <input type="submit" value="Submit"></input>
                             </div>
-
-
-
                         </form>
                     </div>
                 </div>
