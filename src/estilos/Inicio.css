@@ -945,6 +945,7 @@ form input {
     header {
         display: flex;
         justify-content: space-around;
+        overflow: hidden;
     }
 
     .headerIzquierda {
