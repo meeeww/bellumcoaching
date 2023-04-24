@@ -20,7 +20,7 @@ const Contacto = () => {
     const enviarMensajeContacto = (event) => {
         event.preventDefault();
 
-        Axios.post("https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje", { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto }).then(() => {
+        Axios.post("https://bellumserver.netlify.app/.netlify/functions/api/users", { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto }).then(() => {
             alert("bien")
             setPosts([nombreContacto, res.data])
         }).catch(e => {
