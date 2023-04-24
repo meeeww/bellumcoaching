@@ -23,6 +23,8 @@ const Contacto = () => {
         Axios.post("https://bellumserver.netlify.app/.netlify/functions/api/users", { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto }).then(() => {
             alert("bien")
             setPosts([nombreContacto, res.data])
+        }).catch(e => {
+            console.log(e)
         })
     }
 
