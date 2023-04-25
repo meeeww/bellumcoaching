@@ -34,7 +34,7 @@ const Contacto = () => {
         let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje";
 
         let config = {
-            timeout: 1000,
+            timeout: 10000,
             headers: { 'Content-Type': 'application/json' }
         };
 
