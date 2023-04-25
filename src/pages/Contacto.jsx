@@ -24,22 +24,32 @@ const Contacto = () => {
             'Content-Type': 'text/plain'
         };
 
-        
+
         // Axios.get("https://bellumserver.netlify.app/.netlify/functions/api/users").then(data => {
         //     console.log(data)
         // }).catch(e => {
         //     console.log(e)
         // })
 
+        let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje";
+
+        let config = {
+            timeout: 1000,
+            headers: { 'Content-Type': 'application/json' }
+        };
+
+
+        var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
+
+        Axios.post(baseURL, data, config)
+            .then((res) => {
+                console.log("RESPONSE RECEIVED: ", res.data);
+                return {
+                    statusCode: 200,
+                    body: JSON.stringify({ title: "this was a success" }),
+                };
+            })
         console.log(nombreContacto, apellidoContacto, correoContacto, asuntoContacto, mensajeContacto)
-        Axios.post(
-            "https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje", 
-            { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto }, 
-            {headers}).then((response) => {
-            console.log(response)
-        }).catch(e => {
-            console.log(e)
-        })
     }
 
     return (
