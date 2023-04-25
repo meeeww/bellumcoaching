@@ -20,12 +20,23 @@ const Contacto = () => {
     const enviarMensajeContacto = (event) => {
         event.preventDefault();
 
-        
-        console.log(Axios.get("https://bellumserver.netlify.app/.netlify/functions/api/users"))
+        const headers = {
+            'Content-Type': 'text/plain'
+        };
 
-        Axios.post("https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje", { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto }).then(() => {
-            alert("bien")
-            setPosts([nombreContacto, res.data])
+        
+        // Axios.get("https://bellumserver.netlify.app/.netlify/functions/api/users").then(data => {
+        //     console.log(data)
+        // }).catch(e => {
+        //     console.log(e)
+        // })
+
+        console.log(nombreContacto, apellidoContacto, correoContacto, asuntoContacto, mensajeContacto)
+        Axios.post(
+            "https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje", 
+            { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto }, 
+            {headers}).then((response) => {
+            console.log(response)
         }).catch(e => {
             console.log(e)
         })
