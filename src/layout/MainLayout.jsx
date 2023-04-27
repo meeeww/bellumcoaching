@@ -5,7 +5,7 @@ import Footer from '../componentes/Footer'
 function MainLayout({children, laPagina}) {
     return (
         <div>
-            <Header quePagina={laPagina}>Hey</Header>
+            <Header quePagina={laPagina}></Header>
             <div>{children}</div>
             <Footer></Footer>
         </div>

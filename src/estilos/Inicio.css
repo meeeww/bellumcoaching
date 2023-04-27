@@ -843,6 +843,48 @@ form input {
     opacity: 1;
 }
 
+.inicioSesionBellum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/BackgroundInicio.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.cajaInicioSesion {
+    width: 50vh;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-inline: 5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 179, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.submitLogin {
+    background-color: var(--color-secundario);
+    color: var(--color-principal-light);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.textLogin{
+    border-radius: 5px;
+}
 /*
 ::-webkit-scrollbar {
     width: 15px;
