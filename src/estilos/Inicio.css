@@ -9,7 +9,6 @@
     --color-secundario: #00B3FF;
     --fondo-negro: #404040;
     --fondo-blanco: #FEFEFE;
-
     --tiempo-cambio-claridad: 0.5s;
 }
 
@@ -844,6 +843,18 @@ form input {
     font-weight: 600;
     letter-spacing: 1px;
     opacity: 1;
+}
+
+.balance{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 1rem;
+    min-height: 100px;
+}
+
+.recent_activities{
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
 }
 
 /*
