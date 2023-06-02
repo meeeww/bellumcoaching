@@ -3,7 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
-import Precios from "../componentes/Precios";
+import PreciosIndividual from "../componentes/Precios";
 
 const Precios = () => {
 
@@ -34,7 +34,7 @@ const Precios = () => {
                     </div>
                 </div>
 
-                <Precios />
+                <PreciosIndividual />
             </div>
         </MainLayout >
     );
