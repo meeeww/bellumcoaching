@@ -3,7 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
-import Precios from "../componentes/Precios";
+import PreciosLista from "../componentes/Precios";
 
 const Inicio = () => {
 
@@ -101,7 +101,7 @@ const Inicio = () => {
 
                 </div>
 
-                <Precios />
+                <PreciosLista />
 
                 <div className="decision">
                     <h2>¿Aún no te has decidido?</h2>
