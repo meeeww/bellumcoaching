@@ -1,7 +1,7 @@
 const Balance = () =>{
     return(
         <>
-            <div className="w-full balance p-4">
+            <div className="w-full balance pt-4 pb-4">
                 <div className="w-full h-[100px] bg-[var(--color-secundario)]  rounded-lg shadow-2xl flex items-center justify-between p-2">
                     <div className="h-full w-[90px] bg-[var(--fondo-negro)] rounded-[50%]"></div>
                     <div className="w-[200px] h-full flex flex-col justify-center items-end">

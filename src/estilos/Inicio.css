@@ -857,6 +857,10 @@ form input {
     border-top-right-radius: 0.75rem;
 }
 
+#drawer-navigation{
+    transform: translateX(-100%);
+}
+
 /*
 ::-webkit-scrollbar {
     width: 15px;
