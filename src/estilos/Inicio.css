@@ -8,6 +8,7 @@
     --fondo-blanco: #FEFEFE;
 
     --tiempo-cambio-claridad: 0.5s;
+    
 }
 
 body {
@@ -843,6 +844,54 @@ form input {
     opacity: 1;
 }
 
+.inicioSesionBellum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/BackgroundInicio.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.cajaInicioSesion {
+    max-width: 30rem;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.414);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.436);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+}
+
+.cajaInicioSesion img{
+    margin-bottom: 2rem;
+}
+
+.submitLogin {
+    background-color: var(--color-secundario);
+    color: var(--color-principal-light);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.textLogin{
+    border-radius: 5px;
+}
 /*
 ::-webkit-scrollbar {
     width: 15px;
@@ -964,5 +1013,11 @@ form input {
 
     .headerDerecha a {
         margin-block: 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .cajaInicioSesion{
+        padding-inline: 1rem;
     }
 }
