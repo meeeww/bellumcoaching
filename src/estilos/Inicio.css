@@ -127,10 +127,12 @@ header {
 .headerDerecha a,
 .headerDerecha label {
     margin-right: 2rem;
+    transition: all 0.25s;
 }
 
 #linkHeaderActive1 {
     color: var(--color-secundario);
+    transition: all 0.25s;
 }
 
 .textoHeader {
@@ -670,10 +672,22 @@ header,
 
 .informacionFooterCentro a {
     margin-bottom: 1rem;
+    transition: all 0.25s;
 }
 
 .informacionFooterDerecha a {
     margin-bottom: 1rem;
+    transition: all 0.25s;
+}
+
+.informacionFooterCentro a:hover {
+    color: var(--fondo-blanco);
+    transition: all 0.25s;
+}
+
+.informacionFooterDerecha a:hover {
+    color: var(--fondo-blanco);
+    transition: all 0.25s;
 }
 
 .redesSociales {
