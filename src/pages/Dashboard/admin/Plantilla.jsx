@@ -1,6 +1,7 @@
 import Balance from "./Balance";
 import Navbar from "./Navbar";
 import UserList from "./UserList";
+import CoachList from "./CoachList";
 
 const Plantilla = () => {
     return (
@@ -15,6 +16,7 @@ const Plantilla = () => {
                         class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "
                     >
                         <UserList/>
+                        <CoachList/>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mb-4">
                         <div
