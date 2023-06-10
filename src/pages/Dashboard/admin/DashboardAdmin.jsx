@@ -1,7 +1,7 @@
 import Footer from "../../../componentes/Footer";
 import Header from "../../../componentes/Header";
 import Balance from "./Balance";
-import Activities from "./Activities";
+import UserList from "./UserList";
 import Plantilla from "./Plantilla";
 
 const DashboardAdmin = () => {
@@ -9,8 +9,7 @@ const DashboardAdmin = () => {
         <>
             <Header/>
             <Plantilla/>
-            <Footer/>
-            
+            <Footer/> 
         </>
     )
 }

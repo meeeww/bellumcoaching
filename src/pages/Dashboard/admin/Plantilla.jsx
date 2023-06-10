@@ -1,6 +1,6 @@
 import Balance from "./Balance";
 import Navbar from "./Navbar";
-import Activities from "./Activities";
+import UserList from "./UserList";
 
 const Plantilla = () => {
     return (
@@ -9,12 +9,12 @@ const Plantilla = () => {
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar/>
                 {/* -----------------CONTENIDO----------------- */}
-                <main class="p-4 h-auto pt-20">
+                <main class="p-4 pt-20">
                     <Balance/>
                     <div
-                        class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
+                        class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "
                     >
-                        <Activities/>
+                        <UserList/>
                     </div>
                     <div class="grid grid-cols-2 gap-4 mb-4">
                         <div

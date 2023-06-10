@@ -861,7 +861,7 @@ form input {
     transform: translateX(-100%);
 }
 
-/*
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -884,7 +884,8 @@ form input {
 ::-webkit-scrollbar-thumb:active {
     background: var(--color-principal-dark);
     border-radius: 15px;
-}*/
+}
+
 
 @media (max-width:900px) {
     h2 {
