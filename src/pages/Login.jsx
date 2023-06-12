@@ -8,7 +8,7 @@ const Contacto = () => {
 
     useEffect(() => {
         checkSession()
-    })
+    }, [])
 
     const nombrePagina = "Login"
 
@@ -17,6 +17,7 @@ const Contacto = () => {
 
     const iniciarSesion = (event) => {
         event.preventDefault();
+        console.log("hey")
 
         var date;
         date = new Date();
@@ -44,7 +45,7 @@ const Contacto = () => {
             .then((res) => {
                 console.log("RESPONSE RECEIVED: ", res.data);
                 localStorage.setItem("token", res.data)
-                location.replace("http://localhost:5173/login")
+                //location.replace("http://localhost:5173/login")
                 return {
                     statusCode: 200,
                     body: JSON.stringify({ title: "this was a success" }),
