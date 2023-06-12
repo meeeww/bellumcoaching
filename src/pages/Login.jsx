@@ -4,7 +4,13 @@ import Axios from 'axios'
 import bellumLogo from '../assets/Logo.png'
 import checkSession from '../scripts/sesionManager.js'
 
+import llamarPopUs from "../scripts/llamarPopUp"
+import PopUp from "../modals/PopUp/Alert"
+
 const Contacto = () => {
+
+    const [tipoAlerta, setTipoAlerta] = useState(2)
+    const [mensajeAlerta, setMensajeAlerta] = useState("dd")
 
     useEffect(() => {
         checkSession()
@@ -17,45 +23,49 @@ const Contacto = () => {
 
     const iniciarSesion = (event) => {
         event.preventDefault();
-        console.log("hey")
 
-        var date;
-        date = new Date();
-        date = date.getUTCFullYear() + '-' +
-        ('00' + (date.getUTCMonth() + 1)).slice(-2) + '-' +
-        ('00' + date.getUTCDate()).slice(-2) + ' ';
+        setMensajeAlerta("Accept privacy policy")
+        setTipoAlerta(3)
+        llamarPopUs()
 
-        let agente = navigator.userAgent
+        // var date;
+        // date = new Date();
+        // date = date.getUTCFullYear() + '-' +
+        // ('00' + (date.getUTCMonth() + 1)).slice(-2) + '-' +
+        // ('00' + date.getUTCDate()).slice(-2) + ' ';
 
-        const headers = {
-            'Content-Type': 'text/plain'
-        };
+        // let agente = navigator.userAgent
 
-        let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/login";
+        // const headers = {
+        //     'Content-Type': 'text/plain'
+        // };
 
-        let config = {
-            timeout: 10000,
-            headers: { 'Content-Type': 'application/json' }
-        };
+        // let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/login";
+
+        // let config = {
+        //     timeout: 10000,
+        //     headers: { 'Content-Type': 'application/json' }
+        // };
 
 
-        var data = { nombreInicio: nombreInicio, contrasenaInicio: contrasenaInicio, agente: agente, date: date };
+        // var data = { nombreInicio: nombreInicio, contrasenaInicio: contrasenaInicio, agente: agente, date: date };
 
-        Axios.post(baseURL, data, config)
-            .then((res) => {
-                console.log("RESPONSE RECEIVED: ", res.data);
-                localStorage.setItem("token", res.data)
-                //location.replace("http://localhost:5173/login")
-                return {
-                    statusCode: 200,
-                    body: JSON.stringify({ title: "this was a success" }),
-                };
-            })
+        // Axios.post(baseURL, data, config)
+        //     .then((res) => {
+        //         console.log("RESPONSE RECEIVED: ", res.data);
+        //         localStorage.setItem("token", res.data)
+        //         //location.replace("http://localhost:5173/login")
+        //         return {
+        //             statusCode: 200,
+        //             body: JSON.stringify({ title: "this was a success" }),
+        //         };
+        //     })
 
     }
 
     return (
         <div className="inicioSesionBellum">
+            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
             <div className="cajaInicioSesion">
                 <img src={bellumLogo} alt="Bellum Logo" style={{ width: "10rem", height: "10rem" }} />
                 <form style={{ paddingbottom: "5rem" }}>

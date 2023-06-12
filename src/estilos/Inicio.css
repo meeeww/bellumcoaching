@@ -784,6 +784,7 @@ form input {
     background-color: #27272766;
     color: var(--fondo-blanco);
     font-weight: 600;
+    font-size: 16px;
     letter-spacing: 1px;
     opacity: 1;
 }
@@ -886,7 +887,7 @@ form input {
 }
 
 .cajaInicioSesion {
-    max-width: 30rem;
+    max-width: 40rem;
     width: 100%;
     min-height: 60vh;
     display: flex;
