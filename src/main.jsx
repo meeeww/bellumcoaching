@@ -8,6 +8,7 @@ import Login from './pages/Login'
 import NoMatch from './pages/NoMatch'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
+import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
 
 import {
   createBrowserRouter,
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     element: <Contacto />,
   },
   {
+    path: "/dashboardAdmin",
+    element: <DashboardAdmin/>
+  },
+    {
     path: "/login",
     element: <Login />,
   },

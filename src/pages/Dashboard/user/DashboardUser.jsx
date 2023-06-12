@@ -1,0 +1,7 @@
+const DashboardUser = () => {
+    return(
+        <>
+        
+        </>
+    )
+}

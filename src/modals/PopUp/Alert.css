@@ -1,0 +1,22 @@
+.alertasLogin2 {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.alertasLogin {
+    border-radius: 0.5rem;
+}
+
+.alertasLogin>div {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.alertasLogin button {
+    border: 1px solid rgba(255, 0, 0, 0.418);
+    color: rgba(255, 0, 0, 0.365);
+}
+
+.marginAlert {
+    margin-left: 4rem;
+}
