@@ -545,7 +545,7 @@ header,
 
 .tarjetasPrecios {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 10px;
     width: 93%;
 }
@@ -845,19 +845,19 @@ form input {
     opacity: 1;
 }
 
-.balance{
+.balance {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     min-height: 100px;
 }
 
-.recent_activities{
+.recent_activities {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
 
-#drawer-navigation{
+#drawer-navigation {
     transform: translateX(-100%);
 }
 
@@ -884,20 +884,6 @@ form input {
 ::-webkit-scrollbar-thumb:active {
     background: var(--color-principal-dark);
     border-radius: 15px;
-}
-
-.alertasLogin{
-    border-radius: 0.5rem;
-}
-
-.alertasLogin > div{
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-}
-
-.alertasLogin button {
-    border: 1px solid rgba(255, 0, 0, 0.418);
-    color: rgba(255, 0, 0, 0.365);
 }
 
 @media (max-width:900px) {

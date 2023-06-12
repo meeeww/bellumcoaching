@@ -1,15 +1,23 @@
+import { useState } from "react";
 import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 
+import llamarPopUs from "../scripts/llamarPopUp"
+import PopUp from "../modals/PopUp/Alert"
+
 const Inicio = () => {
 
     const nombrePagina = "Inicio"
 
+    const [tipoAlerta, setTipoAlerta] = useState(2)
+    const [mensajeAlerta, setMensajeAlerta] = useState("dd")
+
     return (
         <MainLayout laPagina={nombrePagina}>
+            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
             <div className="bodyBellum">
                 <div className="titulo">
                     <div className="tituloIzquierda">
@@ -19,6 +27,7 @@ const Inicio = () => {
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
                             estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
                             con nuestro Coaching para League of Legends especialiado!</h4>
+                            <button onClick={console.log("hey")}></button>
                     </div>
                     <div className="tituloDerecha">
                         <img src={bellumLogo} alt="Bellum Logo" />

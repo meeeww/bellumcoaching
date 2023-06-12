@@ -2,12 +2,10 @@ import Balance from "./Balance";
 import Navbar from "./Navbar";
 import UserList from "./UserList";
 import CoachList from "./CoachList";
-import LoginAlert from "../../../componentes/LoginAlert";
 
 const Plantilla = () => {
     return (
         <>
-        <LoginAlert/>
             <div class="antialiased">
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar/>
