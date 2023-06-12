@@ -4,9 +4,6 @@ const CoachList = () => {
     return (
         <>
             <div className="w-full h-full flex flex-col overflow-y-scroll">
-                <div className='w-full h-[30px] bg-black pl-4'>
-                    <p className='text-[white]'>Coach list</p>
-                </div>
                 <div className='w-full h-full p-4 overflow-y-scroll flex gap-4 flex-col userList'>
                     <div className="clientCard w-full h-[100px] rounded-xl flex justify-between bg-[var(--color-secundario)] p-2 ">
                         <div className="clientCardIzquierda flex items-center">
