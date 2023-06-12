@@ -4,6 +4,7 @@ import Header from './componentes/Header'
 import Inicio from './pages/Inicio'
 import Precios from './pages/Precios'
 import Contacto from './pages/Contacto'
+import Login from './pages/Login'
 import NoMatch from './pages/NoMatch'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
@@ -12,6 +13,7 @@ import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
 import {
   createBrowserRouter,
   RouterProvider,
+  Routes,
   Route
 } from "react-router-dom";
 
@@ -31,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboardAdmin",
     element: <DashboardAdmin/>
+  },
+    {
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "*",
