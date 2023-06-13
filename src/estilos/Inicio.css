@@ -804,6 +804,7 @@ form input {
 
 .juntarContacto {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -920,6 +921,16 @@ form input {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     padding: 0;
     margin-top: 2rem;
+    transition: all 0.25s;
+}
+
+.submitLogin:hover{
+    transform: scale(1.02);
+    transition: all 0.25s;
+}
+
+.submitLogin:active{
+    color: red!important;
 }
 
 .textLogin{
