@@ -4,7 +4,7 @@ function checkSession() {
     if (localStorage.getItem("token") != null || localStorage.getItem("token") == "") {
         let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/checksession";
         let baseURL2 = "https://bellumserver.netlify.app/.netlify/functions/api/usuarios/id=";
-        let updateURL = ""
+        let updateURL = "https://bellumserver.netlify.app/.netlify/functions/api/updatesession"
 
         var date;
         date = new Date();
@@ -22,14 +22,13 @@ function checkSession() {
 
         Axios.post(baseURL, data, config)
             .then((res) => {
-                console.log("RESPONSE RECEIVED: ", res.data[0]);
                 if (res.data[0]) {
-                    console.log("existe el token")
                     let idUsuario = res.data[0]["id_usuario"]
                     Axios.get((baseURL2 + idUsuario), config)
                         .then((res) => {
                             if (res.data[0] != undefined) {
-                                location.replace("http://localhost:5173")
+                                Axios.put(updateURL, { fecha: date, token: localStorage.getItem("token")}, config)
+                                //location.replace("http://localhost:5173")
                             } else {
                                 localStorage.removeItem("token")
                                 location.replace("http://localhost:5173/login")
