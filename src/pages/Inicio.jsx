@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
@@ -6,19 +5,12 @@ import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 import PreciosLista from "../componentes/Precios";
 
-import llamarPopUs from "../scripts/llamarPopUp"
-import PopUp from "../modals/PopUp/Alert"
-
 const Inicio = () => {
 
     const nombrePagina = "Inicio"
 
-    const [tipoAlerta, setTipoAlerta] = useState(2)
-    const [mensajeAlerta, setMensajeAlerta] = useState("dd")
-
     return (
         <MainLayout laPagina={nombrePagina}>
-            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
             <div className="bodyBellum">
                 <div className="titulo">
                     <div className="tituloIzquierda">

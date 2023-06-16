@@ -1,3 +1,21 @@
+.containerPopUpMain{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--gris);
+
+    padding-block: 1rem;
+
+    transition: all 0.25s;
+}
+
+.activePopUp{
+    display: flex;
+
+    transition: all 0.25s;
+}
+
 .alertasLogin2 {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
