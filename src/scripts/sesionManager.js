@@ -3,7 +3,14 @@ import Axios from 'axios'
 function checkSession() {
     if (localStorage.getItem("token") != null || localStorage.getItem("token") == "") {
         let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/checksession";
-        let baseURL2 = "https://bellumserver.netlify.app/.netlify/functions/api/persona/";
+        let baseURL2 = "https://bellumserver.netlify.app/.netlify/functions/api/usuarios/id=";
+        let updateURL = ""
+
+        var date;
+        date = new Date();
+        date = date.getUTCFullYear() + '-' +
+            ('00' + (date.getUTCMonth() + 1)).slice(-2) + '-' +
+            ('00' + date.getUTCDate()).slice(-2) + ' ';
 
         let config = {
             timeout: 10000,
@@ -21,10 +28,10 @@ function checkSession() {
                     let idUsuario = res.data[0]["id_usuario"]
                     Axios.get((baseURL2 + idUsuario), config)
                         .then((res) => {
-                            console.log("RESPONSE 2 RECEIVED: ", res.data[0]);
-                            if(res.data[0] != undefined){
+                            if (res.data[0] != undefined) {
                                 location.replace("http://localhost:5173")
                             } else {
+                                localStorage.removeItem("token")
                                 location.replace("http://localhost:5173/login")
                             }
                         })

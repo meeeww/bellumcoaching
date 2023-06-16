@@ -23,7 +23,7 @@ const Contacto = () => {
     };
 
     useEffect(() => {
-        //checkSession()
+        checkSession()
     }, [])
 
     const nombrePagina = "Login"
@@ -52,19 +52,6 @@ const Contacto = () => {
             headers: { 'Content-Type': 'application/json' }
         };
 
-        var data = { nombreInicio: nombreInicio, contrasenaInicio: contrasenaInicio, agente: agente, date: date };
-
-        // Axios.post(baseURL, data, config)
-        //     .then((res) => {
-        //         console.log("RESPONSE RECEIVED: ", res.data);
-        //         localStorage.setItem("token", res.data)
-        //         //location.replace("http://localhost:5173/login")
-        //         return {
-        //             statusCode: 200,
-        //             body: JSON.stringify({ title: "this was a success" }),
-        //         };
-        //     })
-
         const encriptarPass = () => {
             return new Promise((resolve) => {
                 resolve(md5(contrasenaInicio))
@@ -75,9 +62,30 @@ const Contacto = () => {
             (datos) => {
                 Axios.get("https://bellumserver.netlify.app/.netlify/functions/api/usuarios/nombre=" + nombreInicio).then(response => {
                     if (response.data[0]["contra"] == datos) {
-                        setMensajeAlerta("Sesión iniciada")
-                        setTipoAlerta(1)
-                        llamarPopUs()
+                        var data = { nombreInicio: nombreInicio, contrasenaInicio: datos, agente: agente, date: date };
+                        Axios.post(baseURL, data, config)
+                            .then((res) => {
+                                if (res.data == "error") {
+                                    localStorage.setItem("token", res.data)
+                                    setMensajeAlerta("Error")
+                                    setTipoAlerta(3)
+                                    llamarPopUs()
+                                    return {
+                                        statusCode: 200,
+                                        body: JSON.stringify({ title: "failed" }),
+                                    };
+                                } else {
+                                    localStorage.setItem("token", res.data)
+                                    location.replace("http://localhost:5173/login")
+                                    setMensajeAlerta("Sesión iniciada")
+                                    setTipoAlerta(1)
+                                    llamarPopUs()
+                                    return {
+                                        statusCode: 200,
+                                        body: JSON.stringify({ title: "this was a success" }),
+                                    };
+                                }
+                            })
                     } else {
                         setMensajeAlerta("Datos incorrectos")
                         setTipoAlerta(3)
