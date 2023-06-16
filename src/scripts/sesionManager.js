@@ -28,7 +28,7 @@ function checkSession() {
                         .then((res) => {
                             if (res.data[0] != undefined) {
                                 Axios.put(updateURL, { fecha: date, token: localStorage.getItem("token")}, config)
-                                //location.replace("http://localhost:5173")
+                                location.replace("http://localhost:5173")
                             } else {
                                 localStorage.removeItem("token")
                                 location.replace("http://localhost:5173/login")
