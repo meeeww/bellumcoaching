@@ -4,14 +4,56 @@ import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 import PreciosLista from "../componentes/Precios";
+import backgroundBellumImage from "../assets/BackgroundMain.png"
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Inicio = () => {
 
+    const [tituloActivo, setTituloActivo] = useState(0)
+
     const nombrePagina = "Inicio"
+
+    useEffect(() => {
+        setTimeout(() => {
+            switch (tituloActivo) {
+                case 1:
+                    setTituloActivo(2)
+                    document.getElementById("primerTituloMain").style.display = "none"
+                    document.getElementById("segundoTituloMain").style.display = "inline"
+                    document.getElementById("tercerTituloMain").style.display = "none"
+                    break
+                case 2:
+                    setTituloActivo(3)
+                    document.getElementById("primerTituloMain").style.display = "none"
+                    document.getElementById("segundoTituloMain").style.display = "none"
+                    document.getElementById("tercerTituloMain").style.display = "inline"
+                    break
+                case 3:
+                    setTituloActivo(1)
+                    document.getElementById("primerTituloMain").style.display = "inline"
+                    document.getElementById("segundoTituloMain").style.display = "none"
+                    document.getElementById("tercerTituloMain").style.display = "none"
+                    break
+                default:
+                    setTituloActivo(1)
+                    document.getElementById("primerTituloMain").style.display = "inline"
+                    document.getElementById("segundoTituloMain").style.display = "none"
+                    document.getElementById("tercerTituloMain").style.display = "none"
+            }
+        }, 300);
+    })
 
     return (
         <MainLayout laPagina={nombrePagina}>
             <div className="bodyBellum">
+                <div className="mainBodyBellum">
+                    <h4>10+ CLIENTES SATISFECHOS</h4>
+                    <h1 id="primerTituloMain">ENTRENA</h1>
+                    <h1 id="segundoTituloMain" style={{display: "none"}}>MEJORA</h1>
+                    <h1 id="tercerTituloMain" style={{display: "none"}}>GANA</h1>
+                    <h3>ACTUALIZADO CADA PARCHE</h3>
+                </div>
                 <div className="titulo">
                     <div className="tituloIzquierda">
                         <h1>Bienvenidos a Bellum Coaching</h1>
@@ -20,7 +62,7 @@ const Inicio = () => {
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
                             estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
                             con nuestro Coaching para League of Legends especialiado!</h4>
-                            <button onClick={console.log("hey")}></button>
+                        <button onClick={console.log("hey")}></button>
                     </div>
                     <div className="tituloDerecha">
                         <img src={bellumLogo} alt="Bellum Logo" />
