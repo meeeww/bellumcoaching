@@ -2,6 +2,7 @@ import Balance from "./Balance";
 import Navbar from "./NavbarAdmin";
 import UserList from "./UserList";
 import CoachList from "./CoachList";
+import User from "./User";
 
 const Plantilla = () => {
     return (
@@ -10,7 +11,7 @@ const Plantilla = () => {
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar/>
                 {/* -----------------CONTENIDO----------------- */}
-                <main class="p-4 pt-20 w-full h-screen overflow-y-scroll">
+                <main class="p-4 pt-20 w-full h-screen overflow-y-scroll mainDashboard">
                     <Balance/>
                     <div
                         class=" h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "

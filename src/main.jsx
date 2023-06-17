@@ -8,6 +8,7 @@ import NoMatch from './pages/NoMatch'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
 import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
+import User from './pages/Dashboard/admin/User'
 
 import {
   createBrowserRouter,
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboardAdmin",
     element: <DashboardAdmin/>
+  },
+  {
+    path: "/user",
+    element: <User/>
   },
   {
     path: "*",

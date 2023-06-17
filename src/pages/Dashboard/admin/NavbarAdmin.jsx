@@ -5,7 +5,6 @@ const NavbarAdmin = () => {
                 <ul>
                     <li><a href="#">Info General</a></li>
                     <li><a href="#">Calendario</a></li>
-
                 </ul>
             </div>
         </>
