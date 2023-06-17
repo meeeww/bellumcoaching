@@ -10,7 +10,7 @@ const Plantilla = () => {
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar/>
                 {/* -----------------CONTENIDO----------------- */}
-                <main class="p-4 pt-20 w-full h-screen">
+                <main class="p-4 pt-20 w-full h-screen overflow-y-scroll">
                     <Balance/>
                     <div
                         class=" h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "
