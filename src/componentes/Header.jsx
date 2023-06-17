@@ -16,7 +16,7 @@ const Header = ({ quePagina }) => {
     }
 
     return (
-        <div>
+        <div style={{position: "absolute", width: "100%"}}>
             <header>
                 <div className="headerIzquierda">
                     <NavLink to="/"><img src={bellumLogo} alt="Bellum Logo" /></NavLink>

@@ -5,9 +5,9 @@
 
 :root {
     --color-principal-dark: #FEFEFE;
-    --color-principal-light: #404040;
+    --color-principal-light: #282828;
     --color-secundario: #00B3FF;
-    --fondo-negro: #404040;
+    --fondo-negro: #282828;
     --fondo-blanco: #FEFEFE;
     --tiempo-cambio-claridad: 0.5s;
     
@@ -69,6 +69,7 @@ a:active {
 
 .mainBodyBellum{
     background: url("../assets/BackgroundMain.png") no-repeat;
+    background-size: cover;
     height: 60rem;
     display: flex;
     flex-direction: column;
@@ -76,14 +77,32 @@ a:active {
     align-items: center;
 }
 
+.textoMainBodyBellum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s;
+}
+
+#primerTituloMain{
+    animation: fadeIn 8s;
+}
+
 .mainBodyBellum h3{
-    font-weight: 800;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 32px;
 }
 
 .mainBodyBellum h4{
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.mainBodyBellum h5{
+    font-weight: 500;
+    font-size: 16px;
 }
 
 
@@ -92,52 +111,10 @@ a:active {
     text-shadow: none;
 }
 
-.custom-shape-divider-top-1681756534 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -1;
-}
-
-.custom-shape-divider-top-1681756534 svg {
-    position: relative;
-    display: block;
-    width: calc(181% + 1.3px);
-    height: 107px;
-}
-
-.custom-shape-divider-top-1681756534 .shape-fill {
-    fill: var(--color-principal-dark);
-}
-
-.custom-shape-divider-bottom-1681757470 {
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: 2rem;
-}
-
-.custom-shape-divider-bottom-1681757470 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 75px;
-}
-
-.custom-shape-divider-bottom-1681757470 .shape-fill {
-    fill: var(--color-principal-dark);
-}
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-principal-light);
 
     padding-block: 0.1rem;
 }
@@ -1081,3 +1058,8 @@ form input {
         padding-inline: 1rem;
     }
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

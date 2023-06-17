@@ -19,27 +19,18 @@ const Inicio = () => {
             switch (tituloActivo) {
                 case 1:
                     setTituloActivo(2)
-                    document.getElementById("primerTituloMain").style.display = "none"
-                    document.getElementById("segundoTituloMain").style.display = "inline"
-                    document.getElementById("tercerTituloMain").style.display = "none"
+                    document.getElementById("primerTituloMain").innerHTML = "ENTRENA"
                     break
                 case 2:
                     setTituloActivo(3)
-                    document.getElementById("primerTituloMain").style.display = "none"
-                    document.getElementById("segundoTituloMain").style.display = "none"
-                    document.getElementById("tercerTituloMain").style.display = "inline"
+                    document.getElementById("primerTituloMain").innerHTML = "MEJORA"
                     break
                 case 3:
                     setTituloActivo(1)
-                    document.getElementById("primerTituloMain").style.display = "inline"
-                    document.getElementById("segundoTituloMain").style.display = "none"
-                    document.getElementById("tercerTituloMain").style.display = "none"
+                    document.getElementById("primerTituloMain").innerHTML = "GANA"
                     break
                 default:
                     setTituloActivo(1)
-                    document.getElementById("primerTituloMain").style.display = "inline"
-                    document.getElementById("segundoTituloMain").style.display = "none"
-                    document.getElementById("tercerTituloMain").style.display = "none"
             }
         }, 300);
     })
@@ -48,11 +39,12 @@ const Inicio = () => {
         <MainLayout laPagina={nombrePagina}>
             <div className="bodyBellum">
                 <div className="mainBodyBellum">
-                    <h4>10+ CLIENTES SATISFECHOS</h4>
-                    <h1 id="primerTituloMain">ENTRENA</h1>
-                    <h1 id="segundoTituloMain" style={{display: "none"}}>MEJORA</h1>
-                    <h1 id="tercerTituloMain" style={{display: "none"}}>GANA</h1>
-                    <h3>ACTUALIZADO CADA PARCHE</h3>
+                    <div className="textoMainBodyBellum">
+                        <h5>10+ CLIENTES SATISFECHOS</h5>
+                        <h1 id="primerTituloMain" style={{ marginTop: "5rem", marginBottom: "3rem" }}>ENTRENA</h1>
+                        <h3 style={{ marginBlock: "1rem" }}>ACTUALIZADO CADA PARCHE</h3>
+                        <h4 style={{ marginBlock: "1rem", width: "40rem" }}>Mejora tus habilidades y monitorea junto a nosotros tu trayectoria con la ayuda de nuestras herramientas</h4>
+                    </div>
                 </div>
                 <div className="titulo">
                     <div className="tituloIzquierda">
