@@ -1,19 +1,19 @@
 import Balance from "./Balance";
-import Navbar from "./Navbar";
+import Navbar from "./NavbarAdmin";
 import UserList from "./UserList";
 import CoachList from "./CoachList";
 
 const Plantilla = () => {
     return (
         <>
-            <div class="antialiased">
+            <div class="antialiased flex m-0 p-0">
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar/>
                 {/* -----------------CONTENIDO----------------- */}
-                <main class="p-4 pt-20">
+                <main class="p-4 pt-20 w-full h-screen">
                     <Balance/>
                     <div
-                        class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "
+                        class=" h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "
                     >
                         <UserList/>
                         <CoachList/>

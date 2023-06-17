@@ -7,9 +7,7 @@ import Plantilla from "./Plantilla";
 const DashboardAdmin = () => {
     return(
         <>
-            <Header/>
             <Plantilla/>
-            <Footer/> 
         </>
     )
 }
