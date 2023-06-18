@@ -67,6 +67,13 @@ a:active {
     margin: 0 auto;
 }
 
+.bodyBellumDos {
+    margin-inline: 10%;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .mainBodyBellum {
     background: url("../assets/BackgroundMain.png") no-repeat;
     background-size: cover;
@@ -77,11 +84,19 @@ a:active {
     align-items: center;
 }
 
+.mainBodyBellum2 {
+    background: url("../assets/Screen11.png") no-repeat center center;
+    height: 30rem;
+    margin-block: 5rem;
+    background-size: cover;
+}
+
 .textoMainBodyBellum {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-inline: 10%;
     animation: fadeIn 2s;
 }
 
@@ -98,7 +113,7 @@ a:active {
 }
 
 .botonMainBodyBellum:hover>i {
-    right: -30px!important;
+    right: -30px !important;
 }
 
 #primerTituloMain {
@@ -108,23 +123,27 @@ a:active {
 .mainBodyBellum h3 {
     font-weight: 600;
     font-size: 32px;
+    display: inline-block;
 }
 
 .mainBodyBellum h4 {
     font-weight: 600;
     font-size: 18px;
     text-align: center;
+    display: inline-block;
 }
 
 .mainBodyBellum h5 {
     font-weight: 500;
     font-size: 16px;
+    display: inline-block;
 }
 
 
 .mainBodyBellum h1 {
     color: var(--fondo-blanco);
     text-shadow: none;
+    display: inline-block;
 }
 
 header {
@@ -391,12 +410,22 @@ header,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10rem;
 
 }
 
+.tituloIzquierda{
+    width: 75%;
+}
+
 .tituloDerecha {
-    margin-left: 2rem;
+    margin-left: 4rem;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloDerecha h4{
+    margin-block: 2%;
 }
 
 .subtitulo {

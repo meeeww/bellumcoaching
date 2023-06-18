@@ -5,6 +5,7 @@ import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 import PreciosLista from "../componentes/Precios";
 import backgroundBellumImage from "../assets/BackgroundMain.png"
+import rayaBellum from "../assets/Raya.png"
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -43,41 +44,53 @@ const Inicio = () => {
                         <h5>10+ CLIENTES SATISFECHOS</h5>
                         <h1 id="primerTituloMain" style={{ marginTop: "5rem", marginBottom: "3rem" }}>ENTRENA</h1>
                         <h3 style={{ marginBlock: "1rem" }}>ACTUALIZADO CADA PARCHE</h3>
-                        <h4 style={{ marginBlock: "1rem", width: "40rem" }}>Mejora tus habilidades y monitorea junto a nosotros tu trayectoria con la ayuda de nuestras herramientas</h4>
-                        <button className="botonMainBodyBellum" style={{ marginBlock: "4rem"}}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px"}}></i></button>
+                        <h4 style={{ marginBlock: "1rem" }}>Mejora tus habilidades y monitorea junto a nosotros tu trayectoria con la ayuda de nuestras herramientas</h4>
+                        <button className="botonMainBodyBellum" style={{ marginBlock: "4rem" }}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                     </div>
                 </div>
+            </div>
+            <div className="bodyBellumDos">
                 <div className="titulo">
                     <div className="tituloIzquierda">
-                        <h1>Bienvenidos a Bellum Coaching</h1>
-                        <h4 id="h4">¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
+                        <h1 style={{ color: "var(--colorBlanco)", fontSize: "62px" }}>BELLUM COACHING</h1>
+                        <img src={rayaBellum} style={{marginBlock: "1rem"}}></img>
+                    </div>
+                    <div className="tituloDerecha">
+                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
+                            coaching
+                            estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
+                            estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
+                            con nuestro Coaching para League of Legends especialiado!</h4>
+                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
                             coaching
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
                             estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
                             con nuestro Coaching para League of Legends especialiado!</h4>
                         <button onClick={console.log("hey")}></button>
-                    </div>
-                    <div className="tituloDerecha">
-                        <img src={bellumLogo} alt="Bellum Logo" />
+
                     </div>
                 </div>
+            </div>
 
 
-                <div className="subtitulo">
-                    <div className="subtituloIzquierda">
-                        <video src={bellumVideo} alt="Bellum Video" autoPlay loop muted="muted" controlsList="nodownload" className="videoDark"></video>
-                        <video src={bellumVideoLight} alt="Bellum Video" autoPlay loop muted="muted" controlsList="nodownload" className="videoLight" style={{ display: "none" }}></video>
+            <div className="mainBodyBellum2 mainBodyBellum">
+
+            </div>
+
+            <div className="bodyBellumDos">
+                <div className="titulo">
+                    <div className="tituloIzquierda">
+                        <h1 style={{ color: "var(--colorBlanco)", fontSize: "62px" }}>¿QUIÉNES SOMOS?</h1>
+                        <img src={rayaBellum} style={{marginBlock: "1rem"}}></img>
                     </div>
-                    <div className="subtituloDerecha">
-                        <h2>Somos Bellum</h2>
-                        <h4 id="h4">¿Quieres mejorar tus habilidades y estrategias en el campo de juego? En nuestro compromiso
-                            por
-                            ayudarte a alcanzar tus metas en el juego, ofrecemos servicios personalizados para adaptarnos a tus
-                            necesidades. Nuestros entrenadores altamente capacitados te guiarán para mejorar tus habilidades,
-                            técnicas y trabajo en equipo. Ya seas principiante o jugador experimentado, nuestro coaching para
-                            League of Legends totalmente personalizado se ajusta a tus necesidades para ayudarte a alcanzar tu
-                            máximo potencial. ¡<a href="https://bellumcoaching.com/contacto/" target="_blank" style={{ color: "#00B3FF" }}>Contáctanos</a> hoy mismo para comenzar a lograr tus objetivos en la grieta!</h4>
-                        <Link to="/contacto" ><button className="botonContacta" style={{ cursor: "pointer" }}>CONTÁCTANOS</button></Link>
+                    <div className="tituloDerecha">
+                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
+                            coaching
+                            estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
+                            estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
+                            con nuestro Coaching para League of Legends especialiado!</h4>
+                        <button onClick={console.log("hey")}></button>
+
                     </div>
                 </div>
 
