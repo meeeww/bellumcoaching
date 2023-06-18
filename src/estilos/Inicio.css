@@ -924,6 +924,55 @@ form input {
     margin-block: 5px;
 }
 
+.userNames > div{
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.elosUser{
+    display: grid;
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+
+}
+
+.elosUser > div{
+    width: 100%;
+    min-height: 170px;
+    background-color: var(--color-principal-light);
+    background-image: url(../assets/Season_2019_-_Bronze_1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 0.5rem;
+    border: 2px solid white;
+}
+
+.elosUser > div>div{
+    text-align: right;
+}
+
+.elosUser p{
+    color: white;
+}
+
+.cuentasUser button{
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 0.1rem 1rem;
+}
+
 @media (max-width:900px) {
     h2 {
         text-align: center;
