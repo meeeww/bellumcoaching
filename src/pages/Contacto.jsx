@@ -47,7 +47,7 @@ const Contacto = () => {
 
     return (
         <MainLayout laPagina={nombrePagina}>
-            <div className="bodyBellum">
+            <div className="bodyBellumDos">
                 <div className="tituloContacto">
                     <div className="tituloIzquierdaContacto">
                         <h1>Contáctanos</h1>

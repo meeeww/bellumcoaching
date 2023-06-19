@@ -1,10 +1,5 @@
-import { Link } from "react-router-dom"
-import MainLayout from "../layout/MainLayout";
-import bellumVideo from '../assets/VideoBellum.mp4'
-import bellumVideoLight from '../assets/VideoBellumLight.mp4'
-import bellumLogo from '../assets/Logo.png'
-import PreciosLista from "../componentes/Precios";
-import backgroundBellumImage from "../assets/BackgroundMain.png"
+import HeaderMain from "../componentes/HeaderMain"
+import Footer from "../componentes/Footer"
 import rayaBellum from "../assets/Raya.png"
 import { useEffect } from "react";
 import { useState } from "react";
@@ -37,7 +32,8 @@ const Inicio = () => {
     })
 
     return (
-        <MainLayout laPagina={nombrePagina}>
+        <>
+            <HeaderMain />
             <div className="bodyBellum">
                 <div className="mainBodyBellum">
                     <div className="textoMainBodyBellum">
@@ -53,14 +49,14 @@ const Inicio = () => {
                 <div className="titulo">
                     <div className="tituloIzquierda">
                         <h1 style={{ color: "var(--colorBlanco)", fontSize: "62px" }}>BELLUM COACHING</h1>
-                        <img src={rayaBellum} style={{marginBlock: "1rem"}}></img>
+                        <img src={rayaBellum} style={{ marginBlock: "1rem" }}></img>
                     </div>
                     <div className="tituloDerecha">
-                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
+                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? Nuestro equipo de especialistas en
                             coaching
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
-                            estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
-                            con nuestro Coaching para League of Legends especialiado!</h4>
+                            estrategia para que puedas dar el siguiente paso en tu juego. No esperes más para mejorar tu nivel
+                            con nuestro Coaching para League of Legends especialiado</h4>
                         <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
                             coaching
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
@@ -81,7 +77,7 @@ const Inicio = () => {
                 <div className="titulo">
                     <div className="tituloIzquierda">
                         <h1 style={{ color: "var(--colorBlanco)", fontSize: "62px" }}>¿QUIÉNES SOMOS?</h1>
-                        <img src={rayaBellum} style={{marginBlock: "1rem"}}></img>
+                        <img src={rayaBellum} style={{ marginBlock: "1rem" }}></img>
                     </div>
                     <div className="tituloDerecha">
                         <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
@@ -93,68 +89,53 @@ const Inicio = () => {
 
                     </div>
                 </div>
+            </div>
 
-                <div className="escogerCoaching">
-                    <h2>Por Qué Escoger Nuestro Coaching</h2>
-                    <div className="tarjetasCoaching">
-                        <div className="tarjetaCoaching">
-                            <div className="tituloTarjetaCoaching">
-                                <h2>Personalización e intransferible</h2>
-                            </div>
-                            <div className="subtituloTarjetaCoaching">
-                                <p>En nuestro equipo, ofrecemos entrenamiento personalizado para que puedas mejorar en tu juego.
-                                    Adaptamos nuestro enfoque a tus necesidades específicas para que nuestros entrenadores se
-                                    centren en las áreas que requieren mejora. Ya seas principiante o experimentado, nuestro enfoque
-                                    personalizado te ayudará a alcanzar tus metas en el juego. Contáctanos hoy para comenzar a
-                                    mejorar tus habilidades.</p>
-                            </div>
-
-
-                        </div>
-                        <div className="tarjetaCoaching">
-                            <div className="tituloTarjetaCoaching">
-                                <h2>Apoyo y Seguimiento</h2>
-                            </div>
-                            <div className="subtituloTarjetaCoaching">
-                                <p>En "Bellum Coaching" no solo ofrecemos entrenamiento para mejorar tus habilidades en el juego,
-                                    sino que también te brindamos apoyo y seguimiento continuo para que puedas mantener tu progreso
-                                    a largo plazo. Nuestro objetivo es ayudarte a mejorar tu rendimiento y alcanzar tus metas. Ya
-                                    seas principiante o experimentado, nuestro equipo está aquí para apoyarte en cada paso del
-                                    camino. Contáctanos hoy mismo para obtener más información.</p>
+            <div className="bodyBellumDos">
+                <div className="tarjetasPrecioMain">
+                    <div className="tarjetaPrecioIndividualMain">
+                        <h1>Individual</h1>
+                        <h3>Descripcion del plan que escala genial</h3>
+                        <div className="tarjetaPrecioIndividualPrecioMain tarjetaPrecioIndividualMainNoMedio">
+                            <h3>Desde</h3>
+                            <div className="desdeClaseMain">
+                                <h2>30€</h2>
+                                <h4>/clase</h4>
                             </div>
                         </div>
-                        <div className="tarjetaCoaching">
-                            <div className="tituloTarjetaCoaching">
-                                <h2>Multitud de Servicios</h2>
-                            </div>
-                            <div className="subtituloTarjetaCoaching">
-                                <p>En "Bellum Coaching" nos enfocamos en ayudar a todos los jugadores a mejorar sus habilidades en
-                                    el juego. Ofrecemos servicios para jugadores de todos los niveles, desde principiantes hasta
-                                    avanzados, y nos enfocamos en mejorar habilidades individuales como el posicionamiento en el
-                                    mapa, la toma de decisiones y la estrategia del juego. Ya seas nuevo en el juego o un jugador
-                                    experimentado, nuestro equipo está listo para ayudarte a alcanzar tus metas en el juego.
-                                    Contáctanos hoy mismo para comenzar a mejorar.</p>
+                        <button className="enviarAPreciosMain">Consultar precios</button>
+                    </div>
+                    <div className="tarjetaPrecioIndividualMain tarjetaPrecioIndividualMainMedio">
+                        <h1>Individual</h1>
+                        <h3>Descripcion del plan que escala genial</h3>
+                        <div className="tarjetaPrecioIndividualPrecioMain">
+                            <h3>Desde</h3>
+                            <div className="desdeClaseMain">
+                                <h2>30€</h2>
+                                <h4>/clase</h4>
                             </div>
                         </div>
+                        <button className="enviarAPreciosMain enviarAPreciosMainMedio">Consultar precios</button>
+                    </div>
+                    <div className="tarjetaPrecioIndividualMain">
+                        <h1>Individual</h1>
+                        <h3>Descripcion del plan que escala genial</h3>
+                        <div className="tarjetaPrecioIndividualPrecioMain tarjetaPrecioIndividualMainNoMedio">
+                            <h3>Desde</h3>
+                            <div className="desdeClaseMain">
+                                <h2>30€</h2>
+                                <h4>/clase</h4>
+                            </div>
+                        </div>
+                        <button className="enviarAPreciosMain">Consultar precios</button>
                     </div>
                 </div>
+            </div>
 
-                <div className="clientesPiensan">
-                    <h2>Lo Que Nuestros Clientes Piensan</h2>
-                    <div className="tarjetaTrustpilot">
-                        <p className="paragraphTrustpilot">Desde Bellum Coaching creemos que lo más importante es estar abiertos a críticas constructivas para poder mejorar nuestro servicio.</p>
-                        <div className="trustpilot-widget" data-locale="es-ES" data-template-id="5419b6a8b0d04a076446a9ad" data-businessunit-id="6436c8f8337ac0fb935bbea5" data-style-height="24px" data-style-width="100%" data-theme="light" data-min-review-count="10" data-style-alignment="center">
-                            <a href="https://es.trustpilot.com/review/www.bellumcoaching.com" target="_blank" rel="noopener">Trustpilot</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <PreciosLista />
-
+            <div className="bodyBellumDos">
                 <div className="decision">
-                    <h2>¿Aún no te has decidido?</h2>
-                    <h3>Aquí te damos 6 razones más sobre nuestro coaching para terminar de convencerte</h3>
+                    <h2>Razones para escogernos</h2>
+                    <h3>¡Aquí te damos 6 razones sobre nuestro coaching para terminar de convencerte!</h3>
                     <div className="tarjetasDecision">
                         <div className="tarjetaDecision">
                             <h4 id="h4">Experiencia, conocimiento y profesionalidad.</h4>
@@ -183,7 +164,8 @@ const Inicio = () => {
                     </div>
                 </div>
             </div>
-        </MainLayout>
+            <Footer />
+        </>
     );
 }
 
