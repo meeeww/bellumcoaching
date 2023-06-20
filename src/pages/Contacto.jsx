@@ -89,7 +89,7 @@ const Contacto = () => {
                     </div>
                 </div>
             </div>
-            <div className="mainBodyBellum" style={{ backgroundImage: "url('/src/assets/Poro.png')", width: "100px", height: "110px", position: "absolute", left: "48%", top: "537px" }}></div>
+            <div className="mainBodyBellum backgroundPoro" style={{ width: "100px", height: "110px", position: "absolute", left: "48%", top: "537px" }}></div>
         </MainLayout >
     );
 }

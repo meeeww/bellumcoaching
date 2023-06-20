@@ -951,6 +951,10 @@ header,
     justify-content: center;
 }
 
+.backgroundPoro{
+    background-image: url("../assets/Poro.png");
+}
+
 form {
     display: flex;
     flex-direction: column;
