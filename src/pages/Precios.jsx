@@ -45,32 +45,32 @@ const Precios = () => {
             <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
                 <div className="tarjetaPrecios" id="mejorParaEmpezar">
                     <h4>Pack 1 Clase</h4>
-                    <h6>Por 7€</h6>
+                    <h6>7€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 3 Clases</h4>
-                    <h6>Por 20€</h6>
+                    <h6>20€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masVendido">
                     <h4>Pack 5 Clases</h4>
-                    <h6>Por 33€</h6>
+                    <h6>33€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 10 Clases</h4>
-                    <h6>Por 65€</h6>
+                    <h6>65€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 15 Clases</h4>
-                    <h6>Por 95€</h6>
+                    <h6>95€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masRentable">
                     <h4>Pack 20 Clases</h4>
-                    <h6>Por 120€</h6>
+                    <h6>120€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
             </div>
@@ -78,32 +78,32 @@ const Precios = () => {
             <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
                 <div className="tarjetaPrecios" id="mejorParaEmpezar">
                     <h4>Pack 1 Clase</h4>
-                    <h6>Por 13€</h6>
+                    <h6>13€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 3 Clases</h4>
-                    <h6>Por 38€</h6>
+                    <h6>38€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masVendido">
                     <h4>Pack 5 Clases</h4>
-                    <h6>Por 63€</h6>
+                    <h6>63€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 10 Clases</h4>
-                    <h6>Por 122€</h6>
+                    <h6>122€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 15 Clases</h4>
-                    <h6>Por 180€</h6>
+                    <h6>180€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masRentable">
                     <h4>Pack 20 Clases</h4>
-                    <h6>Por 220€</h6>
+                    <h6>220€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
             </div>
@@ -111,32 +111,32 @@ const Precios = () => {
             <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
                 <div className="tarjetaPrecios" id="mejorParaEmpezar">
                     <h4>Pack 1 Clase</h4>
-                    <h6>Por 6€/persona</h6>
+                    <h6>6€/persona</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 3 Clases</h4>
-                    <h6>Por 17.33€/persona</h6>
+                    <h6>17.33€/persona</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masVendido">
                     <h4>Pack 5 Clases</h4>
-                    <h6>Por 28€/persona</h6>
+                    <h6>28€/persona</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 10 Clases</h4>
-                    <h6>Por 53.34€/persona</h6>
+                    <h6>53.34€/persona</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 15 Clases</h4>
-                    <h6>Por 76.67€/persona</h6>
+                    <h6>76.67€/persona</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masRentable">
                     <h4>Pack 20 Clases</h4>
-                    <h6>Por 90€/persona</h6>
+                    <h6>90€/persona</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
             </div>
