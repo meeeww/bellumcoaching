@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import bellumLogo from '../assets/Logo.png'
 
 const Footer = () => (
     <div className="footer">

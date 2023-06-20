@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { NavLink } from "react-router-dom"
 import bellumLogo from '../assets/Logo.png'
 import { Link } from 'react-router-dom'
 
-const Header = ({ quePagina }) => {
+const Header = () => {
     const navLinkStyles = ({ isActive }) => {
         return {
             color: isActive ? "#00B3FF" : ""

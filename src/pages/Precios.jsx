@@ -1,19 +1,14 @@
-import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
-import bellumVideo from '../assets/VideoBellum.mp4'
-import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 
 const Precios = () => {
-
-    const nombrePagina = "Precios"
 
     function enviarDiscord() {
         window.open("https://discord.gg/MW6F2Ajecq", '_blank');
     }
 
     return (
-        <MainLayout laPagina={nombrePagina}>
+        <MainLayout>
             <div className="bodyBellumDos">
                 <div className="titulo" style={{marginTop: "5rem"}}>
                     <div className="tituloIzquierda">

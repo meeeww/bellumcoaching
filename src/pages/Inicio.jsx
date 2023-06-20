@@ -1,7 +1,7 @@
 import HeaderMain from "../componentes/HeaderMain"
 import Footer from "../componentes/Footer"
 import rayaBellum from "../assets/Raya.png"
-import { lazy, useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 
 import llamarPopUs from "../scripts/llamarPopUp"
@@ -13,8 +13,6 @@ const Inicio = () => {
 
     const [tipoAlerta, setTipoAlerta] = useState(2)
     const [mensajeAlerta, setMensajeAlerta] = useState("")
-
-    const nombrePagina = "Inicio"
 
     useEffect(() => {
         setTimeout(() => {

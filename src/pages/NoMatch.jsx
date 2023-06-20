@@ -1,15 +1,10 @@
-import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
-import bellumVideo from '../assets/VideoBellum.mp4'
-import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 
 const Inicio = () => {
 
-    const nombrePagina = "NoMatch"
-
     return (
-        <MainLayout laPagina={nombrePagina}>
+        <MainLayout>
             <div className="bodyBellumDos" style={{marginBlock: "10rem"}}>
                 <div className="titulo">
                     <div className="tituloIzquierdaNM">

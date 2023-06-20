@@ -1,18 +1,11 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
-import bellumVideo from '../assets/VideoBellum.mp4'
-import bellumVideoLight from '../assets/VideoBellumLight.mp4'
-import poro from '../assets/Poro.png'
 import Axios from 'axios'
 
 import llamarPopUs from "../scripts/llamarPopUp"
 import PopUp from "../modals/PopUp/Alert"
 
 const Contacto = () => {
-
-    const nombrePagina = "Contacto"
 
     const [tipoAlerta, setTipoAlerta] = useState(2)
     const [mensajeAlerta, setMensajeAlerta] = useState("")
@@ -40,8 +33,6 @@ const Contacto = () => {
 
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
-        let todoRellenado = false
-
         setMensajeAlerta("Por favor espere")
         setTipoAlerta(2)
         llamarPopUs()
@@ -64,7 +55,7 @@ const Contacto = () => {
     }
 
     return (
-        <MainLayout laPagina={nombrePagina}>
+        <MainLayout>
             <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
             <div className="bodyBellumDos">
                 <div className="tituloContacto">
