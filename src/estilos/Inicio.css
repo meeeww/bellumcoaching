@@ -955,6 +955,12 @@ header,
     background-image: url("../assets/Poro.png");
 }
 
+@media (max-width: 936px) {
+    .backgroundPoro{
+        display: none;
+    }
+}
+
 form {
     display: flex;
     flex-direction: column;
