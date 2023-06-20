@@ -1206,8 +1206,7 @@ form input {
     }
 
     .headerDerecha {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
     .headerDerecha a {
