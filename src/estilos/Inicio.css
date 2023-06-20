@@ -517,12 +517,12 @@ header,
 }
 
 .tituloIzquierda {
-    width: 75%;
+    width: auto;
 }
 
 .tituloDerecha {
-    margin-left: 4rem;
-    width: 75%;
+    margin-right: 8rem;
+    width: auto;
     display: flex;
     flex-direction: column;
 }
