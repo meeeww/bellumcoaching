@@ -13,7 +13,7 @@ const Precios = () => {
     return (
         <MainLayout laPagina={nombrePagina}>
             <div className="bodyBellumDos">
-                <div className="titulo">
+                <div className="titulo" style={{marginTop: "5rem"}}>
                     <div className="tituloIzquierda">
                         <h1 style={{ marginBlock: "2rem" }}>Nuestros Precios</h1>
                         <h4 id="h4">En <a href="https://bellumcoaching.com/" target="_blank" style={{ color: "#00B3FF" }}>Bellum Coaching</a> nos enfocamos en brindar un coaching personalizado y efectivo para ayudar a los jugadores de League of Legends a alcanzar su máximo potencial. Ofrecemos paquetes de coaching adaptados a las necesidades individuales de cada jugador, dúo o equipo, los cuales incluyen una clase inicial para crear un plan personalizado de coaching. <a href="https://bellumcoaching.com/contacto/" target="_blank" style={{ color: "#00B3FF" }}>Contáctanos</a> para mejorar tu juego en League of Legends.</h4>
