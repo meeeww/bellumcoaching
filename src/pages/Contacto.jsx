@@ -74,7 +74,7 @@ const Contacto = () => {
                         <h2>Envíanos Un Mensaje</h2>
                         <h4 id="h4">contacto@bellumcoaching.com</h4>
                         <h2>También Por Redes Sociales</h2>
-                        <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
+                        <h4 id="h4">Utilizamos Discord, Twitter, TikTok e Instagram. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
                     </div>
                     <div className="tituloDerechaContacto">
                         <form>
