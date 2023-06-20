@@ -41,7 +41,7 @@ const Inicio = () => {
         location.href = "/precios#" + categoria
     }
 
-    function irAlDemo(){
+    function irAlDemo() {
         setMensajeAlerta("Función no disponible")
         setTipoAlerta(0)
         llamarPopUs()
@@ -74,11 +74,9 @@ const Inicio = () => {
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
                             estrategia para que puedas dar el siguiente paso en tu juego. No esperes más para mejorar tu nivel
                             con nuestro Coaching para League of Legends especialiado</h4>
-                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
-                            coaching
-                            estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
-                            estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
-                            con nuestro Coaching para League of Legends especialiado!</h4>
+                        <h4 id="h4" style={{ fontSize: "20px" }}>Disponemos de herramientas disponibles
+                            para nuestros clientes en el panel de nuestra página web que permite realizar un seguimiento tanto por parte del
+                            alumno como del entrenador. </h4>
 
                     </div>
                 </div>
@@ -96,11 +94,7 @@ const Inicio = () => {
                         <img src={rayaBellum} style={{ marginBlock: "1rem" }}></img>
                     </div>
                     <div className="tituloDerecha">
-                        <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? En nuestro equipo de especialistas en
-                            coaching
-                            estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
-                            estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
-                            con nuestro Coaching para League of Legends especialiado!</h4>
+                        <h4 id="h4" style={{ fontSize: "20px" }}>Somos un equipo de expertos en coaching y estamos comprometidos en ayudarte a alcanzar tus metas en el juego. Nuestros servicios de coaching personalizado te ayudarán a mejorar tu estrategia, habilidades técnicas y trabajo en equipo. Ya seas un jugador nuevo o un veterano, nuestro enfoque personalizado te ayudará a mejorar tus habilidades y a llevar tu juego al siguiente nivel.</h4>
 
                     </div>
                 </div>
@@ -114,8 +108,8 @@ const Inicio = () => {
                         <div className="tarjetaPrecioIndividualPrecioMain tarjetaPrecioIndividualMainNoMedio">
                             <h3>Desde</h3>
                             <div className="desdeClaseMain">
-                                <h2>13€</h2>
-                                <h4>/clase</h4>
+                                <h2>5.50€</h2>
+                                <h4>/persona</h4>
                             </div>
                         </div>
                         <button className="enviarAPreciosMain" onClick={() => { onClickear("clasesIndividuales") }}>Consultar precios</button>
@@ -126,7 +120,7 @@ const Inicio = () => {
                         <div className="tarjetaPrecioIndividualPrecioMain">
                             <h3>Desde</h3>
                             <div className="desdeClaseMain">
-                                <h2>7€</h2>
+                                <h2>6€</h2>
                                 <h4>/clase</h4>
                             </div>
                         </div>
@@ -138,8 +132,8 @@ const Inicio = () => {
                         <div className="tarjetaPrecioIndividualPrecioMain tarjetaPrecioIndividualMainNoMedio">
                             <h3>Desde</h3>
                             <div className="desdeClaseMain">
-                                <h2>18€</h2>
-                                <h4>/clase</h4>
+                                <h2>4.50€</h2>
+                                <h4>/persona</h4>
                             </div>
                         </div>
                         <button className="enviarAPreciosMain" onClick={() => { onClickear("clasesIndividuales") }}>Consultar precios</button>
