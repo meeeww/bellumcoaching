@@ -727,7 +727,7 @@ header,
 
 .tarjetasPrecios {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     width: 93%;
 }
@@ -735,7 +735,7 @@ header,
 .tarjetaPrecios {
     background-color: var(--color-principal-light);
     margin-inline: 0.5rem;
-    height: 14rem;
+    height: 20rem;
     width: 100%;
     display: flex;
     flex-direction: column;

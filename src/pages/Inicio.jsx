@@ -32,7 +32,7 @@ const Inicio = () => {
     })
 
     function onClickear(categoria) {
-        location.replace("#hola")
+        location.href = "/precios#" + categoria
     }
 
     return (
@@ -105,7 +105,7 @@ const Inicio = () => {
                                 <h4>/clase</h4>
                             </div>
                         </div>
-                        <button className="enviarAPreciosMain">Consultar precios</button>
+                        <button className="enviarAPreciosMain" onClick={() => { onClickear("clasesIndividuales") }}>Consultar precios</button>
                     </div>
                     <div className="tarjetaPrecioIndividualMain tarjetaPrecioIndividualMainMedio">
                         <h1>Individual</h1>
@@ -117,7 +117,7 @@ const Inicio = () => {
                                 <h4>/clase</h4>
                             </div>
                         </div>
-                        <button className="enviarAPreciosMain enviarAPreciosMainMedio" onClick={onClickear}>Consultar precios</button>
+                        <button className="enviarAPreciosMain enviarAPreciosMainMedio" onClick={() => { onClickear("clasesIndividuales") }}>Consultar precios</button>
                     </div>
                     <div className="tarjetaPrecioIndividualMain">
                         <h1>Grupal</h1>
@@ -129,7 +129,7 @@ const Inicio = () => {
                                 <h4>/clase</h4>
                             </div>
                         </div>
-                        <button className="enviarAPreciosMain">Consultar precios</button>
+                        <button className="enviarAPreciosMain" onClick={() => { onClickear("clasesIndividuales") }}>Consultar precios</button>
                     </div>
                 </div>
             </div>

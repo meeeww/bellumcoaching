@@ -4,11 +4,14 @@ import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
 import Zed from "../assets/Zed.png"
-import PreciosLista from "../componentes/Precios";
 
 const Precios = () => {
 
     const nombrePagina = "Precios"
+
+    function enviarDiscord() {
+        window.open("https://discord.gg/MW6F2Ajecq", '_blank');
+    }
 
     return (
         <MainLayout laPagina={nombrePagina}>
@@ -27,7 +30,7 @@ const Precios = () => {
             <div className="bodyBellumDos">
                 <div className="comoPagar">
                     <div className="comoPagarIzquierda">
-                        <iframe src="https://discord.com/widget?id=1090294279240421538&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        <iframe src="https://discord.com/widget?id=1090294279240421538&theme=dark" width="350" height="500" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                     <div className="comoPagarDerecha">
                         <h2 style={{ marginBlock: "2rem" }}>¿Cómo pagar?</h2>
@@ -43,7 +46,107 @@ const Precios = () => {
             </div>
 
             <div className="bodyBellumDos">
-                <PreciosLista />
+            <div className="precios">
+            <h2 style={{ color: "var(--color-principal-dark)" }} id="clasesIndividuales">Nuestros Precios Para Clases Individuales</h2>
+            <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
+                <div className="tarjetaPrecios" id="mejorParaEmpezar">
+                    <h4>Pack 1 Clase</h4>
+                    <h6>Por 7€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 3 Clases</h4>
+                    <h6>Por 20€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios" id="masVendido">
+                    <h4>Pack 5 Clases</h4>
+                    <h6>Por 33€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 10 Clases</h4>
+                    <h6>Por 65€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 15 Clases</h4>
+                    <h6>Por 95€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios" id="masRentable">
+                    <h4>Pack 20 Clases</h4>
+                    <h6>Por 120€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+            </div>
+            <h2 style={{ color: "var(--color-principal-dark)", marginTop: "4rem" }} id="clasesDuales">Nuestros Precios Para Clases Duales</h2>
+            <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
+                <div className="tarjetaPrecios" id="mejorParaEmpezar">
+                    <h4>Pack 1 Clase</h4>
+                    <h6>Por 7€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 3 Clases</h4>
+                    <h6>Por 20€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios" id="masVendido">
+                    <h4>Pack 5 Clases</h4>
+                    <h6>Por 33€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 10 Clases</h4>
+                    <h6>Por 65€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 15 Clases</h4>
+                    <h6>Por 95€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios" id="masRentable">
+                    <h4>Pack 20 Clases</h4>
+                    <h6>Por 120€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+            </div>
+            <h2 style={{ color: "var(--color-principal-dark)", marginTop: "4rem" }} id="clasesGrupales">Nuestros Precios Para Clases Grupales</h2>
+            <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
+                <div className="tarjetaPrecios" id="mejorParaEmpezar">
+                    <h4>Pack 1 Clase</h4>
+                    <h6>Por 7€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 3 Clases</h4>
+                    <h6>Por 20€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios" id="masVendido">
+                    <h4>Pack 5 Clases</h4>
+                    <h6>Por 33€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 10 Clases</h4>
+                    <h6>Por 65€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios">
+                    <h4>Pack 15 Clases</h4>
+                    <h6>Por 95€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+                <div className="tarjetaPrecios" id="masRentable">
+                    <h4>Pack 20 Clases</h4>
+                    <h6>Por 120€</h6>
+                    <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
+                </div>
+            </div>
+        </div>
             </div>
         </MainLayout >
     );
