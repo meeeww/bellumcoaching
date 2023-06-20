@@ -4,9 +4,15 @@ import rayaBellum from "../assets/Raya.png"
 import { lazy, useEffect } from "react";
 import { useState } from "react";
 
+import llamarPopUs from "../scripts/llamarPopUp"
+import PopUp from "../modals/PopUp/Alert"
+
 const Inicio = () => {
 
     const [tituloActivo, setTituloActivo] = useState(0)
+
+    const [tipoAlerta, setTipoAlerta] = useState(2)
+    const [mensajeAlerta, setMensajeAlerta] = useState("")
 
     const nombrePagina = "Inicio"
 
@@ -35,9 +41,16 @@ const Inicio = () => {
         location.href = "/precios#" + categoria
     }
 
+    function irAlDemo(){
+        setMensajeAlerta("Función no disponible")
+        setTipoAlerta(0)
+        llamarPopUs()
+    }
+
     return (
         <>
             <HeaderMain />
+            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
             <div className="bodyBellum">
                 <div className="mainBodyBellum">
                     <div className="textoMainBodyBellum">
@@ -45,7 +58,7 @@ const Inicio = () => {
                         <h1 id="primerTituloMain" style={{ marginTop: "5rem", marginBottom: "3rem" }}>ENTRENA</h1>
                         <h3 style={{ marginBlock: "1rem" }}>ACTUALIZADO CADA PARCHE</h3>
                         <h4 style={{ marginBlock: "1rem" }}>Mejora tus habilidades y monitorea junto a nosotros tu trayectoria con la ayuda de nuestras herramientas</h4>
-                        <button className="botonMainBodyBellum" style={{ marginBlock: "4rem" }}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
+                        <button className="botonMainBodyBellum" style={{ marginBlock: "4rem" }} onClick={() => { irAlDemo() }}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                     </div>
                 </div>
             </div>
