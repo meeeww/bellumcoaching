@@ -1,7 +1,7 @@
 import HeaderMain from "../componentes/HeaderMain"
 import Footer from "../componentes/Footer"
 import rayaBellum from "../assets/Raya.png"
-import { useEffect } from "react";
+import { lazy, useEffect } from "react";
 import { useState } from "react";
 
 const Inicio = () => {

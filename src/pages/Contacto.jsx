@@ -7,9 +7,15 @@ import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import poro from '../assets/Poro.png'
 import Axios from 'axios'
 
+import llamarPopUs from "../scripts/llamarPopUp"
+import PopUp from "../modals/PopUp/Alert"
+
 const Contacto = () => {
 
     const nombrePagina = "Contacto"
+
+    const [tipoAlerta, setTipoAlerta] = useState(2)
+    const [mensajeAlerta, setMensajeAlerta] = useState("")
 
     const [nombreContacto, setNombreContacto] = useState('')
     const [apellidoContacto, setApellidoContacto] = useState('')
@@ -34,19 +40,32 @@ const Contacto = () => {
 
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
-        Axios.post(baseURL, data, config)
-            .then((res) => {
-                console.log("RESPONSE RECEIVED: ", res.data);
-                return {
-                    statusCode: 200,
-                    body: JSON.stringify({ title: "this was a success" }),
-                };
-            })
-        console.log(nombreContacto, apellidoContacto, correoContacto, asuntoContacto, mensajeContacto)
+        let todoRellenado = false
+
+        setMensajeAlerta("Por favor espere")
+        setTipoAlerta(2)
+        llamarPopUs()
+        if (data["nombreContacto"] != "" && data["apellidoContacto"] != "" && data["correoContacto"] != "" && data["asuntoContacto"] != "" && data["mensajeContacto"] != "") {
+            Axios.post(baseURL, data, config)
+                .then((res) => {
+                    setMensajeAlerta("Contacto enviado")
+                    setTipoAlerta(1)
+                    llamarPopUs()
+                    return {
+                        statusCode: 200,
+                        body: JSON.stringify({ title: "this was a success" }),
+                    };
+                })
+        } else {
+            setMensajeAlerta("Datos insuficientes")
+            setTipoAlerta(3)
+            llamarPopUs()
+        }
     }
 
     return (
         <MainLayout laPagina={nombrePagina}>
+            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
             <div className="bodyBellumDos">
                 <div className="tituloContacto">
                     <div className="tituloIzquierdaContacto">
@@ -73,7 +92,7 @@ const Contacto = () => {
                                 <input type="text" placeholder="Tu Mensaje" className="mensajeContacto" onChange={(e) => { setMensajeContacto(e.target.value) }}></input>
                             </div>
                             <div className="juntarContacto">
-                                <button className="botonMainBodyBellum" style={{width: "95%"}}>ENVIAR MENSAJE <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
+                                <button className="botonMainBodyBellum" style={{ width: "95%" }} onClick={enviarMensajeContacto}>ENVIAR MENSAJE <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                             </div>
                         </form>
                     </div>
