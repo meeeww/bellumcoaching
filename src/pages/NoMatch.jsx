@@ -12,11 +12,11 @@ const Inicio = () => {
         <MainLayout laPagina={nombrePagina}>
             <div className="bodyBellumDos" style={{marginBlock: "10rem"}}>
                 <div className="titulo">
-                    <div className="tituloIzquierda">
+                    <div className="tituloIzquierdaNM">
                         <h1>¡Ups! Error 404</h1>
                         <h4 id="h4">Parece que la página a la que intentas acceder no existe...</h4>
                     </div>
-                    <div className="tituloDerecha">
+                    <div className="tituloDerechaNM">
                         <img src={bellumLogo} alt="Bellum Logo" style={{width: "15rem"}}/>
                     </div>
                 </div>
