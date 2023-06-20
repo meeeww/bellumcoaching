@@ -2,10 +2,10 @@ import React from 'react'
 import Header from '../componentes/Header.jsx'
 import Footer from '../componentes/Footer'
 
-function MainLayout({children, laPagina}) {
+function MainLayout({children}) {
     return (
         <div>
-            <Header quePagina={laPagina}></Header>
+            <Header></Header>
             <div>{children}</div>
             <Footer></Footer>
         </div>

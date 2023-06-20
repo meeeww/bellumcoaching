@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
     --color-principal-dark: #FEFEFE;
-    --color-principal-light: #404040;
+    --color-principal-light: #282828;
     --color-secundario: #00B3FF;
-    --fondo-negro: #404040;
+    --fondo-negro: #282828;
     --fondo-blanco: #FEFEFE;
-
     --tiempo-cambio-claridad: 0.5s;
-    
+
 }
 
 body {
@@ -61,51 +63,190 @@ a:active {
 }
 
 .bodyBellum {
-    margin-inline: 10%;
-    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
 }
 
-.custom-shape-divider-top-1681756534 {
-    position: absolute;
-    top: 0;
-    left: 0;
+.bodyBellumDos {
+    margin-inline: 10%;
+    max-width: 1200px;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    z-index: -1;
+    margin: 0 auto;
 }
 
-.custom-shape-divider-top-1681756534 svg {
-    position: relative;
-    display: block;
-    width: calc(181% + 1.3px);
-    height: 107px;
+.mainBodyBellum {
+    background: url("../assets/BackgroundMain.png") no-repeat;
+    background-size: cover;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.custom-shape-divider-top-1681756534 .shape-fill {
-    fill: var(--color-principal-dark);
+.mainBodyBellum2 {
+    background: url("../assets/Screen11.png") no-repeat center center;
+    height: 30rem;
+    margin-block: 5rem;
+    background-size: cover;
 }
 
-.custom-shape-divider-bottom-1681757470 {
-    bottom: 0;
-    left: 0;
+.tarjetasPrecioMain {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-block: 5rem;
+}
+
+.tarjetaPrecioIndividualMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 30rem;
+    padding: 1.05rem 2.5em;
+}
+
+.tarjetaPrecioIndividualMain h1{
+    font-size: 48px;
+    text-shadow: none;
+}
+
+.tarjetaPrecioIndividualMain h2{
+    text-shadow: none;
+}
+
+.tarjetaPrecioIndividualMain h3{
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+.tarjetaPrecioIndividualMainMedio {
+    height: 31rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.enviarAPreciosMain {
+    font-weight: bold;
+    color: var(--color-principal-dark);
+    background-color: transparent;
+    outline: 0.02rem solid var(--color-secundario);
+    border-radius: 1rem;
+    box-shadow: 8px 8px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.25s;
+    text-align: center;
     width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    margin-top: 2rem;
+    height: 10%;
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.25s;
 }
 
-.custom-shape-divider-bottom-1681757470 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 75px;
+.enviarAPreciosMainMedio {
+    outline: 0px;
+    color: var(--color-principal-light);
+    background-color: var(--color-secundario);
 }
 
-.custom-shape-divider-bottom-1681757470 .shape-fill {
-    fill: var(--color-principal-dark);
+.enviarAPreciosMainMedio:hover{
+    color: var(--color-principal-dark)!important;
+    background-color: transparent!important;
+}
+
+.enviarAPreciosMain:hover {
+    box-shadow: 8px 8px 15px -3px rgba(0, 0, 0, 0.6);
+    color: var(--color-principal-light);
+    background-color: var(--color-secundario);
+}
+
+.tarjetaPrecioIndividualPrecioMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.desdeClaseMain {
+    display: flex;
+    align-items: baseline;
+}
+
+@media (max-width: 1228px) {
+    .tarjetasPrecioMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetaPrecioIndividualMain {
+        margin-block: 0.5rem;
+    }
+}
+
+.textoMainBodyBellum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 10%;
+    animation: fadeIn 2s;
+}
+
+.separadorTarjetasDecisionIcono{
+    display: flex;
+    align-items: center;
+}
+
+.separadorTarjetasDecisionIcono i{
+    color: var(--color-secundario);
+    margin-right: 1rem;
+    font-size: 46px;
+}
+
+.botonMainBodyBellum{
+    padding: 1.05rem 2.5em;
+    font-weight: bold;
+    color: var(--color-principal-light);
+    background-color: var(--color-secundario);
+    transition: all 0.25s;
+}
+
+.botonMainBodyBellum i {
+    transition: all 0.5s;
+}
+
+.botonMainBodyBellum:hover>i {
+    right: -30px !important;
+}
+
+#primerTituloMain {
+    animation: fadeIn 8s;
+}
+
+.mainBodyBellum h3 {
+    font-weight: 600;
+    font-size: 32px;
+    display: inline-block;
+}
+
+.mainBodyBellum h4 {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+.mainBodyBellum h5 {
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+}
+
+
+.mainBodyBellum h1 {
+    color: var(--fondo-blanco);
+    text-shadow: none;
+    display: inline-block;
 }
 
 header {
@@ -113,7 +254,7 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    margin-block: 1rem;
+    padding-block: 0.1rem;
 }
 
 .headerIzquierda {
@@ -121,14 +262,32 @@ header {
 }
 
 .headerIzquierda img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    margin-block: 0.1rem;
 }
 
-.headerDerecha a,
-.headerDerecha label {
-    margin-right: 2rem;
+.headerCentro a {
+    font-size: 20px;
+    margin-inline: 1rem;
+    font-weight: 500;
     transition: all 0.25s;
+}
+
+.headerDerecha a {
+    color: var(--fondo-blanco);
+    height: 16px;
+    width: 16px;
+    margin-right: 1rem;
+    transition: all 0.25s;
+}
+
+.headerDerecha a:hover {
+    color: var(--color-secundario);
+}
+
+.headerDerecha i {
+    font-size: 16px;
 }
 
 #linkHeaderActive1 {
@@ -354,12 +513,33 @@ header,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10rem;
 
 }
 
+.tituloIzquierda {
+    width: 75%;
+}
+
 .tituloDerecha {
-    margin-left: 2rem;
+    margin-left: 4rem;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloIzquierdaNM {
+    width: auto;
+}
+
+.tituloDerechaNM {
+    margin-right: 8rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloDerecha h4 {
+    margin-block: 2%;
 }
 
 .subtitulo {
@@ -514,7 +694,7 @@ header,
     font-size: 34px;
     font-weight: 700;
     line-height: 54px;
-    letter-spacing: -2.7px;
+    letter-spacing: -2px;
     word-spacing: 0px;
     stroke-width: 0px;
     stroke: #000;
@@ -525,6 +705,7 @@ header,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    margin-top: 5rem;
 }
 
 .tarjetaDecision {
@@ -546,7 +727,7 @@ header,
 
 .tarjetasPrecios {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     width: 93%;
 }
@@ -554,14 +735,13 @@ header,
 .tarjetaPrecios {
     background-color: var(--color-principal-light);
     margin-inline: 0.5rem;
-    height: 14rem;
+    height: 20rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    border: 2px solid rgba(9, 9, 9, .1);
     border-radius: 4px;
     transition: transform 500ms ease-out;
 }
@@ -643,6 +823,7 @@ header,
     padding: 0;
     margin: 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .footer a {
@@ -707,6 +888,10 @@ header,
     margin-inline: 1rem;
 }
 
+.redesSocialesIzquierda p{
+    color: var(--color-principal-light);
+}
+
 .redesSocialesDerecha a {
     color: var(--color-principal-light);
     font-size: 25px;
@@ -716,11 +901,10 @@ header,
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 2rem;
     width: 100%;
     background-color: var(--fondo-blanco);
     color: var(--color-principal-light);
-    padding-bottom: 2rem;
+    padding-block: 1rem;
 }
 
 .copyrightFooter p {
@@ -782,6 +966,7 @@ form input {
     background-color: #27272766;
     color: var(--fondo-blanco);
     font-weight: 600;
+    font-size: 16px;
     letter-spacing: 1px;
     opacity: 1;
 }
@@ -801,6 +986,7 @@ form input {
 
 .juntarContacto {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -858,6 +1044,22 @@ form input {
     opacity: 1;
 }
 
+.balance {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    min-height: 100px;
+}
+
+.recent_activities {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+#drawer-navigation {
+    transform: translateX(-100%);
+}
+
 .inicioSesionBellum {
     display: flex;
     justify-content: center;
@@ -868,7 +1070,7 @@ form input {
 }
 
 .cajaInicioSesion {
-    max-width: 30rem;
+    max-width: 40rem;
     width: 100%;
     min-height: 60vh;
     display: flex;
@@ -884,7 +1086,7 @@ form input {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
 }
 
-.cajaInicioSesion img{
+.cajaInicioSesion img {
     margin-bottom: 2rem;
 }
 
@@ -901,35 +1103,21 @@ form input {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
     padding: 0;
     margin-top: 2rem;
+    transition: all 0.25s;
 }
 
-.textLogin{
+.submitLogin:hover {
+    transform: scale(1.02);
+    transition: all 0.25s;
+}
+
+.submitLogin:active {
+    color: red !important;
+}
+
+.textLogin {
     border-radius: 5px;
 }
-/*
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 1px var(--fondo-negro);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--color-principal-dark);
-    border-radius: 15px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--color-secundario);
-    border-radius: 15px;
-}
-
-::-webkit-scrollbar-thumb:active {
-    background: var(--color-principal-dark);
-    border-radius: 15px;
-}*/
 
 @media (max-width:900px) {
     h2 {
@@ -976,8 +1164,6 @@ form input {
     }
 
     .tarjetasPrecios {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
@@ -1021,8 +1207,7 @@ form input {
     }
 
     .headerDerecha {
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
     .headerDerecha a {
@@ -1030,8 +1215,18 @@ form input {
     }
 }
 
-@media (max-width: 768px){
-    .cajaInicioSesion{
+@media (max-width: 768px) {
+    .cajaInicioSesion {
         padding-inline: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
