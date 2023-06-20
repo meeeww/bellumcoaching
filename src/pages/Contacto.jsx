@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
-import bellumLogo from '../assets/Logo.png'
+import poro from '../assets/Poro.png'
 import Axios from 'axios'
 
 const Contacto = () => {
@@ -73,12 +73,13 @@ const Contacto = () => {
                                 <input type="text" placeholder="Tu Mensaje" className="mensajeContacto" onChange={(e) => { setMensajeContacto(e.target.value) }}></input>
                             </div>
                             <div className="juntarContacto">
-                                <input type="submit" value="Submit" onClick={enviarMensajeContacto}></input>
+                                <button className="botonMainBodyBellum" style={{width: "95%"}}>ENVIAR MENSAJE <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <div className="mainBodyBellum" style={{ backgroundImage: "url('/src/assets/Poro.png')", width: "100px", height: "110px", position: "absolute", left: "48%", top: "537px" }}></div>
         </MainLayout >
     );
 }

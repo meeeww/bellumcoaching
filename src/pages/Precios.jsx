@@ -11,7 +11,7 @@ const Precios = () => {
 
     return (
         <MainLayout laPagina={nombrePagina}>
-            <div className="bodyBellum">
+            <div className="bodyBellumDos">
                 <div className="titulo">
                     <div className="tituloIzquierda">
                         <h1>Nuestros Precios</h1>

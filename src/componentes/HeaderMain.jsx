@@ -22,9 +22,10 @@ const Header = ({ quePagina }) => {
                     <NavLink to="/contacto" className="textoHeader" style={navLinkStyles}>Contacto</NavLink>
                 </div>
                 <div className="headerDerecha">
-                    <Link to="https://www.discord.gg/MW6F2Ajecq"><i className="fa-brands fa-discord"></i></Link>
-                    <Link to="https://www.twitter.com/BellumCoaching"><i className="fa-brands fa-twitter"></i></Link>
-                    <Link to="https://www.instagram.com/bellumcoaching/"><i className="fa-brands fa-instagram"></i></Link>
+                    <Link to="https://discord.gg/MW6F2Ajecq" target="_blank"><i className="fa-brands fa-discord"></i></Link>
+                    <Link to="https://twitter.com/BellumCoaching" target="_blank"><i className="fa-brands fa-twitter"></i></Link>
+                    <Link to="https://tiktok.com/@bellumcoaching" target="_blank"><i className="fa-brands fa-tiktok"></i></Link>
+                    <Link to="https://instagram.com/bellumcoaching/" target="_blank"><i className="fa-brands fa-instagram"></i></Link>
                 </div>
             </header>
         </div>

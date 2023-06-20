@@ -31,6 +31,10 @@ const Inicio = () => {
         }, 300);
     })
 
+    function onClickear(categoria) {
+        location.replace("#hola")
+    }
+
     return (
         <>
             <HeaderMain />
@@ -62,7 +66,6 @@ const Inicio = () => {
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
                             estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
                             con nuestro Coaching para League of Legends especialiado!</h4>
-                        <button onClick={console.log("hey")}></button>
 
                     </div>
                 </div>
@@ -85,7 +88,6 @@ const Inicio = () => {
                             estamos aquí para ayudarte a alcanzar tus metas. Ofrecemos programas personalizados y guías de
                             estrategia para que puedas dar el siguiente paso en tu juego. ¡No esperes más para mejorar tu nivel
                             con nuestro Coaching para League of Legends especialiado!</h4>
-                        <button onClick={console.log("hey")}></button>
 
                     </div>
                 </div>
@@ -94,12 +96,12 @@ const Inicio = () => {
             <div className="bodyBellumDos">
                 <div className="tarjetasPrecioMain">
                     <div className="tarjetaPrecioIndividualMain">
-                        <h1>Individual</h1>
-                        <h3>Descripcion del plan que escala genial</h3>
+                        <h1>Dual</h1>
+                        <h3>Ideal para aquellos dúos que quieran mejorar como premade.</h3>
                         <div className="tarjetaPrecioIndividualPrecioMain tarjetaPrecioIndividualMainNoMedio">
                             <h3>Desde</h3>
                             <div className="desdeClaseMain">
-                                <h2>30€</h2>
+                                <h2>13€</h2>
                                 <h4>/clase</h4>
                             </div>
                         </div>
@@ -107,23 +109,23 @@ const Inicio = () => {
                     </div>
                     <div className="tarjetaPrecioIndividualMain tarjetaPrecioIndividualMainMedio">
                         <h1>Individual</h1>
-                        <h3>Descripcion del plan que escala genial</h3>
+                        <h3>Enfocado hacia los jugadores tryhards que quieran subir su elo.</h3>
                         <div className="tarjetaPrecioIndividualPrecioMain">
                             <h3>Desde</h3>
                             <div className="desdeClaseMain">
-                                <h2>30€</h2>
+                                <h2>7€</h2>
                                 <h4>/clase</h4>
                             </div>
                         </div>
-                        <button className="enviarAPreciosMain enviarAPreciosMainMedio">Consultar precios</button>
+                        <button className="enviarAPreciosMain enviarAPreciosMainMedio" onClick={onClickear}>Consultar precios</button>
                     </div>
                     <div className="tarjetaPrecioIndividualMain">
-                        <h1>Individual</h1>
-                        <h3>Descripcion del plan que escala genial</h3>
+                        <h1>Grupal</h1>
+                        <h3>Indicado para los grupos de jugadores o equipos de eSports</h3>
                         <div className="tarjetaPrecioIndividualPrecioMain tarjetaPrecioIndividualMainNoMedio">
                             <h3>Desde</h3>
                             <div className="desdeClaseMain">
-                                <h2>30€</h2>
+                                <h2>18€</h2>
                                 <h4>/clase</h4>
                             </div>
                         </div>
@@ -138,27 +140,45 @@ const Inicio = () => {
                     <h3>¡Aquí te damos 6 razones sobre nuestro coaching para terminar de convencerte!</h3>
                     <div className="tarjetasDecision">
                         <div className="tarjetaDecision">
-                            <h4 id="h4">Experiencia, conocimiento y profesionalidad.</h4>
+                            <div className="separadorTarjetasDecisionIcono">
+                                <i className="fa-solid fa-book"></i>
+                                <h4 id="h4">Experiencia</h4>
+                            </div>
                             <p className="paragraphDecision">Contamos con un equipo de entrenadores altamente capacitados y actualizados en las últimas tendencias y estrategias del juego. Nuestro objetivo es brindarte un servicio de coaching excepcional, y para lograrlo nos aseguramos de estar siempre a la vanguardia del juego. Ya sea que necesites mejorar tu juego individual o trabajar en equipo, nuestro equipo de entrenadores está listo para ayudarte. Contáctanos hoy mismo para obtener más información.</p>
                         </div>
                         <div className="tarjetaDecision">
-                            <h4 id="h4">Formalidad, compromiso y responsabilidad.</h4>
+                            <div className="separadorTarjetasDecisionIcono">
+                                <i className="fa-solid fa-graduation-cap"></i>
+                                <h4 id="h4">Formalidad</h4>
+                            </div>
                             <p className="paragraphDecision">Estamos comprometidos con brindar un servicio de alta calidad en cada sesión de coaching. Nuestro objetivo es ayudar a nuestros clientes a alcanzar su máximo potencial con profesionalismo y dedicación. Nos aseguramos de que cada sesión sea personalizada y adaptada a las necesidades de cada jugador. Si buscas mejorar tus habilidades y estrategias en el juego, nuestro equipo de entrenadores está aquí para ayudarte.</p>
                         </div>
                         <div className="tarjetaDecision">
-                            <h4 id="h4">Empatía, cercanía y amabilidad.</h4>
+                            <div className="separadorTarjetasDecisionIcono">
+                                <i className="fa-solid fa-heart"></i>
+                                <h4 id="h4">Empatía</h4>
+                            </div>
                             <p className="paragraphDecision">Establecemos relaciones duraderas con nuestros clientes y brindamos apoyo continuo. Escuchamos sus inquietudes y respondemos a sus preguntas para asegurarnos de que estén completamente satisfechos con nuestros servicios. Si estás buscando un equipo de entrenadores dedicados a ayudarte a mejorar tus habilidades y estrategias en el juego, no dudes en contactarnos. Estamos aquí para ayudarte a alcanzar tus metas.</p>
                         </div>
                         <div className="tarjetaDecision">
-                            <h4 id="h4">Retroalimentación constante.</h4>
+                            <div className="separadorTarjetasDecisionIcono">
+                                <i className="fa-solid fa-bolt"></i>
+                                <h4 id="h4">Retroalimentación</h4>
+                            </div>
                             <p className="paragraphDecision">Brindamos retroalimentación constante y constructiva a nuestros clientes durante las sesiones de coaching. Identificamos sus fortalezas y debilidades específicas y los ayudamos a mejorar en esas áreas. Si estás buscando un equipo de entrenadores dedicados a ayudarte a mejorar tus habilidades y estrategias en el juego, no dudes en contactarnos. Estamos aquí para ayudarte a alcanzar tus metas.</p>
                         </div>
                         <div className="tarjetaDecision">
-                            <h4 id="h4">Enfoque en el progreso a largo plazo.</h4>
+                            <div className="separadorTarjetasDecisionIcono">
+                                <i className="fa-solid fa-compass"></i>
+                                <h4 id="h4">Largo plazo</h4>
+                            </div>
                             <p className="paragraphDecision">Nos enfocamos en ayudar a nuestros clientes a alcanzar objetivos a largo plazo en el juego. Ofrecemos entrenamiento constante y seguimiento para mejorar continuamente sus habilidades y estrategias. No ofrecemos soluciones rápidas a problemas específicos, sino que nos dedicamos a mejorar de manera constante. Si estás buscando un servicio de coaching personalizado, ¡contáctanos hoy mismo!</p>
                         </div>
                         <div className="tarjetaDecision">
-                            <h4 id="h4">Adaptación individual para cada cliente.</h4>
+                            <div className="separadorTarjetasDecisionIcono">
+                                <i className="fa-solid fa-marker"></i>
+                                <h4 id="h4">Adaptación</h4>
+                            </div>
                             <p className="paragraphDecision">Nos centramos en brindar servicios de coaching personalizados para satisfacer las necesidades únicas de cada cliente. Trabajamos en estrecha colaboración con nuestros clientes para identificar sus fortalezas y debilidades individuales y proporcionar un plan de coaching adaptado a sus objetivos y habilidades específicas. ¡Nuestro objetivo es ayudar a nuestros clientes a alcanzar el éxito a largo plazo!</p>
                         </div>
                     </div>

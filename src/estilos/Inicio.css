@@ -120,6 +120,7 @@ a:active {
 
 .tarjetaPrecioIndividualMain h3{
     font-size: 24px;
+    letter-spacing: -1px;
 }
 
 .tarjetaPrecioIndividualMainMedio {
@@ -191,7 +192,18 @@ a:active {
     animation: fadeIn 2s;
 }
 
-.textoMainBodyBellum button {
+.separadorTarjetasDecisionIcono{
+    display: flex;
+    align-items: center;
+}
+
+.separadorTarjetasDecisionIcono i{
+    color: var(--color-secundario);
+    margin-right: 1rem;
+    font-size: 46px;
+}
+
+.botonMainBodyBellum{
     padding: 1.05rem 2.5em;
     font-weight: bold;
     color: var(--color-principal-light);
@@ -671,7 +683,7 @@ header,
     font-size: 34px;
     font-weight: 700;
     line-height: 54px;
-    letter-spacing: -2.7px;
+    letter-spacing: -2px;
     word-spacing: 0px;
     stroke-width: 0px;
     stroke: #000;
@@ -682,6 +694,7 @@ header,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
+    margin-top: 5rem;
 }
 
 .tarjetaDecision {

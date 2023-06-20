@@ -10,6 +10,7 @@ const Footer = () => (
             <div className="redesSocialesDerecha">
                 <Link to="https://discord.gg/MW6F2Ajecq"><i className="fa-brands fa-discord"></i></Link>
                 <Link to="https://twitter.com/BellumCoaching"><i className="fa-brands fa-twitter"></i></Link>
+                <Link to="https://tiktok.com/@bellumcoaching"><i className="fa-brands fa-tiktok"></i></Link>
                 <Link to="https://instagram.com/BellumCoaching"><i className="fa-brands fa-instagram"></i></Link>
             </div>
         </div>
