@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="footer">
         <div className="redesSociales">
             <div className="redesSocialesIzquierda">
-                <p>Nuestras redes sociales:</p>
+                <p>Nuestras redes sociales</p>
             </div>
             <div className="redesSocialesDerecha">
                 <Link to="https://discord.gg/MW6F2Ajecq"><i className="fa-brands fa-discord"></i></Link>
