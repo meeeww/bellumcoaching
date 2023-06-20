@@ -111,32 +111,32 @@ const Precios = () => {
             <div className="tarjetasPrecios" style={{ marginTop: "2rem" }}>
                 <div className="tarjetaPrecios" id="mejorParaEmpezar">
                     <h4>Pack 1 Clase</h4>
-                    <h6>6€/persona</h6>
+                    <h6>18€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 3 Clases</h4>
-                    <h6>17.33€/persona</h6>
+                    <h6>52€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masVendido">
                     <h4>Pack 5 Clases</h4>
-                    <h6>28€/persona</h6>
+                    <h6>84€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 10 Clases</h4>
-                    <h6>53.34€/persona</h6>
+                    <h6>160€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios">
                     <h4>Pack 15 Clases</h4>
-                    <h6>76.67€/persona</h6>
+                    <h6>230€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
                 <div className="tarjetaPrecios" id="masRentable">
                     <h4>Pack 20 Clases</h4>
-                    <h6>90€/persona</h6>
+                    <h6>270€</h6>
                     <button className="enviarAPreciosMain" style={{ width: "75%", borderRadius: "0.5rem" }} onClick={enviarDiscord}>Pedir Ahora</button>
                 </div>
             </div>
