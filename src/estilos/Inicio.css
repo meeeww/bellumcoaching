@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -920,7 +926,6 @@ form input {
 }
 
 .navbarAdmin li{
-    position: relative;
     margin-block: 5px;
 }
 
@@ -940,7 +945,7 @@ form input {
     padding: 1rem;
     gap: 1rem;
     margin-top: 1rem;
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 
 }
 
@@ -971,6 +976,18 @@ form input {
     font-size: 1rem;
     border: 1px solid white;
     padding: 0.1rem 1rem;
+}
+
+.notasScroll{
+    overflow-x: scroll;
+}
+
+.notasScroll > div{
+    box-shadow: 1px 5px 8px rgb(0 0 0 / 30%);
+}
+
+.notas{
+    border: 2px solid white;
 }
 
 @media (max-width:900px) {
