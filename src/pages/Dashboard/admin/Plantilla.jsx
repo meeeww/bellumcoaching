@@ -7,7 +7,7 @@ import User from "./User";
 const Plantilla = () => {
     return (
         <>
-            <div class="antialiased flex m-0 p-0 w-full">
+            <div class="antialiased flex m-0 p-0">
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar/>
                 {/* -----------------CONTENIDO----------------- */}

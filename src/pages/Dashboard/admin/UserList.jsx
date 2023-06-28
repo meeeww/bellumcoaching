@@ -14,7 +14,7 @@ const UserList = () => {
                             <p>Cliente</p>
                         </div>
                     </div>
-                    <div className="clientCardDerecha flex items-center">
+                    <div className="clientCardDerecha flex items-center justify-center w-[100px]">
                         <img src={Logo} alt="" className="h-[70%]" />
                     </div>
                 </div>

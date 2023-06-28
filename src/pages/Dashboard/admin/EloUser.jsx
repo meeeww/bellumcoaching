@@ -1,7 +1,7 @@
 const EloUser = () => {
     return (
         <>
-            <div className="elosUser">
+            <div className="elosUser grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                 <div>
                     <p>Elo Inicial</p>
                     <div>

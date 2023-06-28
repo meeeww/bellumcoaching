@@ -858,8 +858,6 @@ form input {
     cursor: pointer;
 }
 
-
-
 .mensajeContacto {
     resize: vertical;
     display: flex;
@@ -912,22 +910,13 @@ form input {
    scrollbar-width: none;
 }
 
-.navbarAdmin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1rem;
+.botonUser div{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
 }
 
-.navbarAdmin li,a{
-    font-size: 1.2rem;
-    color: black;
-    transition: all 0.3s;
-}
-
-.navbarAdmin li{
-    margin-block: 5px;
-}
 
 .userNames > div{
     height: 100%;
@@ -939,14 +928,11 @@ form input {
 }
 
 .elosUser{
-    display: grid;
     width: 100%;
     min-height: 200px;
     padding: 1rem;
     gap: 1rem;
     margin-top: 1rem;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-
 }
 
 .elosUser > div{
@@ -988,6 +974,20 @@ form input {
 
 .notas{
     border: 2px solid white;
+}
+
+.navbarAdmin.active{
+    transform: translateX(0%);
+}
+
+.navbarAdmin a{
+    font-size: 1.3rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+.navbarAdmin a:hover{
+    color: #00b3ffce;
 }
 
 @media (max-width:900px) {

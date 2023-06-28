@@ -9,6 +9,8 @@ import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
 import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
 import User from './pages/Dashboard/admin/User'
+import Calendario from './pages/Dashboard/admin/Calendario'
+
 
 import {
   createBrowserRouter,
@@ -31,11 +33,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboardAdmin",
-    element: <DashboardAdmin/>
+    element: <DashboardAdmin />
   },
   {
     path: "/user",
-    element: <User/>
+    element: <User />
+  },
+  {
+    path: "/calendario",
+    element: <Calendario />
   },
   {
     path: "*",
