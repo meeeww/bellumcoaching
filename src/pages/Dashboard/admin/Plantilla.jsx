@@ -3,52 +3,23 @@ import Navbar from "./NavbarAdmin";
 import UserList from "./UserList";
 import CoachList from "./CoachList";
 import User from "./User";
+import Modal from "./Modal";
 
 const Plantilla = () => {
     return (
         <>
+            <Modal />
             <div class="antialiased flex m-0 p-0">
                 {/* -----------------BARRA LATERAL----------------- */}
-                <Navbar/>
+                <Navbar />
                 {/* -----------------CONTENIDO----------------- */}
-                <main class="p-4 pt-20 w-full min-h-screen mainDashboard">
-                    <Balance/>
+                <main class=" p-4 pt-20 w-full min-h-screen mainDashboard">
+                    <Balance />
                     <div
                         class=" h-[27rem] mb-4 lg:grid-cols-2 grid-cols-1 grid "
                     >
-                        <UserList/>
-                        <CoachList/>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 mb-4">
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                    </div>
-                    <div
-                        class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-96 mb-4"
-                    ></div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
-                        <div
-                            class="border-2 border-dashed rounded-lg border-gray-300 dark:border-gray-600 h-48 md:h-72"
-                        ></div>
+                        <UserList />
+                        <CoachList />
                     </div>
                 </main>
             </div>

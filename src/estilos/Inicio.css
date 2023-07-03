@@ -201,10 +201,6 @@ header {
     color: var(--color-secundario);
 }
 
-main {
-    margin-inline: 5rem;
-}
-
 h1 {
     color: var(--color-secundario);
     font-size: 55px;
@@ -988,6 +984,12 @@ form input {
 
 .navbarAdmin a:hover{
     color: #00b3ffce;
+}
+
+.modal input{
+    width: 200px;
+    height: 40px;
+    border-radius: 0.5rem;
 }
 
 @media (max-width:900px) {
