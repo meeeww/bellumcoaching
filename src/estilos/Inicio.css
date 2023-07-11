@@ -987,9 +987,11 @@ form input {
 }
 
 .modal input{
-    width: 200px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     border-radius: 0.5rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
 }
 
 @media (max-width:900px) {

@@ -1,11 +1,11 @@
-const Modal = () => {
+const ModalCrear = () => {
     return (
         <>
             <div className="w-full h-screen bg-[#0000007b] fixed z-[200] modal p-4 flex items-center justify-center">
                 <div className="max-w-[600px] w-full h-full max-h-[400px] bg-[var(--color-secundario)] border text-[var(--color-principal-light)]">
                     <div className="w-full h-full relative">
                         <div className="flex justify-between bg-[var(--color-principal-light)] h-[30px] items-center">
-                            <span className="text-xl text-white p-4 text-[var(--color-principal-light)]">EDITAR USUARIO</span>
+                            <span className="text-xl text-white p-4 text-[var(--color-principal-light)]">CREAR USUARIO</span>
                             <button className=" p-4 text-white" onClick={() => { document.querySelector(".modal").classList.add("hidden") }}>X</button>
                         </div>
 
@@ -26,4 +26,4 @@ const Modal = () => {
     )
 }
 
-export default Modal;
+export default ModalCrear;

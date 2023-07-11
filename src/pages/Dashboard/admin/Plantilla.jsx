@@ -5,11 +5,12 @@ import CoachList from "./CoachList";
 import User from "./User";
 import Modal from "./Modal";
 import ModalEliminar from "./ModalEliminar";
+import ModalCrear from "./ModalCrear";
 
 const Plantilla = () => {
     return (
         <>
-        <Modal/>
+        <ModalCrear/>
             <div class="antialiased flex m-0 p-0">
                 {/* -----------------BARRA LATERAL----------------- */}
                 <Navbar />
