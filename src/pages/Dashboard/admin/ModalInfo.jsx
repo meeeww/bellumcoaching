@@ -5,7 +5,7 @@ const ModalInfo = () => {
                 <div className="h-[400px] md:w-[350px] w-full bg-[var(--color-principal-dashboard)]">
                     <div className="w-full h-[40px] bg-[var(--color-fondo-dashboard)] flex items-center justify-between px-4">
                         <div><p className="text-white text-xl">Información</p></div>
-                        <button className="h-full" onClick={() => { document.querySelector(".modalBorrar").classList.add("hidden") }}>X</button>
+                        <button className="h-full" onClick={() => { document.querySelector(".modalInfo").classList.add("hidden") }}>X</button>
                     </div>
                     <div className="flex flex-col gap-4 w-full h-full p-4">
                         <div className="flex gap-2 w-full">

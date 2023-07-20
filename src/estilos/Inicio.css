@@ -1104,6 +1104,26 @@ form input {
     font-weight: 400;
 }
 
+.modalEditar > div{
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditar > div > div{
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalEditar input{
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditar input::placeholder{
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
 
 @media (max-width:900px) {
     h2 {
