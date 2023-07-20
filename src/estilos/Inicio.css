@@ -75,10 +75,8 @@ body {
     background-color: var(--fondo-negro);
     color: var(--color-principal-dark);
     font-size: 25px;
-
     animation-name: aOscuro;
     animation-duration: var(--tiempo-cambio-claridad);
-
     font-family: "Rubik", Sans-serif;
 }
 
@@ -86,35 +84,30 @@ a {
     color: var(--color-secundario);
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
     text-decoration: none;
 }
 
 a:link {
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
     text-decoration: none;
 }
 
 a:visited {
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
     text-decoration: none;
 }
 
 a:hover {
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
     text-decoration: none;
 }
 
 a:active {
     font-size: inherit;
     line-height: inherit;
-    font-weight: 700;
     text-decoration: none;
 }
 
@@ -1048,6 +1041,40 @@ form input {
 .userList ul li:last-child{
     border-bottom: 1px solid var(--color-texto-dashboard);
 }
+
+.menuDropdown{
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.menuDropdown li{
+    color: var(--color-texto-dashboard);
+    transition: all 0.3s;
+}
+
+.menuDropdown li:hover{
+    color: white;
+}
+
+.modalInfo > div{
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalInfo > div > div{
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalInfo input{
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.modalInfo input::placeholder{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
 
 @media (max-width:900px) {
     h2 {
