@@ -17,6 +17,12 @@ const UserList = () => {
                                     <p className='text-[var(--color-texto-dashboard)]'>zas@gmail.com</p>
                                 </div>
                             </div>
+                            <div className='hidden lg:block'>
+                                <p className='text-var'>User</p>
+                            </div>
+                            <div className='hidden lg:block'>
+                                <p>10 clases restantes</p>
+                            </div>
                             <div className='flex gap-2'>
                                 <button className='bg-blue-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>i</button>
                                 <button className='bg-green-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>e</button>
