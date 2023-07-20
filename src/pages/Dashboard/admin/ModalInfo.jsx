@@ -2,7 +2,7 @@ const ModalInfo = () => {
     return (
         <>
             <div className="modalInfo w-full h-screen bg-[#1118277e] fixed top-0 left-0 flex items-center justify-center p-4">
-                <div className="h-[250px] w-full bg-[var(--color-principal-dashboard)]">
+                <div className="h-[250px] md:w-[350px] w-full bg-[var(--color-principal-dashboard)]">
                     <div className="w-full h-[40px] bg-[var(--color-fondo-dashboard)] flex items-center justify-between px-4">
                         <div><p className="text-white text-xl">Información</p></div>
                         <button className="h-full">X</button>
