@@ -7,14 +7,20 @@ const ModalInfo = () => {
                         <div><p className="text-white text-xl">Información</p></div>
                         <button className="h-full">X</button>
                     </div>
-                    <div className="grid grid-cols-2 grid-rows-3 gap-4 w-full pl-1">
-                        <p className="text-white">Nombre: </p>
-                        <input type="text" placeholder="nombre" className="w-[150px] text-[1rem] pl-1 bg-[var(--color-principal-dashboard)] text-[var(--color-texto-dashboard)]" />
-                        <p className="text-white">Correo: </p>
-                        <input type="email" placeholder="nombre" className="w-[150px] text-[1rem] pl-1 bg-[var(--color-principal-dashboard)] text-[var(--color-texto-dashboard)]" />
-                        <p className="text-white">Contraseña: </p>
-                        <input type="password" placeholder="nombre" className="w-[150px] text-[1rem] pl-1 bg-[var(--color-principal-dashboard)] text-[var(--color-texto-dashboard)]" />
-                        <button className="bg-[var(--color-texto)] w-[100px]">Confirmar</button>
+                    <div className="flex flex-col gap-4 w-full h-full p-4">
+                        <div className="flex gap-2 w-full">
+                            <p className="text-white">Nombre: </p>
+                            <input type="text" placeholder="nombre" className="w-[150px] text-[1rem] pl-1 bg-[var(--color-principal-dashboard)] text-[var(--color-texto-dashboard)]" />
+                        </div>
+                        <div className="flex gap-2 w-full">
+                            <p className="text-white">Correo: </p>
+                            <input type="email" placeholder="nombre" className="w-[150px] text-[1rem] pl-1 bg-[var(--color-principal-dashboard)] text-[var(--color-texto-dashboard)]" />
+                        </div>
+                        <div className="flex gap-2 w-full">
+                            <p className="text-white">Contraseña: </p>
+                            <input type="password" placeholder="nombre" className="w-[150px] text-[1rem] pl-1 bg-[var(--color-principal-dashboard)] text-[var(--color-texto-dashboard)]" />
+                        </div>
+                        <button className="bg-[var(--color-texto)]">Confirmar</button>
                     </div>
                 </div>
             </div>
