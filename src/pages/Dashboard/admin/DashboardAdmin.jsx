@@ -1,13 +1,15 @@
-import Footer from "../../../componentes/Footer";
-import Header from "../../../componentes/Header";
+import Header from "./HeaderAdmin";
 import Balance from "./Balance";
 import UserList from "./UserList";
-import Plantilla from "./Plantilla";
 
 const DashboardAdmin = () => {
-    return(
+    return (
         <>
-            <Plantilla/>
+            <div className="dashboardAdmin">
+                <Header />
+                <Balance />
+                <UserList />
+            </div>
         </>
     )
 }

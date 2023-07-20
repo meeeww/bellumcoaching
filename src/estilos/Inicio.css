@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,6 +64,9 @@
     --fondo-negro: #404040;
     --fondo-blanco: #FEFEFE;
     --tiempo-cambio-claridad: 0.5s;
+    --color-principal-dashboard: #1f2937;
+    --color-fondo-dashboard: #111827;
+    --color-texto-dashboard: #9ca3af;
 }
 
 body {
@@ -903,10 +906,10 @@ form input {
 }
 
 .antialiased>main {
-   scrollbar-width: none;
+    scrollbar-width: none;
 }
 
-.botonUser div{
+.botonUser div {
     width: 30px;
     height: 4px;
     background-color: white;
@@ -914,7 +917,7 @@ form input {
 }
 
 
-.userNames > div{
+.userNames>div {
     height: 100%;
     border: 1px solid white;
     display: flex;
@@ -923,7 +926,7 @@ form input {
     font-size: 1.3rem;
 }
 
-.elosUser{
+.elosUser {
     width: 100%;
     min-height: 200px;
     padding: 1rem;
@@ -931,7 +934,7 @@ form input {
     margin-top: 1rem;
 }
 
-.elosUser > div{
+.elosUser>div {
     width: 100%;
     min-height: 170px;
     background-color: var(--color-principal-light);
@@ -946,52 +949,104 @@ form input {
     border: 2px solid white;
 }
 
-.elosUser > div>div{
+.elosUser>div>div {
     text-align: right;
 }
 
-.elosUser p{
+.elosUser p {
     color: white;
 }
 
-.cuentasUser button{
+.cuentasUser button {
     font-size: 1rem;
     border: 1px solid white;
     padding: 0.1rem 1rem;
 }
 
-.notasScroll{
+.notasScroll {
     overflow-x: scroll;
 }
 
-.notasScroll > div{
+.notasScroll>div {
     box-shadow: 1px 5px 8px rgb(0 0 0 / 30%);
 }
 
-.notas{
+.notas {
     border: 2px solid white;
 }
 
-.navbarAdmin.active{
+.navbarAdmin.active {
     transform: translateX(0%);
 }
 
-.navbarAdmin a{
+.navbarAdmin a {
     font-size: 1.3rem;
     color: white;
     transition: all 0.3s;
 }
 
-.navbarAdmin a:hover{
+.navbarAdmin a:hover {
     color: #00b3ffce;
 }
 
-.modal input{
+.modal input {
     width: 150px;
     height: 30px;
     border-radius: 0.5rem;
     font-size: 1rem;
     padding-left: 0.5rem;
+}
+
+.dashboardAdmin {
+    background-color: var(--color-fondo-dashboard);
+}
+
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    height: 50px;
+    width: 30px;
+}
+
+.menuButton>div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.headerAdmin {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255);
+    background-color: var(--color-principal-dashboard);
+}
+
+.balance>div {
+    background-color: var(--color-principal-dashboard);
+}
+
+.tarjetaBalance {
+    background-color: var(--color-texto-dashboard);
+    display: flex;
+}
+
+.tarjetaBalance p {
+    color: white;
+}
+
+.userList > div{
+    background-color: var(--color-principal-dashboard);
+}
+
+.userList ul li{
+    border-top: 1px solid var(--color-texto-dashboard);
+}
+.userList ul li:last-child{
+    border-bottom: 1px solid var(--color-texto-dashboard);
 }
 
 @media (max-width:900px) {

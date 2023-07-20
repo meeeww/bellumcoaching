@@ -1,26 +1,34 @@
 import Logo from '../../../assets/Logo.png'
-import User from './User'
 
 const UserList = () => {
     return (
         <>
-            <div className="w-full h-full  overflow-y-scroll flex gap-4 flex-col userList">
-                <p className='text-white w-full bg-black pl-4 sticky top-0 left-0'>User List</p>
-                <div className="clientCard w-full h-[100px] flex justify-between bg-[var(--color-secundario)] p-2">
-                    <div className="clientCardIzquierda flex items-center">
-                        <img src={Logo} alt="" className="clientCardImg h-full rounded-[50%] cursor-pointer"/>
-                        <div className='ml-4'>
-                            <p className='text-[1.3rem]'>Nombre</p>
-                            <p>Cliente</p>
-                        </div>
+            <div className="userList p-4">
+                <div className="w-full h-screen rounded-md">
+                    <div className="w-full h-[30px] bg-[var(--color-texto-dashboard)] rounded-md flex items-center pl-4">
+                        <p className="text-white">User List</p>
                     </div>
-                    <div className="clientCardDerecha flex items-center justify-center w-[100px]">
-                        <img src={Logo} alt="" className="h-[70%]" />
-                    </div>
+                    <ul className="flex flex-col w-full h-full overflow-x-scroll">
+                        <li className="w-full h-[70px] flex items-center justify-between pr-4">
+                            <div className='flex'>
+                                <img src={Logo} alt="" className="w-[70px] rounded-[50%]" />
+                                <div >
+                                    <p className='text-white text-2xl'>zask</p>
+                                    <p className='text-[var(--color-texto-dashboard)]'>zas@gmail.com</p>
+                                </div>
+                            </div>
+                            <div className='flex gap-2'>
+                                <button className='bg-blue-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>i</button>
+                                <button className='bg-green-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>e</button>
+                                <button className='bg-red-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>x</button>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </>
     )
 }
+
 
 export default UserList;
