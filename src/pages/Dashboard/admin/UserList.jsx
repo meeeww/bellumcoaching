@@ -24,9 +24,9 @@ const UserList = () => {
                                 <p>10 clases restantes</p>
                             </div>
                             <div className='flex gap-2'>
-                                <button className='bg-blue-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>i</button>
+                                <button className='bg-blue-500 h-[30px] w-[30px] flex items-center justify-center rounded-md' onClick={() => {document.querySelector(".modalInfo").classList.remove("hidden")}}>i</button>
                                 <button className='bg-green-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>e</button>
-                                <button className='bg-red-500 h-[30px] w-[30px] flex items-center justify-center rounded-md'>x</button>
+                                <button className='bg-red-500 h-[30px] w-[30px] flex items-center justify-center rounded-md' onClick={() => {document.querySelector(".modalBorrar").classList.remove("hidden")}}>x</button>
                             </div>
                         </li>
                     </ul>

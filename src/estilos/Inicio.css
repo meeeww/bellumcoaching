@@ -1064,6 +1064,15 @@ form input {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
+.modalBorrar > div{
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalBorrar > div > div{
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
 
 .modalInfo input{
     border-bottom: 1px solid var(--color-texto-dashboard);
@@ -1071,7 +1080,7 @@ form input {
 
 .modalInfo input::placeholder{
     font-size: 1rem;
-    text-transform: capitalize;
+    text-transform: none;
     font-weight: 400;
 }
 
