@@ -1084,6 +1084,26 @@ form input {
     font-weight: 400;
 }
 
+.modalEditarAdmin > div{
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditarAdmin > div > div{
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalEditarAdmin input{
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditarAdmin input::placeholder{
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
 
 @media (max-width:900px) {
     h2 {

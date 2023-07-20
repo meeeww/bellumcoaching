@@ -1,8 +1,10 @@
 import Header from "./HeaderAdmin";
 import Balance from "./Balance";
 import UserList from "./UserList";
-import ModalInfo from "./ModalInfo";
+import ModalEditar from "./ModalEditar";
 import ModalBorrar from "./ModalBorrar";
+import ModalInfo from "./ModalInfo";
+import ModalEditarAdmin from "./ModalEditarAdmin";
 
 const DashboardAdmin = () => {
     return (
@@ -12,7 +14,9 @@ const DashboardAdmin = () => {
                 <Balance />
                 <UserList />
                 <ModalBorrar />
+                <ModalEditar />
                 <ModalInfo />
+                <ModalEditarAdmin />
             </div>
         </>
     )
