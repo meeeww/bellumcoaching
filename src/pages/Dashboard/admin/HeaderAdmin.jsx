@@ -3,8 +3,8 @@ import Logo from '../../../assets/Logo.png'
 const Header = () => {
     return (
         <>
-            <div className="w-full h-[70px] flex items-center justify-between px-4 headerAdmin">
-                <button className='menuButton'>
+            <div className="w-full h-[70px] flex items-center justify-between px-4 headerAdmin sticky top-[0px]">
+                <button className='menuButton' onClick={() =>{document.querySelector(".navbar").classList.toggle("active")}}>
                     <div></div>
                     <div></div>
                     <div></div>
@@ -12,7 +12,7 @@ const Header = () => {
                 <div className='flex items-center gap-4 '>
                     <p className='text-white'>zaskf</p>
                     <div className='relative'>
-                        <a href="#"><img src={Logo} alt="" className="h-[50px]" /></a>
+                        <a href="#" onClick={() => {document.querySelector(".menuDropdown").classList.toggle("hidden")}}><img src={Logo} alt="" className="h-[50px]" /></a>
                         <div className='absolute w-[100px] h-[100px] bg-[var(--color-principal-dashboard)] rounded-md top-[60px] right-[0px] menuDropdown hidden'>
                             <ul className='flex w-full h-full flex-col text-right items-center justify-center'>
                                 <a href=""><li className='text-lg w-full'>Settings</li></a>

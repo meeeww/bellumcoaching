@@ -968,20 +968,6 @@ form input {
     border: 2px solid white;
 }
 
-.navbarAdmin.active {
-    transform: translateX(0%);
-}
-
-.navbarAdmin a {
-    font-size: 1.3rem;
-    color: white;
-    transition: all 0.3s;
-}
-
-.navbarAdmin a:hover {
-    color: #00b3ffce;
-}
-
 .modal input {
     width: 150px;
     height: 30px;
@@ -1031,97 +1017,109 @@ form input {
     color: white;
 }
 
-.userList > div{
+.userList>div {
     background-color: var(--color-principal-dashboard);
 }
 
-.userList ul li{
+.userList ul li {
     border-top: 1px solid var(--color-texto-dashboard);
 }
-.userList ul li:last-child{
+
+.userList ul li:last-child {
     border-bottom: 1px solid var(--color-texto-dashboard);
 }
 
-.menuDropdown{
+.menuDropdown {
     border: 1px solid var(--color-texto-dashboard);
 }
 
-.menuDropdown li{
+.menuDropdown li {
     color: var(--color-texto-dashboard);
     transition: all 0.3s;
 }
 
-.menuDropdown li:hover{
+.menuDropdown li:hover {
     color: white;
 }
 
-.modalInfo > div{
+.modalInfo>div {
     border-radius: 0.75rem;
     border: 1px solid var(--color-texto-dashboard);
 }
 
-.modalInfo > div > div{
+.modalInfo>div>div {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
-.modalBorrar > div{
+
+.modalBorrar>div {
     border-radius: 0.75rem;
     border: 1px solid var(--color-texto-dashboard);
 }
 
-.modalBorrar > div > div{
+.modalBorrar>div>div {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
 
-.modalInfo input{
+.modalInfo input {
     border-bottom: 1px solid var(--color-texto-dashboard);
 }
 
-.modalInfo input::placeholder{
+.modalInfo input::placeholder {
     font-size: 1rem;
     text-transform: none;
     font-weight: 400;
 }
 
-.modalEditarAdmin > div{
+.modalEditarAdmin>div {
     border-radius: 0.75rem;
     border: 1px solid var(--color-texto-dashboard);
 }
 
-.modalEditarAdmin > div > div{
+.modalEditarAdmin>div>div {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
 
-.modalEditarAdmin input{
+.modalEditarAdmin input {
     border-bottom: 1px solid var(--color-texto-dashboard);
 }
 
-.modalEditarAdmin input::placeholder{
+.modalEditarAdmin input::placeholder {
     font-size: 1rem;
     text-transform: none;
     font-weight: 400;
 }
 
-.modalEditar > div{
+.modalEditar>div {
     border-radius: 0.75rem;
     border: 1px solid var(--color-texto-dashboard);
 }
 
-.modalEditar > div > div{
+.modalEditar>div>div {
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
 }
 
-.modalEditar input{
+.modalEditar input {
     border-bottom: 1px solid var(--color-texto-dashboard);
 }
 
-.modalEditar input::placeholder{
+.modalEditar input::placeholder {
     font-size: 1rem;
     text-transform: none;
     font-weight: 400;
+}
+
+.listaNavbar li {
+    border-bottom: 1px solid var(--color-texto-dashboard);
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.navbar.active{
+    transform: translateX(0%);
 }
 
 
