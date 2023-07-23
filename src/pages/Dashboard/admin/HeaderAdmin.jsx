@@ -3,7 +3,7 @@ import Logo from '../../../assets/Logo.png'
 const Header = () => {
     return (
         <>
-            <div className="w-full h-[70px] flex items-center justify-between px-4 headerAdmin sticky top-[0px]">
+            <div className="w-full h-[70px] flex items-center justify-between px-4 headerAdmin lg:static sticky top-[0px]">
                 <button className='menuButton' onClick={() =>{document.querySelector(".navbar").classList.toggle("active")}}>
                     <div></div>
                     <div></div>

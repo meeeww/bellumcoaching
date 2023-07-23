@@ -5,7 +5,7 @@ const UserList = () => {
         <>
             <div className="userList p-4">
                 <div className="w-full h-screen rounded-md">
-                    <div className="w-full h-[30px] bg-[var(--color-texto-dashboard)] rounded-md flex items-center pl-4">
+                    <div className="w-full h-[30px] bg-[var(--color-texto-dashboard)] userListheader flex items-center pl-4">
                         <p className="text-white">User List</p>
                     </div>
                     <ul className="flex flex-col w-full h-full overflow-x-scroll">
