@@ -6,6 +6,7 @@ import ModalBorrar from "./ModalBorrar";
 import ModalInfo from "./ModalInfo";
 import ModalEditarAdmin from "./ModalEditarAdmin";
 import Navbar from "./Navbar";
+import Calendario from "./Calendario";
 
 const DashboardAdmin = () => {
     return (

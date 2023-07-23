@@ -15,6 +15,7 @@ import {
   RouterProvider,
   Route
 } from "react-router-dom";
+import Calendario from './pages/Dashboard/admin/Calendario'
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
   {
     path: "/dashboardAdmin",
     element: <DashboardAdmin />
+  },
+  {
+    path: "/calendario",
+    element: <Calendario />
   },
   {
     path: "*",
