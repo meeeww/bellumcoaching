@@ -46,6 +46,8 @@ function checkSession() {
                     body: JSON.stringify({ title: "this was a success" }),
                 };
             })
+    } else {
+        location.replace("http://localhost:5173/login")
     }
 }
 
