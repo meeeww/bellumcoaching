@@ -31,6 +31,7 @@ function checkSession() {
                                 location.replace("http://localhost:5173")
                             } else {
                                 localStorage.removeItem("token")
+                                localStorage.removeItem("usuario")
                                 location.replace("http://localhost:5173/login")
                             }
                         })

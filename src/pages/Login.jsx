@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Axios from 'axios'
 import bellumLogo from '../assets/Logo.png'
-import checkSession from '../scripts/sesionManager.js'
+import checkSession from '../scripts/loginManager.js'
 
 import md5 from 'md5'
 
@@ -23,6 +23,12 @@ const Contacto = () => {
 
     useEffect(() => {
         checkSession()
+        if (localStorage.getItem("usuario")) {
+            setMensajeAlerta("Ya tienes una sesión iniciada")
+            setTipoAlerta(1)
+            llamarPopUs()
+            location.replace("http://localhost:5173/dashboardadmin")
+        }
     }, [])
 
     const [nombreInicio, setNombreInicio] = useState('')
@@ -73,6 +79,7 @@ const Contacto = () => {
                                     };
                                 } else {
                                     localStorage.setItem("token", res.data)
+                                    localStorage.setItem("usuario", JSON.stringify(response.data[0]))
                                     location.replace("http://localhost:5173/login")
                                     setMensajeAlerta("Sesión iniciada")
                                     setTipoAlerta(1)

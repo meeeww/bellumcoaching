@@ -8,7 +8,7 @@ function UserList() {
     const [cargando, setCargando] = useState(true)
 
     useEffect(() => {
-        axios.get("https://bellumserver.netlify.app/.netlify/functions/api/usuarios/clientes").then((usuarios) => {
+        axios.get("https://bellumserver.netlify.app/.netlify/functions/api/usuarios").then((usuarios) => {
             setListaUsuarios(usuarios.data)
             setCargando(false)
         })
@@ -39,14 +39,27 @@ function UserList() {
                         {listaUsuarios.map((usuario) => (
                             <li className="w-full h-[70px] flex items-center justify-between pr-4" key={usuario.id_usuario}>
                                 <div className='flex'>
-                                    <a href={'/user?id='+usuario.id_usuario}><img src={"https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/profile-icons/" + usuario.icono + ".jpg"} alt="Image" className="w-[70px] rounded-[50%]" /></a>
+                                    <a href={'/user?id=' + usuario.id_usuario}><img src={"https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/profile-icons/" + usuario.icono + ".jpg"} alt="Image" className="w-[70px] rounded-[50%]" /></a>
                                     <div >
                                         <p className='text-white text-2xl'>{usuario.nombre}</p>
                                         <p className='text-[var(--color-texto-dashboard)]'>{usuario.discord}</p>
                                     </div>
                                 </div>
                                 <div className='hidden lg:block'>
-                                    <p className='text-[var(--color-texto-dashboard)]'>User</p>
+                                    <p className='text-[var(--color-texto-dashboard)]'>{(() => {
+                                        switch (usuario.permisos) {
+                                            case 1:
+                                                return <p>Privilegiado</p>
+                                            case 2:
+                                                return <p>Coach</p>
+                                            case 3:
+                                                return <p>Desarrollador</p>
+                                            case 4:
+                                                return <p>Administrador</p>
+                                            default:
+                                                return <p>Usuario</p>
+                                        }
+                                    })()}</p>
                                 </div>
                                 <div className='hidden lg:block'>
                                     <p className='text-[var(--color-texto-dashboard)]'>10 clases restantes</p>
