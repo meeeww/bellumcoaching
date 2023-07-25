@@ -7,6 +7,7 @@ import Contacto from './pages/Contacto'
 import NoMatch from './pages/NoMatch'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
+import './estilos/Loader.css'
 import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
 
 
