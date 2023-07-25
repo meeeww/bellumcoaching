@@ -1,3 +1,6 @@
+import { useEffect, useState } from 'react'
+import checkSession from '../../../scripts/sessionManager'
+
 import Header from "./HeaderAdmin";
 import Balance from "./Balance";
 import UserList from "./UserList";
@@ -9,6 +12,16 @@ import Navbar from "./Navbar";
 import Calendario from "./Calendario";
 
 const DashboardAdmin = () => {
+
+    const [cargando, setCargando] = useState(true)
+
+    useEffect(() => {
+        checkSession()
+    }, [])
+
+    if (cargando)
+        return (<div className="loaderRing"></div>)
+
     return (
         <>
             <div className="dashboardAdmin">
