@@ -1,6 +1,13 @@
 import Logo from '../../../assets/Logo.png'
+import { useEffect } from 'react'
+import checkSession from '../../../scripts/sessionManager'
 
 const Header = () => {
+
+    useEffect(() => {
+        checkSession()
+    }, [])
+
     return (
         <>
             <div className="w-full h-[70px] flex items-center justify-between px-4 headerAdmin lg:static sticky top-[0px]">

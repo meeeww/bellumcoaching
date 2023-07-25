@@ -1,10 +1,10 @@
 import Header from "./HeaderAdmin";
 import Balance from "./Balance";
 import UserList from "./UserList";
-import ModalEditar from "./ModalEditar";
-import ModalBorrar from "./ModalBorrar";
-import ModalInfo from "./ModalInfo";
-import ModalEditarAdmin from "./ModalEditarAdmin";
+import ModalEditar from "../../../modals/dashboard/admin/ModalEditar";
+import ModalBorrar from "../../../modals/dashboard/admin/ModalBorrar";
+import ModalInfo from "../../../modals/dashboard/admin/ModalInfo";
+import ModalEditarAdmin from "../../../modals/dashboard/admin/ModalEditarAdmin";
 import Navbar from "./Navbar";
 import Calendario from "./Calendario";
 
