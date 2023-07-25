@@ -12,6 +12,7 @@ import './estilos/Dashboard.css'
 import './estilos/Inicio.css'
 import './estilos/Loader.css'
 import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
+import DashboardUser from './pages/Dashboard/user/DashboardUser'
 
 
 import {
@@ -41,9 +42,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboardAdmin",
-    element: <DashboardAdmin/>
+    element: <DashboardAdmin />
   },
-    {
+  {
+    path: "/user",
+    element: <DashboardUser/>
+  },
+  {
     path: "/login",
     element: <Login />,
   },

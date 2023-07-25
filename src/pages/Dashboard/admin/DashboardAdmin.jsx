@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import checkSession from '../../../scripts/sessionManager'
-
 import Header from "./HeaderAdmin";
 import Balance from "./Balance";
 import UserList from "./UserList";

@@ -37,7 +37,7 @@ function UserList() {
                     </div>
                     <ul className="flex flex-col w-full h-full overflow-x-scroll">
                         {listaUsuarios.map((usuario) => (
-                            <li className="w-full h-[70px] flex items-center justify-between pr-4" key={usuario.id_usuario}>
+                            <li className="w-full h-[80px] flex items-center justify-between pr-4 pl-2" key={usuario.id_usuario}>
                                 <div className='flex'>
                                     <a href={'/user?id=' + usuario.id_usuario}><img src={"https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/profile-icons/" + usuario.icono + ".jpg"} alt="Image" className="w-[70px] rounded-[50%]" /></a>
                                     <div >
