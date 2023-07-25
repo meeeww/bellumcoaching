@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom"
-import bellumLogo from '../assets/Logo.png'
 
 const Footer = () => (
     <div className="footer">
         <div className="redesSociales">
             <div className="redesSocialesIzquierda">
-                <p>Nuestras redes sociales:</p>
+                <p>Nuestras redes sociales</p>
             </div>
             <div className="redesSocialesDerecha">
                 <Link to="https://discord.gg/MW6F2Ajecq"><i className="fa-brands fa-discord"></i></Link>
                 <Link to="https://twitter.com/BellumCoaching"><i className="fa-brands fa-twitter"></i></Link>
+                <Link to="https://tiktok.com/@bellumcoaching"><i className="fa-brands fa-tiktok"></i></Link>
                 <Link to="https://instagram.com/BellumCoaching"><i className="fa-brands fa-instagram"></i></Link>
             </div>
         </div>
@@ -27,7 +27,7 @@ const Footer = () => (
             <div className="informacionFooterDerecha">
                 <h5>Contacto</h5>
                 <a href="https://discord.gg/MW6F2Ajecq" target={"_blank"}><i className="fa-brands fa-discord"></i>Discord</a>
-                <a href="contacto@bellumcoaching.com"><i className="fa-solid fa-envelope"></i>Email</a>
+                <a href="mailto:contacto@bellumcoaching.com"><i className="fa-solid fa-envelope"></i>Email</a>
             </div>
         </div>
         <div className="custom-shape-divider-bottom-1681757470">

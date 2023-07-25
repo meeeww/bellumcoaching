@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import MainLayout from "../layout/MainLayout";
 import Axios from 'axios'
 import bellumLogo from '../assets/Logo.png'
 import checkSession from '../scripts/sesionManager.js'
@@ -7,7 +6,7 @@ import checkSession from '../scripts/sesionManager.js'
 import md5 from 'md5'
 
 import llamarPopUs from "../scripts/llamarPopUp"
-import PopUp from "../modals/PopUp/Alert"
+import PopUp from "../modals/popup/Alert"
 
 const Contacto = () => {
 
@@ -25,8 +24,6 @@ const Contacto = () => {
     useEffect(() => {
         checkSession()
     }, [])
-
-    const nombrePagina = "Login"
 
     const [nombreInicio, setNombreInicio] = useState('')
     const [contrasenaInicio, setContrasenaInicio] = useState('')

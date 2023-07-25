@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-principal-dashboard: #1f2937;
+    --color-fondo-dashboard: #111827;
+    --color-texto-dashboard: #9ca3af;
+    --color-principal-dark: #FEFEFE;
+    --color-principal-light: #282828;
+    --color-secundario: #00B3FF;
+    --fondo-negro: #282828;
+    --fondo-blanco: #FEFEFE;
+    --tiempo-cambio-claridad: 0.5s;
+    
+}
+
+.antialiased>main::-webkit-scrollbar {
+    display: none;
+}
+
+.antialiased>main {
+    scrollbar-width: none;
+}
+
+.botonUser div {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.userNames>div {
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+.elosUser {
+    width: 100%;
+    min-height: 200px;
+    padding: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.elosUser>div {
+    width: 100%;
+    min-height: 170px;
+    background-color: var(--color-principal-light);
+    background-image: url(../assets/Season_2019_-_Bronze_1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 0.5rem;
+    border: 2px solid white;
+}
+
+.elosUser>div>div {
+    text-align: right;
+}
+
+.elosUser p {
+    color: white;
+}
+
+.cuentasUser button {
+    font-size: 1rem;
+    border: 1px solid white;
+    padding: 0.1rem 1rem;
+}
+
+.notasScroll {
+    overflow-x: scroll;
+}
+
+.notasScroll>div {
+    box-shadow: 1px 5px 8px rgb(0 0 0 / 30%);
+}
+
+.notas {
+    border: 2px solid white;
+}
+
+.modal input {
+    width: 150px;
+    height: 30px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+.dashboardAdmin {
+    background-color: var(--color-fondo-dashboard);
+}
+
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    height: 50px;
+    width: 30px;
+}
+
+.menuButton>div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.headerAdmin {
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.255);
+    background-color: var(--color-principal-dashboard);
+}
+
+.balance>div {
+    background-color: var(--color-principal-dashboard);
+}
+
+.tarjetaBalance {
+    background-color: var(--color-texto-dashboard);
+    display: flex;
+}
+
+.tarjetaBalance p {
+    color: white;
+}
+
+.userList>div {
+    background-color: var(--color-principal-dashboard);
+}
+
+.userList ul li {
+    border-top: 1px solid var(--color-texto-dashboard);
+}
+
+.userList ul li:last-child {
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.userListheader {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.menuDropdown {
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.menuDropdown li {
+    color: var(--color-texto-dashboard);
+    transition: all 0.3s;
+}
+
+.menuDropdown li:hover {
+    color: white;
+}
+
+.modalInfo>div {
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalInfo>div>div {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalBorrar>div {
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalBorrar>div>div {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalInfo input {
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.modalInfo input::placeholder {
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.modalEditarAdmin>div {
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditarAdmin>div>div {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalEditarAdmin input {
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditarAdmin input::placeholder {
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.modalEditar>div {
+    border-radius: 0.75rem;
+    border: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditar>div>div {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.modalEditar input {
+    border-bottom: 1px solid var(--color-texto-dashboard);
+}
+
+.modalEditar input::placeholder {
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 400;
+}
+
+.listaNavbar li {
+    border-bottom: 1px solid var(--color-texto-dashboard);
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.navbar.active {
+    transform: translateX(0%);
+}
+
+.calendario span,
+.calendario a,
+.calendario svg {
+    color: white;
+}
+
+@media (max-width:900px) {
+    h2 {
+        text-align: center;
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    .tituloDerecha {
+        margin: 0;
+    }
+
+    .subtitulo {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    .escogerCoaching {
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1rem;
+    }
+
+    .tarjetasCoaching {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjetaCoaching {
+        width: auto;
+    }
+
+    .clientesPiensan {
+        margin-inline: 1rem;
+    }
+
+    .precios {
+        margin-inline: 1rem;
+    }
+
+    .tarjetasPrecios {
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .tarjetaPrecios {
+        margin: 0;
+    }
+
+    .decision {
+        margin-inline: 1rem;
+    }
+
+    .tarjetasDecision {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .tarjetaDecision {
+        margin: 0;
+    }
+
+    .custom-shape-divider-top-1681756534 {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    .headerIzquierda {
+        margin: 0;
+    }
+
+    .headerIzquierda img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .headerDerecha {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .headerDerecha a {
+        margin-block: 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .cajaInicioSesion{
+        padding-inline: 1rem;
+    }
+}

@@ -1,15 +1,14 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { Link } from "react-router-dom"
 import MainLayout from "../layout/MainLayout";
-import bellumVideo from '../assets/VideoBellum.mp4'
-import bellumVideoLight from '../assets/VideoBellumLight.mp4'
-import bellumLogo from '../assets/Logo.png'
 import Axios from 'axios'
+
+import llamarPopUs from "../scripts/llamarPopUp"
+import PopUp from "../modals/popup/Alert"
 
 const Contacto = () => {
 
-    const nombrePagina = "Contacto"
+    const [tipoAlerta, setTipoAlerta] = useState(2)
+    const [mensajeAlerta, setMensajeAlerta] = useState("")
 
     const [nombreContacto, setNombreContacto] = useState('')
     const [apellidoContacto, setApellidoContacto] = useState('')
@@ -34,20 +33,31 @@ const Contacto = () => {
 
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
-        Axios.post(baseURL, data, config)
-            .then((res) => {
-                console.log("RESPONSE RECEIVED: ", res.data);
-                return {
-                    statusCode: 200,
-                    body: JSON.stringify({ title: "this was a success" }),
-                };
-            })
-        console.log(nombreContacto, apellidoContacto, correoContacto, asuntoContacto, mensajeContacto)
+        setMensajeAlerta("Por favor espere")
+        setTipoAlerta(2)
+        llamarPopUs()
+        if (data["nombreContacto"] != "" && data["apellidoContacto"] != "" && data["correoContacto"] != "" && data["asuntoContacto"] != "" && data["mensajeContacto"] != "") {
+            Axios.post(baseURL, data, config)
+                .then((res) => {
+                    setMensajeAlerta("Contacto enviado")
+                    setTipoAlerta(1)
+                    llamarPopUs()
+                    return {
+                        statusCode: 200,
+                        body: JSON.stringify({ title: "this was a success" }),
+                    };
+                })
+        } else {
+            setMensajeAlerta("Datos insuficientes")
+            setTipoAlerta(3)
+            llamarPopUs()
+        }
     }
 
     return (
-        <MainLayout laPagina={nombrePagina}>
-            <div className="bodyBellum">
+        <MainLayout>
+            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
+            <div className="bodyBellumDos">
                 <div className="tituloContacto">
                     <div className="tituloIzquierdaContacto">
                         <h1>Contáctanos</h1>
@@ -55,7 +65,7 @@ const Contacto = () => {
                         <h2>Envíanos Un Mensaje</h2>
                         <h4 id="h4">contacto@bellumcoaching.com</h4>
                         <h2>También Por Redes Sociales</h2>
-                        <h4 id="h4">Utilizamos Twitter, Instagram y Discord. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
+                        <h4 id="h4">Utilizamos Discord, Twitter, TikTok e Instagram. ¡No dudes en ponerte en contacto con nosotros por tu medio favorito!</h4>
                     </div>
                     <div className="tituloDerechaContacto">
                         <form>
@@ -73,12 +83,13 @@ const Contacto = () => {
                                 <input type="text" placeholder="Tu Mensaje" className="mensajeContacto" onChange={(e) => { setMensajeContacto(e.target.value) }}></input>
                             </div>
                             <div className="juntarContacto">
-                                <input type="submit" value="Submit" onClick={enviarMensajeContacto}></input>
+                                <button className="botonMainBodyBellum" style={{ width: "95%" }} onClick={enviarMensajeContacto}>ENVIAR MENSAJE <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+            <div className="mainBodyBellum backgroundPoro" style={{ width: "100px", height: "110px", position: "absolute", left: "48%", top: "537px" }}></div>
         </MainLayout >
     );
 }
