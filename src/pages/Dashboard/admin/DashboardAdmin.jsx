@@ -17,6 +17,7 @@ const DashboardAdmin = () => {
 
     useEffect(() => {
         checkSession()
+        setCargando(false)
     }, [])
 
     if (cargando)
