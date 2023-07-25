@@ -58,15 +58,15 @@
 }
 
 :root {
-    --color-principal-dark: #FEFEFE;
-    --color-principal-light: #404040;
-    --color-secundario: #00B3FF;
-    --fondo-negro: #404040;
-    --fondo-blanco: #FEFEFE;
-    --tiempo-cambio-claridad: 0.5s;
     --color-principal-dashboard: #1f2937;
     --color-fondo-dashboard: #111827;
     --color-texto-dashboard: #9ca3af;
+    --color-principal-dark: #FEFEFE;
+    --color-principal-light: #282828;
+    --color-secundario: #00B3FF;
+    --fondo-negro: #282828;
+    --fondo-blanco: #FEFEFE;
+    --tiempo-cambio-claridad: 0.5s;
 }
 
 body {
@@ -1029,7 +1029,7 @@ form input {
     border-bottom: 1px solid var(--color-texto-dashboard);
 }
 
-.userListheader{
+.userListheader {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
@@ -1123,11 +1123,13 @@ form input {
     padding-left: 5px;
 }
 
-.navbar.active{
+.navbar.active {
     transform: translateX(0%);
 }
 
-.calendario span,a,svg{
+.calendario span,
+a,
+svg {
     color: white !important;
 }
 
