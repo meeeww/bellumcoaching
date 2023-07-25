@@ -1,39 +1,35 @@
-const Balance = () =>{
-    return(
+import Logo from '../../../assets/Logo.png'
+
+const Balance = () => {
+    return (
         <>
-            <div className="w-full balance pt-4 pb-4">
-                <div className="w-full h-[100px] bg-[var(--color-secundario)]  rounded-lg shadow-2xl flex items-center justify-between p-2">
-                    <div className="h-full w-[90px] bg-[var(--fondo-negro)] rounded-[50%]"></div>
-                    <div className="w-[200px] h-full flex flex-col justify-center items-end">
-                        <h3>1,257</h3>
-                        <p>Visitors</p>
+            <div className="balance p-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 w-full p-4 rounded-md">
+                    <div className="w-full h-[100px] rounded-md tarjetaBalance">
+                        <img src={Logo} alt="" className='h-full' />
+                        <div>
+                            <h3>Usuarios totales</h3>
+                            <p>1670</p>
+                        </div>
                     </div>
-                </div>
-                <div className="w-full h-[100px] bg-[var(--color-secundario)]  rounded-lg shadow-2xl flex items-center justify-between p-2">
-                    <div className="h-full w-[90px] bg-[var(--fondo-negro)]  rounded-[50%]"></div>
-                    <div className="w-[200px] h-full flex flex-col justify-center items-end">
-                        <h3>557</h3>
-                        <p>Orders</p>
+                    <div className="w-full h-[100px] rounded-md tarjetaBalance">
+                        <img src={Logo} alt="" className='h-full' />
+                        <div>
+                            <h3>Numero pedidos</h3>
+                            <p>100</p>
+                        </div>
                     </div>
-                </div>
-                <div className="w-full h-[100px] bg-[var(--color-secundario)]  rounded-lg shadow-2xl flex items-center justify-between p-2">
-                    <div className="h-full w-[90px] bg-[var(--fondo-negro)]  rounded-[50%]"></div>
-                    <div className="w-[200px] h-full flex flex-col justify-center items-end">
-                        <h3>$11,256</h3>
-                        <p>Sales</p>
-                    </div>
-                </div>
-                <div className="w-full h-[100px] bg-[var(--color-secundario)]  rounded-lg shadow-2xl flex items-center justify-between p-2">
-                    <div className="h-full w-[90px] bg-[var(--fondo-negro)]  rounded-[50%]"></div>
-                    <div className="w-[200px] h-full flex flex-col justify-center items-end">
-                        <h3>$75,257</h3>
-                        <p>Balances</p>
+                    <div className="w-full h-[100px] rounded-md tarjetaBalance">
+                        <img src={Logo} alt="" className='h-full' />
+                        <div>
+                            <h3>Balance total</h3>
+                            <p>1670$</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </>
-    );
-
+    )
 }
 
 export default Balance;

@@ -1,15 +1,34 @@
-import Footer from "../../../componentes/Footer";
-import Header from "../../../componentes/Header";
+import Header from "./HeaderAdmin";
 import Balance from "./Balance";
 import UserList from "./UserList";
-import Plantilla from "./Plantilla";
+import ModalEditar from "../../../modals/dashboard/admin/ModalEditar";
+import ModalBorrar from "../../../modals/dashboard/admin/ModalBorrar";
+import ModalInfo from "../../../modals/dashboard/admin/ModalInfo";
+import ModalEditarAdmin from "../../../modals/dashboard/admin/ModalEditarAdmin";
+import Navbar from "./Navbar";
+import Calendario from "./Calendario";
 
 const DashboardAdmin = () => {
-    return(
+    return (
         <>
-            <Header/>
-            <Plantilla/>
-            <Footer/> 
+            <div className="dashboardAdmin">
+                <Header />
+                <div className="flex navbarContainer">
+                    <div className="fixed lg:static">
+                        <Navbar />
+                    </div>
+                    <div className="w-full">
+                        <Balance />
+                        <UserList />
+                        <ModalBorrar />
+                        <ModalEditar />
+                        <ModalInfo />
+                        <ModalEditarAdmin />
+                    </div>
+
+                </div>
+
+            </div>
         </>
     )
 }

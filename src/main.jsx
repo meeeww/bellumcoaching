@@ -8,7 +8,9 @@ import Login from './pages/Login'
 import NoMatch from './pages/NoMatch'
 import Footer from './componentes/Footer'
 import './estilos/Inicio.css'
+import './estilos/Loader.css'
 import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
+
 
 import {
   createBrowserRouter,
@@ -16,6 +18,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Calendario from './pages/Dashboard/admin/Calendario'
 
 const router = createBrowserRouter([
   {
@@ -32,7 +35,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboardAdmin",
-    element: <DashboardAdmin/>
+    element: <DashboardAdmin />
+  },
+  {
+    path: "/calendario",
+    element: <Calendario />
   },
     {
     path: "/login",
