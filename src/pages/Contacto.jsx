@@ -24,13 +24,6 @@ const Contacto = () => {
             'Content-Type': 'text/plain'
         };
 
-
-        // Axios.get("https://bellumserver.netlify.app/.netlify/functions/api/users").then(data => {
-        //     console.log(data)
-        // }).catch(e => {
-        //     console.log(e)
-        // })
-
         let baseURL = "https://bellumserver.netlify.app/.netlify/functions/api/enviarmensaje";
 
         let config = {

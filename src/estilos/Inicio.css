@@ -67,6 +67,7 @@
     --fondo-negro: #282828;
     --fondo-blanco: #FEFEFE;
     --tiempo-cambio-claridad: 0.5s;
+    
 }
 
 body {
@@ -179,10 +180,12 @@ header {
 .headerDerecha a,
 .headerDerecha label {
     margin-right: 2rem;
+    transition: all 0.25s;
 }
 
 #linkHeaderActive1 {
     color: var(--color-secundario);
+    transition: all 0.25s;
 }
 
 .textoHeader {
@@ -718,10 +721,22 @@ header,
 
 .informacionFooterCentro a {
     margin-bottom: 1rem;
+    transition: all 0.25s;
 }
 
 .informacionFooterDerecha a {
     margin-bottom: 1rem;
+    transition: all 0.25s;
+}
+
+.informacionFooterCentro a:hover {
+    color: var(--fondo-blanco);
+    transition: all 0.25s;
+}
+
+.informacionFooterDerecha a:hover {
+    color: var(--fondo-blanco);
+    transition: all 0.25s;
 }
 
 .redesSociales {
@@ -815,6 +830,7 @@ form input {
     background-color: #27272766;
     color: var(--fondo-blanco);
     font-weight: 600;
+    font-size: 16px;
     letter-spacing: 1px;
     opacity: 1;
 }
@@ -834,6 +850,7 @@ form input {
 
 .juntarContacto {
     display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -893,6 +910,68 @@ form input {
     color: rgba(255, 0, 0, 0.365);
 }
 
+#drawer-navigation {
+    transform: translateX(-100%);
+}
+
+.inicioSesionBellum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/BackgroundInicio.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.cajaInicioSesion {
+    max-width: 40rem;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.414);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.436);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.389);
+}
+
+.cajaInicioSesion img{
+    margin-bottom: 2rem;
+}
+
+.submitLogin {
+    background-color: var(--color-secundario);
+    color: var(--color-principal-light);
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    margin-top: 2rem;
+    transition: all 0.25s;
+}
+
+.submitLogin:hover{
+    transform: scale(1.02);
+    transition: all 0.25s;
+}
+
+.submitLogin:active{
+    color: red!important;
+}
+
+.textLogin{
+    border-radius: 5px;
+}
 
 .antialiased>main::-webkit-scrollbar {
     display: none;
@@ -1133,7 +1212,6 @@ svg {
     color: white !important;
 }
 
-
 @media (max-width:900px) {
     h2 {
         text-align: center;
@@ -1228,5 +1306,11 @@ svg {
 
     .headerDerecha a {
         margin-block: 0.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    .cajaInicioSesion{
+        padding-inline: 1rem;
     }
 }

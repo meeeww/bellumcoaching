@@ -3,6 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import bellumVideo from '../assets/VideoBellum.mp4'
 import bellumVideoLight from '../assets/VideoBellumLight.mp4'
 import bellumLogo from '../assets/Logo.png'
+import PreciosLista from "../componentes/Precios";
 
 const Precios = () => {
 
@@ -33,35 +34,7 @@ const Precios = () => {
                     </div>
                 </div>
 
-                <div className="precios">
-                    <h2>Nuestros Precios Para Clases Individuales</h2>
-                    <div className="tarjetasPrecios">
-                        <div className="tarjetaPrecios" id="mejorParaEmpezar">
-                            <h4>1 Clase</h4>
-                            <h6>5€</h6>
-                        </div>
-                        <div className="tarjetaPrecios">
-                            <h4>3 Clases</h4>
-                            <h6>13€</h6>
-                        </div>
-                        <div className="tarjetaPrecios" id="masVendido">
-                            <h4>5 Clases</h4>
-                            <h6>20€</h6>
-                        </div>
-                        <div className="tarjetaPrecios">
-                            <h4>10 Clases</h4>
-                            <h6>40€</h6>
-                        </div>
-                        <div className="tarjetaPrecios" id="masRentable">
-                            <h4>15 Clases</h4>
-                            <h6>55€</h6>
-                        </div>
-                        <div className="tarjetaPrecios">
-                            <h4>20 Clases</h4>
-                            <h6>70€</h6>
-                        </div>
-                    </div>
-                </div>
+                <PreciosLista />
             </div>
         </MainLayout >
     );
