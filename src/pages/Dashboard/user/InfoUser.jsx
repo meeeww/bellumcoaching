@@ -21,8 +21,8 @@ const InfoUser = () => {
                         </div>
                     </div>
                     <div className='absolute bottom-0 right-0 flex items-center gap-2 p-2'>
-                        <button href="#"><i className="gg-keyhole"></i></button>
-                        <button href="#"><i className="gg-log-off"></i></button>
+                        <button href="#"><i className="gg-keyhole hover:text-[var(--color-secundario)] transition-all"></i></button>
+                        <button href="#"><i className="gg-log-off hover:text-[var(--color-secundario)] transition-all"></i></button>
                     </div>
                 </div>
             </div>

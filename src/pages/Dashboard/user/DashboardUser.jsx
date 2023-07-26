@@ -4,6 +4,7 @@ import ListaCuentas from "./ListaCuentas";
 import Header from '../admin/HeaderAdmin';
 import Navbar from '../admin/Navbar';
 import GraficaElo from "./GraficaElo";
+import HistorialClases from "./HistorialClases";
 const DashboardUser = () => {
     return (
         <>
@@ -20,7 +21,8 @@ const DashboardUser = () => {
                         <div className="w-full">
                             <ListaCuentas />
                             <HistorialElo />
-                            <GraficaElo/>
+                            <GraficaElo />
+                            <HistorialClases />
                         </div>
                     </div>
 

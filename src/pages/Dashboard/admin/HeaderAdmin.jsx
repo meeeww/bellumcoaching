@@ -14,7 +14,7 @@ const Header = () => {
                     <p className='text-white'>{JSON.parse(localStorage.getItem("usuario"))["nombre"]}</p>
                     <div className='relative'>
                         <a href="#" onClick={() => { document.querySelector(".menuDropdown").classList.toggle("hidden") }}><img src={Logo} alt="" className="h-[50px]" /></a>
-                        <div className='absolute w-[100px] h-[100px] bg-[var(--color-principal-dashboard)] rounded-md top-[60px] right-[0px] menuDropdown hidden'>
+                        <div className='absolute w-[100px] h-[100px] bg-[var(--color-principal-dashboard)] rounded-md top-[60px] right-[0px] menuDropdown hidden z-40'>
                             <ul className='flex w-full h-full flex-col text-right items-center justify-center'>
                                 <a href=""><li className='text-lg w-full'>Settings</li></a>
                                 <a href=""><li className='text-lg w-full'>Dashboard</li></a>
