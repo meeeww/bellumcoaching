@@ -97,7 +97,7 @@ export default function GraficaElo({ id }) {
     if (cargando)
         return (
             <div className="graficaElo p-2">
-                <div className="rounded-md w-full h-[500px] bg-[var(--color-principal-light)]">
+                <div className="rounded-md w-full h-[500px] bg-[var(--color-principal-light)] flex items-center">
                     <div className="loaderRing"></div>
                 </div>
             </div>

@@ -44,12 +44,9 @@ const DashboardUser = () => {
                     </div>
                     <div className="w-full flex flex-col md:flex-row z-0">
                         <div className="w-full md:max-w-[350px]">
-                            <InfoUser usuario={usuario}/>
+                            <InfoUser usuario={usuario} />
                         </div>
                         <div className="w-full">
-                            <HistorialElo />
-                            <GraficaElo />
-                            <HistorialClases />
                             <div className="listaCuentas p-2">
                                 <div className="w-full bg-[var(--color-principal-light)] rounded-md flex flex-wrap p-2 gap-2 items-center justify-center">
                                     {
@@ -63,10 +60,11 @@ const DashboardUser = () => {
                             </div>
                             {
                                 cuentas.length > 0 ?
-                                    urlParams.get('cuenta') == null ? (<><HistorialElo id={cuentas[0].id_cuenta} /><GraficaElo id={cuentas[0].id_cuenta} /></>) : (<><HistorialElo id={urlParams.get('cuenta')} /><GraficaElo id={urlParams.get('cuenta')} /></>)
+                                    urlParams.get('cuenta') == null ? (<><HistorialElo id={cuentas[0].id_cuenta} /><GraficaElo id={cuentas[0].id_cuenta} /><HistorialClases id={cuentas[0].id_cuenta} /></>) : (<><HistorialElo id={urlParams.get('cuenta')} /><GraficaElo id={urlParams.get('cuenta')} /><HistorialClases id={urlParams.get('cuenta')} /></>)
                                     :
                                     (<div>Nada configurado</div>)
                             }
+
                         </div>
                     </div>
 

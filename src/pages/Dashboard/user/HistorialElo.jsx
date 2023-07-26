@@ -29,33 +29,36 @@ export default function HistorialElo({ id }) {
     }, [])
 
     if (cargando)
-        return (<div class="loaderRing"></div>)
+        return (
+            <div className="historialElo p-2">
+                <div className="rounded-md w-full bg-[var(--color-principal-light)] grid p-2 gap-4">
+                    <div className="loaderRing"></div>
+                </div>
+            </div>
+        )
 
     return (
         <>
             <div className="historialElo p-2">
                 <div className="rounded-md w-full bg-[var(--color-principal-light)] grid p-2 gap-4">
-                    <div className="w-full h-[120px] flex items-center justify-between bg-[var(--color-texto-dashboard)]  rounded-md p-2">
-                        <div><h1 className='text-xl'>Rango Inicial: </h1></div>
-                        <img src={Poro} alt="" className='h-[70%]' />
+                    <div className="w-full h-[120px] flex items-center justify-between bg-[var(--color-texto-dashboard)] rounded-md p-2" style={{ backgroundImage: "url(https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/ranked-emblem/emblem-" + (eloInicial.division).toLowerCase() + ".png)", backgroundSize: "60rem", backgroundPosition: "center" }}>
+                        <div><h1>Elo Inicial</h1></div>
                         <div className='text-xl'>
                             <p>{eloInicial.division.charAt(0).toUpperCase() + eloInicial.division.slice(1).toLowerCase()}</p>
                             <p>{eloInicial.lps + "LPs"}</p>
                             <p>{eloInicial.fecha.substring(8, 10) + "/" + eloInicial.fecha.substring(5, 7)}</p>
                         </div>
                     </div>
-                    <div className="w-full h-[120px] flex items-center justify-between bg-[var(--color-texto-dashboard)]  rounded-md p-2">
-                        <div><h1 className='text-xl'>Rango Actual: </h1></div>
-                        <img src={Poro} alt="" className='h-[70%]' />
+                    <div className="w-full h-[120px] flex items-center justify-between bg-[var(--color-texto-dashboard)] rounded-md p-2" style={{ backgroundImage: "url(https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/ranked-emblem/emblem-" + (eloActual.division).toLowerCase() + ".png)", backgroundSize: "60rem", backgroundPosition: "center" }}>
+                        <div><h1>Elo Actual</h1></div>
                         <div className='text-xl'>
                             <p>{eloActual.division.charAt(0).toUpperCase() + eloActual.division.slice(1).toLowerCase()}</p>
                             <p>{eloActual.lps + "LPs"}</p>
                             <p>{eloActual.fecha.substring(8, 10) + "/" + eloActual.fecha.substring(5, 7)}</p>
                         </div>
                     </div>
-                    <div className="w-full h-[120px] flex items-center justify-between bg-[var(--color-texto-dashboard)]  rounded-md p-2">
-                        <div><h1 className='text-xl'>Rango Máximo: </h1></div>
-                        <img src={Poro} alt="" className='h-[70%]' />
+                    <div className="w-full h-[120px] flex items-center justify-between bg-[var(--color-texto-dashboard)] rounded-md p-2" style={{ backgroundImage: "url(https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-static-assets/global/default/images/ranked-emblem/emblem-" + (eloMaximo.division).toLowerCase() + ".png)", backgroundSize: "60rem", backgroundPosition: "center" }}>
+                        <div><h1>Elo Máximo</h1></div>
                         <div className='text-xl'>
                             <p>{eloMaximo.division.charAt(0).toUpperCase() + eloMaximo.division.slice(1).toLowerCase()}</p>
                             <p>{eloMaximo.lps + "LPs"}</p>
