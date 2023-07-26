@@ -13,8 +13,11 @@ const HistorialClases = () => {
                                     <p>1</p>
                                 </div>
                                 <div className="w-[100px] flex flex-col pl-4">
-                                    <p className="h-[30px]">26/07</p>
-                                    <p className="text-lg text-[var(--color-texto-dashboard)]">50 mins</p>
+                                    <div className="flex items-center w-full h-[30px]">
+                                        <p>26/07</p>
+                                        <p className="ml-3 text-xl">15:00</p>
+                                    </div>
+                                    <p className="text-lg text-[var(--color-texto-dashboard)]">TITOSGYP2k</p>
                                 </div>
                             </div>
                             <div className="flex items-center justify-center gap-4 w-[70px] pr-8">
