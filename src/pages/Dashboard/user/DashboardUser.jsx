@@ -3,6 +3,7 @@ import InfoUser from "./InfoUser";
 import ListaCuentas from "./ListaCuentas";
 import Header from '../admin/HeaderAdmin';
 import Navbar from '../admin/Navbar';
+import GraficaElo from "./GraficaElo";
 const DashboardUser = () => {
     return (
         <>
@@ -19,6 +20,7 @@ const DashboardUser = () => {
                         <div className="w-full">
                             <ListaCuentas />
                             <HistorialElo />
+                            <GraficaElo/>
                         </div>
                     </div>
 
