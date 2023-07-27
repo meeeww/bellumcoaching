@@ -32,7 +32,7 @@ function HistorialClases() {
         <>
             <div className="historialClases p-2">
                 <div className="rounded-md w-full h-[500px] bg-[var(--color-principal-light)]">
-                    <div className="w-full h-[40px] bg-[var(--color-texto-dashboard)]">
+                    <div className="w-full h-[40px] bg-[var(--color-texto-dashboard)] flex items-center">
                         <p className="pl-2">Clases</p>
                     </div>
                     <div className="w-full h-[460px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-2 overflow-y-scroll">

@@ -13,6 +13,8 @@ import './estilos/Inicio.css'
 import './estilos/Loader.css'
 import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
 import DashboardUser from './pages/Dashboard/user/DashboardUser'
+import Calendario from './pages/Dashboard/admin/Calendario'
+import PanelClase from './pages/Dashboard/user/PanelClase'
 
 
 import {
@@ -21,7 +23,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Calendario from './pages/Dashboard/admin/Calendario'
+
 
 const router = createBrowserRouter([
   {
@@ -46,11 +48,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/user",
-    element: <DashboardUser/>
+    element: <DashboardUser />
   },
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/clase",
+    element: <PanelClase />,
   },
   {
     path: "*",

@@ -8,6 +8,9 @@ import HistorialClases from "./HistorialClases";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import checkSession from '../../../scripts/sessionManager'
+import PanelClase from "./PanelClase";
+import Notas from "./Notas";
+import AgregarNota from "./AgregarNota";
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -69,7 +72,9 @@ const DashboardUser = () => {
                     </div>
 
                 </div>
-
+                <PanelClase />
+                <Notas />
+                <AgregarNota />
             </div>
         </>
     )

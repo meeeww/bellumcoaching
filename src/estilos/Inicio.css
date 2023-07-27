@@ -18,7 +18,6 @@ body {
     background-color: var(--fondo-negro);
     color: var(--color-principal-dark);
     font-size: 25px;
-
     animation-name: aOscuro;
     animation-duration: var(--tiempo-cambio-claridad);
 
