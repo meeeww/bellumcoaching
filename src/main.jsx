@@ -23,6 +23,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Notas from './pages/Dashboard/user/Notas'
+import PanelNotas from './pages/Dashboard/user/PanelNotas'
 
 
 const router = createBrowserRouter([
@@ -57,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/clase",
     element: <PanelClase />,
+  },
+  {
+    path: "/notas",
+    element: <PanelNotas />,
   },
   {
     path: "*",

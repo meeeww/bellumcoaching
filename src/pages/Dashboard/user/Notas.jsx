@@ -1,8 +1,8 @@
 const Notas = () => {
     return (
         <>
-            <div className="modalInfo panelClase w-full h-screen bg-[#1118277e] fixed top-0 left-0 flex items-center justify-center p-4 z-50 hidden">
-                <div className="md:w-[1000px] w-full bg-[var(--color-principal-light)]">
+            <div className="modalInfo panelClase w-full flex items-center p-4">
+                <div className="w-full bg-[var(--color-principal-light)]">
                     <div className="w-full h-[40px] bg-[var(--color-fondo-dashboard)] flex items-center justify-between px-4">
                         <div className="flex items-center gap-1">
                             <button><i className="gg-arrow-left"></i></button>
@@ -19,8 +19,6 @@ const Notas = () => {
                             <h1 className="text-2xl">ASUNTO</h1>
                             <p className="text-[1rem] mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius necessitatibus natus incidunt sint perferendis tempore quos ab libero veniam voluptas modi qui fugit reiciendis dolorem neque, corrupti similique iusto explicabo.</p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
