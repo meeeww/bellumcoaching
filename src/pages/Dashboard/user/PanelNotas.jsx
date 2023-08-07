@@ -4,6 +4,7 @@ import Header from "../admin/HeaderAdmin";
 import Navbar from "../admin/Navbar";
 import PanelClase from "./PanelClase";
 import AgregarNota from './AgregarNota';
+import InfoUser from './InfoUser';
 
 
 const PanelNotas = () => {
@@ -16,9 +17,11 @@ const PanelNotas = () => {
                         <Navbar />
                     </div>
                     <div className="w-full h-full flex flex-col">
-                        <div className="flex items-center md:justify-center flex-col md:flex-row">
+                        <div className="flex items-center md:justify-between flex-col md:flex-row">
+                            <InfoUser/>
                             <PanelClase />
                             <AgregarNota />
+                            <InfoUser/>
                         </div>
                         <div className="h-full w-full">
                             <Notas />
