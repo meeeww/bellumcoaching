@@ -1,15 +1,15 @@
 import React, { useRef, useState } from 'react';
 import MainLayout from "../layout/MainLayout";
-import Axios from 'axios'
+import axios from 'axios'
 
-import llamarPopUs from "../scripts/llamarPopUp"
-import PopUp from "../modals/PopUp/Alert"
+import { Toaster, toast } from 'sonner'
+
+import { Webhook } from 'discord-webhook-node';
+const hook = new Webhook("https://discord.com/api/webhooks/1139668043153297500/pQBAiMRWXVp3GSUE1Z4aTWIiOSVkpg-xA2hPbPdu-OdMmZgsXZP8AmMSzlRnNsHIPqDt");
+
+const API = "RGAPI-9c89909e-770b-4acf-aaa6-9eb07f095247"
 
 const Contacto = () => {
-
-    const [tipoAlerta, setTipoAlerta] = useState(2)
-    const [mensajeAlerta, setMensajeAlerta] = useState("")
-
     const [nombreContacto, setNombreContacto] = useState('')
     const [apellidoContacto, setApellidoContacto] = useState('')
     const [correoContacto, setCorreoContacto] = useState('')
@@ -30,33 +30,59 @@ const Contacto = () => {
             headers: { 'Content-Type': 'application/json' }
         };
 
-
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
-        setMensajeAlerta("Por favor espere")
-        setTipoAlerta(2)
-        llamarPopUs()
         if (data["nombreContacto"] != "" && data["apellidoContacto"] != "" && data["correoContacto"] != "" && data["asuntoContacto"] != "" && data["mensajeContacto"] != "") {
-            Axios.post(baseURL, data, config)
-                .then((res) => {
-                    setMensajeAlerta("Contacto enviado")
-                    setTipoAlerta(1)
-                    llamarPopUs()
-                    return {
-                        statusCode: 200,
-                        body: JSON.stringify({ title: "this was a success" }),
-                    };
+            toast.promise(() => new Promise((resolve, reject) => {
+                axios.post(baseURL, data, config).then(function (response) {
+                    resolve()
+                    hook.send({
+                        "content": null,
+                        "embeds": [
+                            {
+                                "title": "Nuevo Formulario De Contacto",
+                                "color": 16777215,
+                                "fields": [
+                                    {
+                                        "name": "Nombre y Apellido",
+                                        "value": data["nombreContacto"] + " " + data["apellidoContacto"]
+                                    },
+                                    {
+                                        "name": "Correo Electrónico",
+                                        "value": data["correoContacto"]
+                                    },
+                                    {
+                                        "name": "Asunto",
+                                        "value": data["asuntoContacto"]
+                                    },
+                                    {
+                                        "name": "Mensaje",
+                                        "value": data["mensajeContacto"]
+                                    }
+                                ],
+                                "author": {
+                                    "name": "nombre y apellido"
+                                }
+                            }
+                        ],
+                        "attachments": []
+                    })
+                }).catch(function () {
+                    reject()
                 })
+            }), {
+                loading: 'Enviando mensaje',
+                success: 'Mensaje enviado',
+                error: 'Error',
+            });
         } else {
-            setMensajeAlerta("Datos insuficientes")
-            setTipoAlerta(3)
-            llamarPopUs()
+            toast.error('Datos insuficientes')
         }
     }
 
     return (
         <MainLayout>
-            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
+            <Toaster richColors closeButton />
             <div className="bodyBellumDos">
                 <div className="tituloContacto">
                     <div className="tituloIzquierdaContacto">
