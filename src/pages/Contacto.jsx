@@ -5,11 +5,14 @@ import axios from 'axios'
 
 
 import { Webhook, MessageBuilder } from 'discord-webhook-node';
-const hook = new Webhook("https://discord.com/api/webhooks/1139668043153297500/pQBAiMRWXVp3GSUE1Z4aTWIiOSVkpg-xA2hPbPdu-OdMmZgsXZP8AmMSzlRnNsHIPqDt");
 
-const API = "RGAPI-9c89909e-770b-4acf-aaa6-9eb07f095247"
 
 const Contacto = () => {
+
+    const hook = new Webhook("https://discord.com/api/webhooks/1139668043153297500/pQBAiMRWXVp3GSUE1Z4aTWIiOSVkpg-xA2hPbPdu-OdMmZgsXZP8AmMSzlRnNsHIPqDt");
+
+    const API = "RGAPI-9c89909e-770b-4acf-aaa6-9eb07f095247"
+
     const [nombreContacto, setNombreContacto] = useState('')
     const [apellidoContacto, setApellidoContacto] = useState('')
     const [correoContacto, setCorreoContacto] = useState('')
@@ -33,7 +36,7 @@ const Contacto = () => {
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
         if (data["nombreContacto"] != "" && data["apellidoContacto"] != "" && data["correoContacto"] != "" && data["asuntoContacto"] != "" && data["mensajeContacto"] != "") {
-            
+
         } else {
             toast.error('Datos insuficientes')
         }
