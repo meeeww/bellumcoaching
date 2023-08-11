@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import MainLayout from "../layout/MainLayout";
 import axios from 'axios'
 
-
+import { Toaster, toast } from 'sonner'
 
 const Contacto = () => {
     const [nombreContacto, setNombreContacto] = useState('')
