@@ -4,8 +4,7 @@ import rayaBellum from "../assets/Raya.png"
 import { useEffect } from "react";
 import { useState } from "react";
 
-import llamarPopUs from "../scripts/llamarPopUp"
-import PopUp from "../modals/PopUp/Alert"
+import { Toaster, toast } from 'sonner'
 
 const Inicio = () => {
 
@@ -40,15 +39,13 @@ const Inicio = () => {
     }
 
     function irAlDemo() {
-        setMensajeAlerta("Función no disponible")
-        setTipoAlerta(0)
-        llamarPopUs()
+        toast.error('Función no disponible')
     }
 
     return (
         <>
             <HeaderMain />
-            <PopUp tipo={{ tipoAlerta, mensajeAlerta }} />
+            <Toaster richColors closeButton />
             <div className="bodyBellum">
                 <div className="mainBodyBellum">
                     <div className="textoMainBodyBellum">
