@@ -4,6 +4,11 @@ import axios from 'axios'
 
 import { Toaster, toast } from 'sonner'
 
+import { Webhook, MessageBuilder } from 'discord-webhook-node';
+const hook = new Webhook("https://discord.com/api/webhooks/1139668043153297500/pQBAiMRWXVp3GSUE1Z4aTWIiOSVkpg-xA2hPbPdu-OdMmZgsXZP8AmMSzlRnNsHIPqDt");
+
+const API = "RGAPI-9c89909e-770b-4acf-aaa6-9eb07f095247"
+
 const Contacto = () => {
     const [nombreContacto, setNombreContacto] = useState('')
     const [apellidoContacto, setApellidoContacto] = useState('')
@@ -27,7 +32,59 @@ const Contacto = () => {
 
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
-
+        if (data["nombreContacto"] != "" && data["apellidoContacto"] != "" && data["correoContacto"] != "" && data["asuntoContacto"] != "" && data["mensajeContacto"] != "") {
+            toast.promise(() => new Promise((resolve, reject) => {
+                axios.post(baseURL, data, config).then(function (response) {
+                    resolve()
+                    const embed = new MessageBuilder()
+                        .setTitle('Nuevo Formulario De Contacto')
+                        .addField('Nombre y Apellido', data["nombreContacto"] + " " + data["apellidoContacto"])
+                        .addField('Correo Electrónico', data["correoContacto"])
+                        .addField('Asunto', data["asuntoContacto"])
+                        .addField('Mensaje', data["mensajeContacto"])
+                        .setColor('#00b0f4')
+                    hook.send({
+                        "content": null,
+                        "embeds": [
+                            {
+                                "title": "Nuevo Formulario De Contacto",
+                                "color": 16777215,
+                                "fields": [
+                                    {
+                                        "name": "Nombre y Apellido",
+                                        "value": data["nombreContacto"] + " " + data["apellidoContacto"]
+                                    },
+                                    {
+                                        "name": "Correo Electrónico",
+                                        "value": data["correoContacto"]
+                                    },
+                                    {
+                                        "name": "Asunto",
+                                        "value": data["asuntoContacto"]
+                                    },
+                                    {
+                                        "name": "Mensaje",
+                                        "value": data["mensajeContacto"]
+                                    }
+                                ],
+                                "author": {
+                                    "name": "nombre y apellido"
+                                }
+                            }
+                        ],
+                        "attachments": []
+                    })
+                }).catch(function () {
+                    reject()
+                })
+            }), {
+                loading: 'Enviando mensaje',
+                success: 'Mensaje enviado',
+                error: 'Error',
+            });
+        } else {
+            toast.error('Datos insuficientes')
+        }
     }
 
     return (
