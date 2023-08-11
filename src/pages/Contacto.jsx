@@ -43,37 +43,7 @@ const Contacto = () => {
                         .addField('Asunto', data["asuntoContacto"])
                         .addField('Mensaje', data["mensajeContacto"])
                         .setColor('#00b0f4')
-                    hook.send({
-                        "content": null,
-                        "embeds": [
-                            {
-                                "title": "Nuevo Formulario De Contacto",
-                                "color": 16777215,
-                                "fields": [
-                                    {
-                                        "name": "Nombre y Apellido",
-                                        "value": data["nombreContacto"] + " " + data["apellidoContacto"]
-                                    },
-                                    {
-                                        "name": "Correo Electrónico",
-                                        "value": data["correoContacto"]
-                                    },
-                                    {
-                                        "name": "Asunto",
-                                        "value": data["asuntoContacto"]
-                                    },
-                                    {
-                                        "name": "Mensaje",
-                                        "value": data["mensajeContacto"]
-                                    }
-                                ],
-                                "author": {
-                                    "name": "nombre y apellido"
-                                }
-                            }
-                        ],
-                        "attachments": []
-                    })
+                    hook.send(embed)
                 }).catch(function () {
                     reject()
                 })
