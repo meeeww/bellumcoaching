@@ -36,14 +36,7 @@ const Contacto = () => {
             toast.promise(() => new Promise((resolve, reject) => {
                 axios.post(baseURL, data, config).then(function (response) {
                     resolve()
-                    const embed = new MessageBuilder()
-                        .setTitle('Nuevo Formulario De Contacto')
-                        .addField('Nombre y Apellido', data["nombreContacto"] + " " + data["apellidoContacto"])
-                        .addField('Correo Electrónico', data["correoContacto"])
-                        .addField('Asunto', data["asuntoContacto"])
-                        .addField('Mensaje', data["mensajeContacto"])
-                        .setColor('#00b0f4')
-                    hook.send(embed)
+                    
                 }).catch(function () {
                     reject()
                 })
