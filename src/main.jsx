@@ -4,10 +4,9 @@ import Inicio from './pages/Inicio'
 import Precios from './pages/Precios'
 import Formacion from './pages/Formacion'
 import Contacto from './pages/Contacto'
-import Login from './pages/Login'
 import NoMatch from './pages/NoMatch'
+
 import './estilos/Inicio.css'
-import DashboardAdmin from './pages/Dashboard/admin/DashboardAdmin'
 
 import {
   createBrowserRouter,
@@ -32,14 +31,6 @@ const router = createBrowserRouter([
   {
     path: "/contacto",
     element: <Contacto />,
-  },
-  {
-    path: "/dashboardAdmin",
-    element: <DashboardAdmin/>
-  },
-    {
-    path: "/login",
-    element: <Login />,
   },
   {
     path: "*",
