@@ -2,13 +2,9 @@ import React, { useRef, useState } from 'react';
 import MainLayout from "../layout/MainLayout";
 import axios from 'axios'
 
-
-
-import { Webhook, MessageBuilder } from 'discord-webhook-node';
-
+import { Toaster, toast } from 'sonner'
 
 const Contacto = () => {
-
     const [nombreContacto, setNombreContacto] = useState('')
     const [apellidoContacto, setApellidoContacto] = useState('')
     const [correoContacto, setCorreoContacto] = useState('')
@@ -32,7 +28,17 @@ const Contacto = () => {
         var data = { nombreContacto: nombreContacto, apellidoContacto: apellidoContacto, correoContacto: correoContacto, asuntoContacto: asuntoContacto, mensajeContacto: mensajeContacto };
 
         if (data["nombreContacto"] != "" && data["apellidoContacto"] != "" && data["correoContacto"] != "" && data["asuntoContacto"] != "" && data["mensajeContacto"] != "") {
-
+            toast.promise(() => new Promise((resolve, reject) => {
+                axios.post(baseURL, data, config).then(function (response) {
+                    resolve()
+                }).catch(function () {
+                    reject()
+                })
+            }), {
+                loading: 'Enviando mensaje',
+                success: 'Mensaje enviado',
+                error: 'Error',
+            });
         } else {
             toast.error('Datos insuficientes')
         }
