@@ -2,12 +2,6 @@ import React, { useRef, useState } from 'react';
 import MainLayout from "../layout/MainLayout";
 import axios from 'axios'
 
-import { Toaster, toast } from 'sonner'
-
-import { Webhook, MessageBuilder } from 'discord-webhook-node';
-const hook = new Webhook("https://discord.com/api/webhooks/1139668043153297500/pQBAiMRWXVp3GSUE1Z4aTWIiOSVkpg-xA2hPbPdu-OdMmZgsXZP8AmMSzlRnNsHIPqDt");
-
-const API = "RGAPI-9c89909e-770b-4acf-aaa6-9eb07f095247"
 
 const Contacto = () => {
     const [nombreContacto, setNombreContacto] = useState('')
