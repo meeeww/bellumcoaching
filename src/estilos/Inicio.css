@@ -133,7 +133,7 @@ a:active {
     color: var(--color-principal-dark);
     background-color: transparent;
     outline: 0.02rem solid var(--color-secundario);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     box-shadow: 8px 8px 15px -3px rgba(0, 0, 0, 0.1);
     transition: all 0.25s;
     text-align: center;

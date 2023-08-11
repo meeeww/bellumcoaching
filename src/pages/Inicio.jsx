@@ -53,7 +53,7 @@ const Inicio = () => {
                         <h1 id="primerTituloMain" style={{ marginTop: "5rem", marginBottom: "3rem" }}>ENTRENA</h1>
                         <h3 style={{ marginBlock: "1rem" }}>ACTUALIZADO CADA PARCHE</h3>
                         <h4 style={{ marginBlock: "1rem" }}>Mejora tus habilidades y monitorea junto a nosotros tu trayectoria con la ayuda de nuestras herramientas</h4>
-                        <button className="botonMainBodyBellum" style={{ marginBlock: "4rem" }} onClick={() => { irAlDemo() }}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
+                        <button className="botonMainBodyBellum" style={{ marginBlock: "4rem", borderRadius: "0.5rem" }} onClick={() => { irAlDemo() }}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                     </div>
                 </div>
             </div>
