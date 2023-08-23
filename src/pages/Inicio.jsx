@@ -10,9 +10,6 @@ const Inicio = () => {
 
     const [tituloActivo, setTituloActivo] = useState(0)
 
-    const [tipoAlerta, setTipoAlerta] = useState(2)
-    const [mensajeAlerta, setMensajeAlerta] = useState("")
-
     useEffect(() => {
         setTimeout(() => {
             switch (tituloActivo) {
