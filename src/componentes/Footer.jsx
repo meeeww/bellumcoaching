@@ -7,10 +7,10 @@ const Footer = () => (
                 <p>Nuestras redes sociales</p>
             </div>
             <div className="redesSocialesDerecha">
-                <Link to="https://discord.gg/MW6F2Ajecq"><i className="fa-brands fa-discord"></i></Link>
-                <Link to="https://twitter.com/BellumCoaching"><i className="fa-brands fa-twitter"></i></Link>
-                <Link to="https://tiktok.com/@bellumcoaching"><i className="fa-brands fa-tiktok"></i></Link>
-                <Link to="https://instagram.com/BellumCoaching"><i className="fa-brands fa-instagram"></i></Link>
+                <Link to="https://discord.gg/MW6F2Ajecq" target="_blank" aria-label="Discord"><i className="fa-brands fa-discord"></i></Link>
+                <Link to="https://twitter.com/BellumCoaching" target="_blank" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></Link>
+                <Link to="https://tiktok.com/@bellumcoaching" target="_blank" aria-label="TikTok"><i className="fa-brands fa-tiktok"></i></Link>
+                <Link to="https://instagram.com/bellumcoaching/" target="_blank" aria-label="Instagram"><i className="fa-brands fa-instagram"></i></Link>
             </div>
         </div>
         <div className="informacionFooter">

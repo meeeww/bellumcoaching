@@ -46,9 +46,8 @@ const Inicio = () => {
             <div className="bodyBellum">
                 <div className="mainBodyBellum">
                     <div className="textoMainBodyBellum">
-                        <h5>10+ CLIENTES SATISFECHOS</h5>
                         <h1 id="primerTituloMain" style={{ marginTop: "5rem", marginBottom: "3rem" }}>ENTRENA</h1>
-                        <h3 style={{ marginBlock: "1rem" }}>ACTUALIZADO CADA PARCHE</h3>
+                        <h2 style={{ marginBlock: "1rem" }}>ACTUALIZADO CADA PARCHE</h2>
                         <h4 style={{ marginBlock: "1rem" }}>Mejora tus habilidades y monitorea junto a nosotros tu trayectoria con la ayuda de nuestras herramientas</h4>
                         <button className="botonMainBodyBellum" style={{ marginBlock: "4rem", borderRadius: "0.5rem" }} onClick={() => { irAlDemo() }}>BELLUM ANALYZER DEMO <i className="fa-solid fa-angles-right" style={{ position: "relative", right: "-15px" }}></i></button>
                     </div>
@@ -58,7 +57,7 @@ const Inicio = () => {
                 <div className="titulo">
                     <div className="tituloIzquierda">
                         <h1 style={{ color: "var(--colorBlanco)", fontSize: "62px" }}>BELLUM COACHING</h1>
-                        <img src={rayaBellum} style={{ marginBlock: "1rem" }}></img>
+                        <img src={rayaBellum} style={{ marginBlock: "1rem" }} alt="Raya"></img>
                     </div>
                     <div className="tituloDerecha">
                         <h4 id="h4" style={{ fontSize: "20px" }}>¿Quieres mejorar tu juego en League of Legends? Nuestro equipo de especialistas en
@@ -83,7 +82,7 @@ const Inicio = () => {
                 <div className="titulo">
                     <div className="tituloIzquierda">
                         <h1 style={{ color: "var(--colorBlanco)", fontSize: "62px" }}>¿QUIÉNES SOMOS?</h1>
-                        <img src={rayaBellum} style={{ marginBlock: "1rem" }}></img>
+                        <img src={rayaBellum} style={{ marginBlock: "1rem" }} alt="Raya"></img>
                     </div>
                     <div className="tituloDerecha">
                         <h4 id="h4" style={{ fontSize: "20px" }}>Somos un equipo de expertos en coaching y estamos comprometidos en ayudarte a alcanzar tus metas en el juego. Nuestros servicios de coaching personalizado te ayudarán a mejorar tu estrategia, habilidades técnicas y trabajo en equipo. Ya seas un jugador nuevo o un veterano, nuestro enfoque personalizado te ayudará a mejorar tus habilidades y a llevar tu juego al siguiente nivel.</h4>
