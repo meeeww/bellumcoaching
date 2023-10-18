@@ -61,8 +61,8 @@ const Contacto = () => {
         <MainLayout>
             <Toaster richColors closeButton />
             <div className="bodyBellumDos">
-                <div className="tituloContacto">
-                    <div className="tituloIzquierdaContacto">
+                <div className="tituloContacto flex flex-col md:flex-row mt-16 gap-2">
+                    <div className="tituloIzquierdaContacto flex flex-col gap-4">
                         <h1>Contáctanos</h1>
                         <h4 id="h4">No dudes en comunicarte con nosotros. Simplemente completa el formulario de contacto aquí y nos aseguraremos de responder lo más rápido posible.</h4>
                         <h2>Envíanos Un Mensaje</h2>
@@ -92,7 +92,7 @@ const Contacto = () => {
                     </div>
                 </div>
             </div>
-            <div className="mainBodyBellum backgroundPoro" style={{ width: "100px", height: "110px", position: "absolute", left: "48%", top: "537px" }}></div>
+            <div className="mainBodyBellum backgroundPoro" style={{ width: "100px", height: "110px", position: "absolute", left: "48%", top: "613px" }}></div>
         </MainLayout >
     );
 }

@@ -12,11 +12,11 @@ const Header = () => {
 
     return (
         <div style={{ width: "100%" }}>
-            <header>
-                <div className="headerIzquierda">
-                    <NavLink to="/"><img src={bellumLogo} alt="Bellum Logo" /></NavLink>
+            <header className='mt-8 sm:mt-4'>
+            <div className="headerIzquierda hidden sm:flex">
+                    <NavLink to="/"><img src={bellumLogo} alt="Bellum Logo" className="hidden sm:block" /></NavLink>
                 </div>
-                <div className="headerCentro">
+                <div className="headerCentro flex flex-col sm:flex-row w-full sm:w-auto justify-center text-center gap-2">
                     <NavLink to="/" className="textoHeader" style={navLinkStyles}>Inicio</NavLink>
                     <NavLink to="/precios" className="textoHeader" style={navLinkStyles}>Precios</NavLink>
                     <NavLink to="/formacion" className="textoHeader" style={navLinkStyles}>Formación</NavLink>

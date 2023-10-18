@@ -22,9 +22,9 @@ const Precios = () => {
             </div>
 
             <div className="bodyBellumDos">
-                <div className="comoPagar">
+                <div className="comoPagar flex-col md:flex-row">
                     <div className="comoPagarIzquierda">
-                        <iframe src="https://discord.com/widget?id=1090294279240421538&theme=dark" width="350" height="500" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                        <iframe className="mr-0 sm:mr-16" src="https://discord.com/widget?id=1090294279240421538&theme=dark" width="350" height="500" allowtransparency="true" frameBorder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                     <div className="comoPagarDerecha">
                         <h2 style={{ marginBlock: "2rem" }}>¿Cómo pagar?</h2>

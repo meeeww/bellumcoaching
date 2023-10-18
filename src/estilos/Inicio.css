@@ -877,11 +877,6 @@ header,
     color: var(--color-principal-light);
 }
 
-.redesSocialesIzquierda,
-.redesSocialesDerecha {
-    margin-inline: 1rem;
-}
-
 .redesSocialesIzquierda p{
     color: var(--color-principal-light);
 }
@@ -921,7 +916,6 @@ header,
 .comoPagar iframe {
     width: 350px;
     height: 500px;
-    margin-right: 4rem
 }
 
 /* contacto */
@@ -1200,10 +1194,6 @@ form input {
         display: flex;
         justify-content: space-around;
         overflow: hidden;
-    }
-
-    .headerIzquierda {
-        margin: 0;
     }
 
     .headerIzquierda img {

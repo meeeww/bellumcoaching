@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 const Footer = () => (
     <div className="footer">
         <div className="redesSociales">
-            <div className="redesSocialesIzquierda">
+            <div className="redesSocialesIzquierda mx-0 md:mx-[1rem]">
                 <p>Nuestras redes sociales</p>
             </div>
-            <div className="redesSocialesDerecha">
+            <div className="redesSocialesDerecha mx-0 md:mx-[1rem]">
                 <Link to="https://discord.gg/MW6F2Ajecq" target="_blank" aria-label="Discord"><i className="fa-brands fa-discord"></i></Link>
                 <Link to="https://twitter.com/BellumCoaching" target="_blank" aria-label="Twitter"><i className="fa-brands fa-twitter"></i></Link>
                 <Link to="https://tiktok.com/@bellumcoaching" target="_blank" aria-label="TikTok"><i className="fa-brands fa-tiktok"></i></Link>
