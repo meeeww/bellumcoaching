@@ -15,7 +15,7 @@ const Precios = () => {
                         <h1 style={{ marginBlock: "2rem" }}>Nuestros Precios</h1>
                         <h4 id="h4">En <a href="https://bellumcoaching.com/" target="_blank" style={{ color: "#00B3FF" }}>Bellum Coaching</a> nos enfocamos en brindar un coaching personalizado y efectivo para ayudar a los jugadores de League of Legends a alcanzar su máximo potencial. Ofrecemos paquetes de coaching adaptados a las necesidades individuales de cada jugador, dúo o equipo, los cuales incluyen una clase inicial para crear un plan personalizado de coaching. <a href="https://bellumcoaching.com/contacto/" target="_blank" style={{ color: "#00B3FF" }}>Contáctanos</a> para mejorar tu juego en League of Legends.</h4>
                     </div>
-                    <div className="tituloDerechaP" style={{ marginLeft: "3rem" }}>
+                    <div className="tituloDerechaP">
                         <img src={bellumLogo} alt="Bellum Logo" style={{ width: "20rem" }} />
                     </div>
                 </div>

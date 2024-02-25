@@ -15,7 +15,7 @@ const Precios = () => {
                         <h1 style={{ marginBlock: "2rem" }}>Nuestra Formación</h1>
                         <h4 id="h4">El programa de formación de coaches de <a href="https://bellumcoaching.com/" target="_blank" style={{ color: "#00B3FF" }}>Bellum Coaching</a> se enfoca en brindar una formación integral en los aspectos clave del juego, con énfasis en el dominio del macrograme, el entendimiento del mapa, el análisis de partidas y el drafteo. A través de nuestras clases personalizadas y la guía de nuestros entrenadores expertos, te ayudaremos a alcanzar un nivel superior en tus habilidades como coach de League of Legends.</h4>
                     </div>
-                    <div className="tituloDerechaP" style={{ marginLeft: "3rem" }}>
+                    <div className="tituloDerechaP">
                         <img src={bellumLogo} alt="Bellum Logo" style={{ width: "20rem" }} />
                     </div>
                 </div>
