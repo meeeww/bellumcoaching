@@ -15,7 +15,6 @@
     "discord-webhook-node": "^1.1.8",
     "md5": "^2.3.0",
     "react": "^18.2.0",
-    "react-cookie-consent": "^9.0.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "sonner": "^0.6.2"

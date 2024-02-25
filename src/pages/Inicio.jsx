@@ -1,7 +1,6 @@
 import HeaderMain from "../componentes/HeaderMain"
 import Footer from "../componentes/Footer"
 import rayaBellum from "../assets/Raya.png"
-import CookieConsent from "react-cookie-consent";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -42,7 +41,6 @@ const Inicio = () => {
 
     return (
         <>
-        <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
             <HeaderMain />
             <Toaster richColors closeButton />
             <div className="bodyBellum">
